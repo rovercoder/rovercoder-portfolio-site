@@ -1,0 +1,352 @@
+I write software to the best of my ability and targeting all the edge cases I can see, making one feel at home with the end result.
+
+Making the most out of the idea
+I value quality above speed of development and time to market and let the results speak for themselves. Although I do not promise that there won't be issues to be fixed; broken, shoddy and lackluster products are not the aim.
+
+Pricing
+> The hardest part to predict, gauging which features fit the bills
+> Building for the future (The start takes longer; laying the groundwork for foreseen features to be added faster and preventing rewrites)
+
+The tech world is vast, evergrowing and everchanging (An admittance to not knowing everything)
+> Taking informed decisions
+> Using readily-made and trustworthy solutions wherever deemed necessary
+> Upskilling and research as I go along
+> No negative surprises
+
+> To avoid negative surprises it is important to take informed decisions, therefore upskilling and research as I go along are requirements. Although external dependency is preferably avoided, using readily-made and trustworthy solutions wherever deemed necessary is paramount for success.
+
+My programming experience
+
+##########
+ExperienceGradeLevels (None, Limited, Moderate, Strong)
+Roles
+ProjectMotives (Work, Hobby, Academia)
+Project
+Organizations
+Sectors (Finance, Legal, Catering, ...)
+Concepts (Asynchrony & Threading, ...)
+TechnologyTypes (Languages, ...)
+Technologies
+   > IsChildOf (maybe multiple)
+   > IsRelatedTo Technologies
+   > TechnologyTypeId
+   > RoleIds
+   > CorporateDependency (bool)
+   > Vendor
+   > Discontinued
+   > Open-source
+ProjectTags (Learning, Teaching, Publishing (Research), Logistics, Wallet, Payment Gateway, Customer Relations Management, Operations, Administration, Fraud Detection, PCI DSS Compliance)
+Projects
+   > Name
+   > Description
+   > CompaniesIds (usually 1 only - and In Partnership might be true)
+   > InPartnership
+   > ProjectMotiveId
+   > Sub-Projects (if any)
+   	> Name
+	> Description
+	> Sub-Projects (if any)
+	> TechnologyLogs
+        	> TechnologyId (e.g. .NET)
+		> Hours (from sub technologies) & Additional Hours
+			> General Usage
+			> Development
+	                > Total
+   		> ConceptIds in technology (+ percentage)
+		> Sub Technologies Logs (e.g. C#, ..)
+	> ProjectTagIds (maybe multiple) (+ percentage)
+   > SectorIds (maybe multiple) per project (+ percentage)
+   
+***********************
+{
+  "projects": [
+    {
+      "key": string,
+      "name": string,
+      "description": string?,
+      "linkUrl": string?,
+      "linkUrlOrganizationKey": string?,
+      "startDate": string, // if inner projects have an earlier date use that
+      "endDate": string?, // if inner projects have a later date use that // can be still ongoing
+      "timeZone": string,
+      "projectMotiveKey": string, // can be undefined as long as inner sub-projects have a project_motive themselves
+      "projectTagsKeys: [string],
+      "technologyLogs": [TechnologyLog],
+      "conceptKeys": [string],
+      "sectorsKeysRatios: [string]: number,
+      "organizationsKeys": [{ organizationKey: string, organizationLocationKey: string?, "workModelsKeysRatios": ([string]: number)?, "workHoursRatio": number /* hours get divided between specified organizations */, fromDate: Date?, endDate: Date? }],
+      "subProjects": [
+        {
+          "key": string,
+          "name": string,
+          "description": string?,
+          "linkUrl": string?,
+          "linkUrlOrganizationKey": string?,
+          "startDate": string, // if inner projects have an earlier date use that
+          "endDate": string?, // if inner projects have a later date use that // can be still ongoing
+          "timeZone": string,
+          "projectMotiveKey": string, // can be undefined as long as inner sub-projects have a project_motive themselves
+          "projectTagsKeys: [string],
+          "technologyLogs": [TechnologyLog],
+          "conceptKeys": [string],
+          "sectorsKeysRatios: [string]: number,
+          "organizationsKeys": [{organizationKey: string, organizationLocationKey: string?, "workModelsKeysRatios": ([string]: number)?, fromDate: Date?}],
+          "subProjects": [
+            {
+              "key": string,
+              "name": string,
+              "description": string?,
+              "linkUrl": string?,
+              "linkUrlOrganizationKey": string?,
+              "startDate": string, // if inner projects have an earlier date use that
+              "endDate": string?, // if inner projects have a later date use that // can be still ongoing
+              "timeZone": string, 
+              "projectMotiveKey": string,
+              "projectTagsKeys: [string],
+              "technologyLogs": [TechnologyLog],
+              "conceptKeys": [string],
+              "sectorsKeysRatios: [string]: number,
+              "organizationsKeys": [{organizationKey: string, organizationLocationKey: string?, "workModelsKeysRatios": ([string]: number)?, fromDate: Date?}],
+            }
+          ]
+        }
+      ],
+    }
+  ]
+}
+
+class TechnologyLog {
+  "technologyKey": string,
+  "description": string,
+  "timezone": string?,
+  "hoursEntries": [
+    {
+      "periodStartDate": { date: string, timezone: string },
+      "periodEndDate": { date: string, timezone: string }?,
+      "timingScheduleKey": string?,
+      "hoursTimeBasisEvery": null/"definite" | "day" | "week" | "month" | "year",
+      "hoursTimeBasisEveryMultiplier": number?,
+      "hoursPerBasis": number,
+      "areHoursPerBasisAdditional": bool?
+    }
+  ],
+  "conceptsKeys": [string],
+  "subTechnologiesLogs": [TechnologyLog]
+}
+
+class TimingSchedule {
+  "key": string,
+  "timezone": string,
+  "defaultSleepTime": { startTimeHrs: 23, endTimeHrs: 7 },
+  "onCallExceptions": [
+    { startDate: { date: string, timezone: string }, endDate: { date: string, timezone: string } },
+    //{ dateDay: number, dateMonth: number, dateYear: number, dateTimezone: string, startTimeHrs: number, startTimeMins: number, endTimeHrs: number, endTimeMins: number }
+  ],
+  "weeklyScheduleApplicable": [
+    {
+      "applicableFromDate": { date: string, timezone: string },
+      "applicableToDate": { date: string, timezone: string },
+      "daysSchedules": [
+        {
+          "applicableInMonths": [number|string],
+          "Monday": { startTimeHrs: 9, endTimeHrs: 17, endTimeMins: 30, breaks: [{startBreakTimeHrs: 13, breakDurationMins: 30}]},
+          "Tuesday": { startTimeHrs: 9, endTimeHrs: 17, endTimeMins: 30, breaks: [{startBreakTimeHrs: 13, breakDurationMins: 30}]},
+          "Wednesday": { startTimeHrs: 9, endTimeHrs: 17, endTimeMins: 30, breaks: [{startBreakTimeHrs: 13, breakDurationMins: 30}]},
+          "Thursday": { startTimeHrs: 9, endTimeHrs: 17, endTimeMins: 30, breaks: [{startBreakTimeHrs: 13, breakDurationMins: 30}]},
+          "Friday": { startTimeHrs: 9, endTimeHrs: 17, endTimeMins: 30, breaks: [{startBreakTimeHrs: 13, breakDurationMins: 30}]},
+          "Saturday": null,
+          "Sunday": null
+        }
+      ]
+    }
+  ],
+  "monthlyScheduleApplicable": [
+    {
+      "applicableFromDate": { date: string, timezone: string },
+      "applicableToDate": { date: string, timezone: string },
+      "startOfMonth": bool?,
+      "middleOfMonth":bool?,
+      "endOfMonth": bool?,
+      "splitOntoDaysMinimum": number?,
+      "specificDaysOfMonth": [number]?,
+    }
+  ],
+  "yearlyScheduleApplicable": [
+    {
+      "applicableFromDate": { date: string, timezone: string },
+      "applicableToDate": { date: string, timezone: string },
+      "startOfYear": true,
+      "middleOfYear": true,
+      "endOfYear": true,
+      "meteorologicalWinter": true // or ratio
+      "meteorologicalSpring": true, // or ratio
+      "meteorologicalSummer": true, // or ratio
+      "meteorologicalAutumn": true, // or ratio
+    }
+  ],
+  "holidaysRestAndLeaveApplied": [
+    {
+      "applicableFromDate": { date: string, timezone: string }?,
+      "applicableToDate": { date: string, timezone: string }?,
+      "holidaysRestAndLeaveEntryKey": string
+    }
+  ]
+}
+
+class HolidaysRestAndLeaveEntries {
+  key: string,
+  type: "school" | "publicNational" | "workLeave",
+  timezone: string,
+  functions: [
+    {
+      "name": "getCatholicEasterByYear",
+      "arguments": "year,timezone", //if multiple e.g. year,month
+      "body": "let o=3;const l=year%19+1,e=Math.floor(year/100)+1,a=Math.floor(3*e/4)-12;let r=(11*l+20+(Math.floor((8*e+5)/25)-5)-a)%30;24===r&&(r+=1),25===r&&l>11&&(r+=1);let f=44-r;f<21&&(f+=30);let h=f+7-(Math.floor(5*year/4)-a-10+f)%7;return h>31&&(h-=31,o=4),new TZDate(year,o-1,h,timezone)",
+      "canBeCalledFromOtherFunctions": true
+    }
+  ],
+  entries: [
+    { name: "", startDate: { date: string, timezone: string }, endDate: { date: string, timezone: string }, isSick: bool? },
+    { name: "", startDateMonth: number, startDateDay: number, startDateHour: number?, startDateMinute: number?, endDateMonth: number, endDateDay: number, endDateHour: number?, endDateMinute: number?, startDateTimezone: string?, endDateTimezone: string? },
+    { name: "Good Friday", mainDateFunctionName: "getCatholicEasterByYear", startDateDayOffsetFromMainDate: -2, endDateDayOffsetFromMainDate: -1, startDateTimezone: string?, endDateTimezone: string? } 
+    /*
+      var declaredFunctions = {}; for (var i = 0; i < functions.length; i++) { declaredFunctions[functions[i].name] = {fn: new Function(functions[i].arguments, functions[i].body), args: functions[i].arguments.split(",").map(x => x.trim()) } } 
+      for (var i = 0; i < 10; i++) { var funcWithArgs = declaredFunctions["getCatholicEasterByYear"]; var args = []; for (var j = 0; j < funcWithArgs.args.length; j++) { switch(funcWithArgs.args[j]) { case 'year': args.push(2016+i); break; default: args.push(undefined); break; } } var date = funcWithArgs.fn.call(this, ...args); console.log(date); }
+    */,
+    { name: "Last day of month for June and September to November", mainDateFunctionName: "getLastDayOfMonth", mainDateFunctionRunOnlyFor: { months: '6,9-11', years: '1997-' }, dateDayOffsetFromMainDate: -1 }
+  ],
+  dependsOnType: null | "publicNational",
+  "defaultSleepTime": { startTimeHrs: 23, endTimeHrs: 7 }
+}
+***********************
+##########
+
+/*
+                    Front-End
+• Flutter, JavaScript/TypeScript, Angular, React, HTML, CSS, SASS/SCSS
+Libraries 
+• Bootstrap, jQuery, GMaps, NgRx
+Back-End
+• C# .NET Framework/Core + ASP + EF, PHP (+ plugins for WordPress and Magento), Java, Android, nodeJS
+• PostgreSQL (+ Supabase), MySQL/MariaDB, MongoDB, OrmLite, Realm
+IDEs
+• Microsoft Visual Studio (+ Code), Android Studio, IntelliJ IDEA, NetBeans, Eclipse
+OSes
+• Windows and Linux
+Tools
+• Puro (Flutter version manager), NPM, Yarn, Fiddler, Postman, NSwag, Devart Entity Developer, Figma, Adobe XD
++ Photoshop + Illustrator, Penpot, Inkscape
+CI/CD
+• Bitbucket Pipelines, GitHub Actions
+Documentation, Tracking & Support
+• Atlassian Confluence and Jira, Bugzilla, Trello, SVN, GIT, Freshdesk, TMetric
+Side/Previous Experience
+Programming
+• C/C++, C# WPF, Blazor & MAUI, Intersystems Caché, Python
+Frameworks
+• RabbitMQ, Apache Tomcat, Jetty, Storm, Kafka and Hadoop
+• Processing, reactiVision, Unity3D and Vuforia
+IoT
+• Arduino, ESP8266/ESP32 and RaspberryPi
+                */
+
+Development Tech Stacks
+
+Mainly 
+	> Back-End
+		> Application
+		> Database
+	> Front-End
+		> Application
+			> Web & Mobile/App
+				Limited
+				> Unity3D
+			Limited
+			> Desktop UI
+		> Database
+	
+	Concepts
+	> Asynchrony & Threading
+	> Real-Time (Web Sockets)
+	> Page Routing & Widgets/Components
+	> Error Handling
+	> Analytics, Audit Trailing & Logging
+	> Packaging, Versioning & Database Migration
+	> Dependency Injection
+
+	Limited
+	> Software Architectures
+		> Clean Code
+		> Atomic Design
+	> Authentication and Authorisation Hosted Setup
+		> User Roles
+		> Database Row-Level Security
+	> Cryptography
+	> Firewalling, Reverse Proxying and Protection
+		> Exponential Backoff & Rate Limiting (Time-Based Delays)
+		> IP Whitelisting
+	> Network Monitoring & Inspection
+	> Message Queueing
+	> Performance Tuning and Debugging
+		> Caching
+		> Indexing
+		> Stored Procedures
+		> Identifying Memory Leaks
+	> State Management
+	> Pagination & Infinite Scrolling
+	> Interop Code
+	> Artificial Intelligence
+	> Embedded
+	> Dev-Ops	
+		> Deployment
+			> BitBucket Pipelines, GitHub Actions
+		> Hosting
+			> Digital Ocean
+		> Domain Registrar
+			> Hover, GoDaddy, Namecheap
+	
+	None
+	> Web3 & Blockchain
+
+Related & Other
+	> Integrated Development Environments
+	> Operating Systems
+	> Documentation, Tracking and Support
+	> Utilities
+	
+Sectors with Previous Experience In
+> Financial
+> Transportation
+> Catering
+
+Types
+> Startups
+> Established
+
+Other Interests & Wants
+> Self-Hosted/Decentralised Solutions
+> Reverse Engineering and Manipulation
+> Low-Level, Operating Systems Development and Electronics
+> Events & Planning
+
+
+What's the process?
+
+> Collecting Requirements, Market Research & Potentially Identifying the Money Makers
+> Emailing out a specifications document with price-per-feature & admitting knowledge limitations and plans to overcome them
+
+Software Lifecycle
+> Design & Flow (for multiple devices)
+> Programming
+> Testing (automatic & manual test-cases)
+> Release
+
+
+Project Ownership & Support
+> Tackled from all ends; ensuring that all required features are implemented and any reported bugs are fixed. A timely description and explanation of what needs to be performed is provided, as well as a change-log with every release.
+
+Mentoring & Guidance
+> Training is provided for usability and when on-boarding new technical members on the team. Technical suggestions are advised and feedback welcomed.
+
+Documentation & Time Tracking
+> In exploring the workings, in-depth documentation may be concocted covering the ins and outs of a system and user manuals may be drafted on request. Development commits and time are tracked for every task.

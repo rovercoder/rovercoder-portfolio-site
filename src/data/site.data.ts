@@ -1,0 +1,5742 @@
+import { handleSiteDataOptions, type SiteDataOptions } from "./options/site.data.options.js";
+import type { SiteData } from "./site.data.types.js";
+
+export const getSiteData = async function (options: SiteDataOptions): Promise<SiteData> {
+    return await handleSiteDataOptions({
+        name: "RoverCoder",
+        version: "1.0.0",
+        description: "A front-page display for RoverCoder",
+        author: "RoverCoder Team",
+        license: "MIT",
+        contactEmail: "nathan@rovercoder.com",
+        socialLinks: [
+            {
+                iconUrl: "/assets/images/linkedin-icon.png",
+                platform: "LinkedIn",
+                url: "https://www.linkedin.com/in/nathan-zahra"
+            },
+            {
+                iconUrl: "/assets/images/github-icon.png",
+                platform: "GitHub",
+                url: "https://github.com/rovercoder"
+            }
+        ],
+        content: {
+            profile: {
+                fullName: "Nathan Zahra",
+                description: "I write software to the best of my ability and targeting all the edge cases I can see, making one feel at home with the end result.",
+                images: [
+                    {
+                        url: "/assets/images/profile.jpg",
+                        description: "Nathan Zahra's profile picture",
+                        isMainImage: true
+                    },
+                    {
+                        url: "/assets/images/photo1.jpg",
+                        description: "Nathan Zahra's second picture",
+                        isMainImage: false
+                    },
+                    {
+                        url: "/assets/images/photo2.jpg",
+                        description: "Nathan Zahra's third picture",
+                        isMainImage: false
+                    }
+                ]
+            },
+            statements: [
+                {
+                    imageUrl: "/assets/images/idea.webp",
+                    title: "Making the most out of the Idea",
+                    titleInfo: null,
+                    textLines: [
+                        "I value quality above speed of development and time to market and let the results speak for themselves.",
+                        "Although I do not promise that there won't be issues to be fixed; broken, shoddy and lackluster products are not the aim."
+                    ]
+                },
+                {
+                    imageUrl: "/assets/images/price-advancements-graph.webp",
+                    title: "Pricing & Building for the Future",
+                    titleInfo: null,
+                    textLines: [
+                        "Being the hardest part to predict; after gauging which features fit the bills, a price estimation can be derived.",
+                        "The start takes longer; laying the groundwork for foreseen features to be added faster and preventing rewrites."
+                    ]
+                },
+                {
+                    imageUrl: "/assets/images/rocket.webp",
+                    title: "Tech's vast, growing and changing",
+                    titleInfo: "An admittance to not knowing everything",
+                    textLines: [
+                        "In avoiding negative surprises, informed decisions are crucial, therefore will be up-skilling and researching as I go along.",
+                        "Although external dependency is preferably avoided, using readily-made and trustworthy solutions wherever deemed necessary is paramount for success."
+                    ]
+                }
+            ],
+            utilityFunctions: undefined,
+            keyFunctions: undefined,
+            experience: {
+                experienceGradeLevels: [
+                    {
+                        level: 0,
+                        name: "None",
+                        description: "No experience in this area."
+                    },
+                    {
+                        level: 1,
+                        name: "Limited",
+                        description: "Basic understanding and limited practical experience."
+                    },
+                    {
+                        level: 2,
+                        name: "Moderate",
+                        description: "Good understanding and practical experience."
+                    },
+                    {
+                        level: 3,
+                        name: "Strong",
+                        description: "Extensive knowledge and significant practical experience."
+                    }
+                ],
+                workModels: [
+                    {
+                        key: "work-model#remote",
+                        name: "Remote",
+                        description: "Working from a location of choice, typically from home or a co-working space."
+                    },
+                    {
+                        key: "work-model#on-site",
+                        name: "On-Site",
+                        description: "Working from the employer's physical location or office."
+                    },
+                    {
+                        key: "work-model#hybrid",
+                        name: "Hybrid",
+                        description: "A combination of remote and on-site work."
+                    }
+                ],
+                roles: [
+                    {
+                        key: "role#full-stack",
+                        name: "Full-Stack",
+                        description: "Involves working on both the front-end and back-end of applications.",
+                        children: [
+                            {
+                                key: "role#full-stack#front-end",
+                                name: "Front-End",
+                                description: "Focuses on the client-side of applications."
+                            },
+                            {
+                                key: "role#full-stack#native-mobile",
+                                name: "Mobile & Native",
+                                description: "Focuses on developing applications for mobile devices and native platforms."
+                            },
+                            {
+                                key: "role#full-stack#back-end",
+                                name: "Back-End",
+                                description: "Handles the server-side logic and crucial database interactions."
+                            }
+                        ]
+                    },
+                    {
+                        key: "role#dev-ops",
+                        name: "Dev-Ops",
+                        description: "Focuses on the deployment, monitoring, and maintenance of applications."
+                    },
+                    {
+                        key: "role#big-data",
+                        name: "Big Data",
+                        description: "Involves working with large datasets and data processing technologies."
+                    },
+                    {
+                        key: "role#embedded",
+                        name: "Embedded",
+                        description: "Involves working with embedded systems and hardware."
+                    },
+                    {
+                        key: "role#gaming",
+                        name: "Gaming",
+                        description: "Focuses on creating video games and interactive experiences."
+                    },
+                    {
+                        key: "role#ui-ux-design",
+                        name: "UI/UX Design",
+                        description: "Focuses on user interface and user experience design."
+                    },
+                    {
+                        key: "role#data-science",
+                        name: "Data Science",
+                        description: "Involves data analysis, machine learning, and statistical modeling."
+                    },
+                    {
+                        key: "role#artificial-intelligence",
+                        name: "Artificial Intelligence",
+                        description: "Focuses on creating intelligent systems and algorithms."
+                    },
+                    {
+                        key: "role#web3-blockchain",
+                        name: "Web3 & Blockchain",
+                        description: "Involves working with decentralized applications and blockchain technology."
+                    },
+                    {
+                        key: "role#general-other",
+                        name: "General & Other",
+                        description: "Miscellaneous roles that don't fit into the other categories."
+                    }
+                ],
+                projectMotives: [
+                    {
+                        key: "project-motive#work",
+                        name: "Work",
+                        description: "Projects undertaken as part of professional work."
+                    },
+                    {
+                        key: "project-motive#hobby",
+                        name: "Hobby",
+                        description: "Projects pursued as a personal interest or hobby."
+                    },
+                    {
+                        key: "project-motive#education-academia",
+                        name: "Education & Academia",
+                        description: "Projects related to educational or academic pursuits."
+                    }
+                ],
+                organizations: [
+                    {
+                        key: "organization#burger-king-paceville",
+                        name: "Burger King (Paceville)",
+                        nameLong: "Burger King (Paceville)",
+                        url: "https://www.burgerking.com.mt/",
+                        logoUrl: "/assets/images/organizations/burger-king-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#radisson-blu",
+                        name: "Radisson Blu",
+                        nameLong: "Radisson Blu",
+                        url: "https://www.radissonhotels.com/en-us/hotels/radisson-blu-malta",
+                        logoUrl: "/assets/images/organizations/radisson-blu-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#mi-c3",
+                        name: "MI-C3",
+                        nameLong: "Meaningful Intelligence - Command and Control to be enhanced with Collaboration (MI-C3)",
+                        url: "https://www.mi-c3.com/",
+                        logoUrl: "/assets/images/organizations/mi-c3-logo.jpeg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#transactium",
+                        name: "Transactium",
+                        nameLong: "Transactium",
+                        url: "https://www.transactium.com/",
+                        logoUrl: "/assets/images/organizations/transactium-logo.png",
+                        logoBackgroundColor: "#55436D",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#bit8",
+                        name: "Bit8",
+                        nameLong: "Bit8",
+                        url: "https://www.bit8.com/",
+                        logoUrl: "/assets/images/organizations/bit8-logo.jpeg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#cuorium-ecabs",
+                        name: "Cuorium (eCabs)",
+                        nameLong: "Cuorium (eCabs)",
+                        url: "https://www.ecabs.com/",
+                        logoUrl: "/assets/images/organizations/ecabs-logo.png",
+                        logoBackgroundColor: "#1B31E5",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#rovercoder",
+                        name: "RoverCoder",
+                        nameLong: "RoverCoder",
+                        url: "https://www.rovercoder.com/",
+                        logoUrl: "/assets/images/organizations/rovercoder-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#mike-portelli",
+                        name: "Mike Portelli",
+                        nameLong: "Mike Portelli",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#mario-borg",
+                        name: "Mario Borg",
+                        nameLong: "Mario Borg",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#showshappening",
+                        name: "Shows Happening",
+                        nameLong: "Shows Happening",
+                        url: "https://www.showshappening.com/",
+                        logoUrl: "/assets/images/organizations/showshappening-logo.png",
+                        logoBackgroundColor: "#000000",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#nightowlstudios",
+                        name: "Night Owl Studios",
+                        nameLong: "Night Owl Studios",
+                        url: "https://www.nightowlstudios.io/",
+                        logoUrl: "/assets/images/organizations/nightowlstudios-logo.jpeg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#borland",
+                        name: "Borland",
+                        nameLong: "Borland",
+                        logoUrl: "/assets/images/organizations/borland-logo.svg",
+                        logoBackgroundColor: "#E6E6E6",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#world-wide-web-consortium",
+                        name: "W3C",
+                        nameLong: "World Wide Web Consortium (W3C)",
+                        url: "https://www.w3.org/",
+                        logoUrl: "/assets/images/organizations/world-wide-web-consortium-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#web-hypertext-application-technology-working-group",
+                        name: "WHATWG",
+                        nameLong: "Web Hypertext Application Technology Working Group (WHATWG)",
+                        url: "https://whatwg.org/",
+                        logoUrl: "/assets/images/organizations/web-hypertext-application-technology-working-group-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#webassembly-community-group",
+                        name: "WebAssembly Community Group",
+                        nameLong: "WebAssembly Community Group",
+                        url: "https://www.w3.org/community/webassembly/",
+                        logoUrl: "/assets/images/organizations/webassembly-community-group-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#adobe",
+                        name: "Adobe",
+                        nameLong: "Adobe Inc.",
+                        url: "https://www.adobe.com/",
+                        logoUrl: "/assets/images/organizations/adobe-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#microsoft",
+                        name: "Microsoft",
+                        nameLong: "Microsoft Corporation",
+                        url: "https://www.microsoft.com/",
+                        logoUrl: "/assets/images/organizations/microsoft-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#eclipse-foundation",
+                        name: "Eclipse Foundation",
+                        nameLong: "Eclipse Foundation",
+                        url: "https://www.eclipse.org/",
+                        logoUrl: "/assets/images/organizations/eclipse-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#oracle",
+                        name: "Oracle",
+                        nameLong: "Oracle Corporation",
+                        url: "https://www.oracle.com/",
+                        logoUrl: "/assets/images/organizations/oracle-logo.svg",
+                        logoBackgroundColor: "#312d2a",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#arduino-ag",
+                        name: "Arduino AG",
+                        nameLong: "Arduino AG",
+                        url: "https://www.arduino.cc/",
+                        logoUrl: "/assets/images/organizations/arduino-ag-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#arduino-foundation",
+                        name: "Arduino Foundation",
+                        nameLong: "Arduino Foundation",
+                        url: "https://www.arduino.cc/",
+                        logoUrl: "/assets/images/organizations/arduino-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#raspberry-pi-foundation",
+                        name: "Raspberry Pi Foundation",
+                        nameLong: "Raspberry Pi Foundation",
+                        url: "https://www.raspberrypi.org/",
+                        logoUrl: "/assets/images/organizations/raspberry-pi-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#intersystems",
+                        name: "InterSystems",
+                        nameLong: "InterSystems Corporation",
+                        url: "https://www.intersystems.com/",
+                        logoUrl: "/assets/images/organizations/intersystems-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#processing-foundation",
+                        name: "Processing Foundation",
+                        nameLong: "Processing Foundation",
+                        url: "https://processingfoundation.org/",
+                        logoUrl: "/assets/images/organizations/processing-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#unity-technologies",
+                        name: "Unity Technologies",
+                        nameLong: "Unity Technologies",
+                        url: "https://unity.com/",
+                        logoUrl: "/assets/images/organizations/unity-technologies-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#ptc",
+                        name: "PTC",
+                        nameLong: "PTC Inc.",
+                        url: "https://www.ptc.com/",
+                        logoUrl: "/assets/images/organizations/ptc-logo.svg",
+                        logoBackgroundColor: "#323B42",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#openjs-foundation",
+                        name: "OpenJS Foundation",
+                        nameLong: "OpenJS Foundation",
+                        url: "https://openjsf.org/",
+                        logoUrl: "/assets/images/organizations/openjs-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#ecma-international",
+                        name: "Ecma International",
+                        nameLong: "Ecma International",
+                        url: "https://www.ecma-international.org/",
+                        logoUrl: "/assets/images/organizations/ecma-international-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#tc39",
+                        name: "TC39",
+                        nameLong: "TC39: The JavaScript Governing Body",
+                        url: "https://tc39.es/",
+                        logoUrl: "/assets/images/organizations/tc39-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#devart",
+                        name: "Devart",
+                        nameLong: "Devart",
+                        url: "https://www.devart.com/",
+                        logoUrl: "/assets/images/organizations/devart-logo.svg",
+                        logoBackgroundColor: "#181720",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#mariadb-foundation",
+                        name: "MariaDB Foundation",
+                        nameLong: "MariaDB Foundation",
+                        url: "https://mariadb.org/",
+                        logoUrl: "/assets/images/organizations/mariadb-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#espressif-systems",
+                        name: "Espressif Systems",
+                        nameLong: "Espressif Systems",
+                        url: "https://www.espressif.com/",
+                        logoUrl: "/assets/images/organizations/espressif-systems-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#apache-software-foundation",
+                        name: "Apache Software Foundation",
+                        nameLong: "Apache Software Foundation (ASF)",
+                        url: "https://www.apache.org/",
+                        logoUrl: "/assets/images/organizations/apache-software-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#software-freedom-conservancy",
+                        name: "Software Freedom Conservancy",
+                        nameLong: "Software Freedom Conservancy",
+                        url: "https://sfconservancy.org/",
+                        logoUrl: "/assets/images/organizations/software-freedom-conservancy-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#mobatek",
+                        name: "Mobatek",
+                        nameLong: "Mobatek",
+                        url: "https://www.mobatek.net/",
+                        logoUrl: "/assets/images/organizations/mobatek-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#openbsd-foundation",
+                        name: "OpenBSD Foundation",
+                        nameLong: "The OpenBSD Foundation",
+                        url: "https://www.openbsdfoundation.org/",
+                        logoUrl: "/assets/images/organizations/openbsd-foundation-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#google",
+                        name: "Google",
+                        nameLong: "Google LLC",
+                        url: "https://www.google.com/",
+                        logoUrl: "/assets/images/organizations/google-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#npm-inc",
+                        name: "npm, Inc.",
+                        nameLong: "npm, Inc.",
+                        url: "https://www.npmjs.com/",
+                        logoUrl: "/assets/images/organizations/npm-inc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#amazon",
+                        name: "Amazon",
+                        nameLong: "Amazon.com, Inc.",
+                        url: "https://www.amazon.com/",
+                        logoUrl: "/assets/images/organizations/amazon-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#atlassian",
+                        name: "Atlassian",
+                        nameLong: "Atlassian Corporation Plc",
+                        url: "https://www.atlassian.com/",
+                        logoUrl: "/assets/images/organizations/atlassian-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#freshworks-inc",
+                        name: "Freshworks",
+                        nameLong: "Freshworks Inc.",
+                        url: "https://www.freshworks.com/",
+                        logoUrl: "/assets/images/organizations/freshworks-inc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#zarro-boogs-corporation",
+                        name: "Zarro Boogs Corporation",
+                        nameLong: "Zarro Boogs Corporation",
+                        url: "https://www.bugzilla.org/about/zarroboogs.html",
+                        logoUrl: "/assets/images/organizations/zarro-boogs-corporation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#mozilla-foundation",
+                        name: "Mozilla Foundation",
+                        nameLong: "Mozilla Foundation",
+                        url: "https://www.mozilla.org/",
+                        logoUrl: "/assets/images/organizations/mozilla-foundation-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#hex-rays",
+                        name: "Hex-Rays",
+                        nameLong: "Hex-Rays",
+                        url: "https://www.hex-rays.com/",
+                        logoUrl: "/assets/images/organizations/hex-rays-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#image-line",
+                        name: "Image-Line",
+                        nameLong: "Image-Line Software",
+                        url: "https://www.image-line.com/",
+                        logoUrl: "/assets/images/organizations/image-line-logo.svg",
+                        logoBackgroundColor: "#0E171C",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#maxon",
+                        name: "Maxon",
+                        nameLong: "Maxon Computer GmbH",
+                        url: "https://www.maxon.net/",
+                        logoUrl: "/assets/images/organizations/maxon-logo.svg",
+                        logoBackgroundColor: "#000000",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#github",
+                        name: "GitHub",
+                        nameLong: "GitHub, Inc.",
+                        url: "https://github.com/",
+                        logoUrl: "/assets/images/organizations/github-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#gitlab-inc",
+                        name: "GitLab, Inc.",
+                        nameLong: "GitLab, Inc.",
+                        url: "https://about.gitlab.com/",
+                        logoUrl: "/assets/images/organizations/gitlab-inc-logo.svg",
+                        logoBackgroundColor: "#E8E7EB",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#canonical",
+                        name: "Canonical",
+                        nameLong: "Canonical Ltd.",
+                        url: "https://canonical.com/",
+                        logoUrl: "/assets/images/organizations/canonical-logo.svg",
+                        logoBackgroundColor: "#F3F3F3",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#software-in-the-public-interest",
+                        name: "Software in the Public Interest",
+                        nameLong: "Software in the Public Interest, Inc.",
+                        url: "https://www.spi-inc.org",
+                        logoUrl: "/assets/images/organizations/software-in-the-public-interest-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#gnu-project",
+                        name: "GNU Project",
+                        nameLong: "GNU Project",
+                        url: "https://www.gnu.org/",
+                        logoUrl: "/assets/images/organizations/gnu-project-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#python-software-foundation",
+                        name: "Python Software Foundation",
+                        nameLong: "Python Software Foundation",
+                        url: "https://www.python.org/psf/",
+                        logoUrl: "/assets/images/organizations/python-software-foundation-logo.png",
+                        logoBackgroundColor: "#1F4462",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#opera",
+                        name: "Opera",
+                        nameLong: "Opera Software",
+                        url: "https://www.opera.com/",
+                        logoUrl: "/assets/images/organizations/opera-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#vivaldi-technologies",
+                        name: "Vivaldi Technologies",
+                        nameLong: "Vivaldi Technologies AS",
+                        url: "https://vivaldi.com/",
+                        logoUrl: "/assets/images/organizations/vivaldi-technologies-logo.svg",
+                        logoBackgroundColor: "#F7F7F9",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#gradle",
+                        name: "Gradle",
+                        nameLong: "Gradle Inc.",
+                        url: "https://gradle.org/",
+                        logoUrl: "/assets/images/organizations/gradle-logo.svg",
+                        logoBackgroundColor: "#161617",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#elastic",
+                        name: "Elastic",
+                        nameLong: "Elastic N.V.",
+                        url: "https://www.elastic.co/",
+                        logoUrl: "/assets/images/organizations/elastic-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#altium",
+                        name: "Altium",
+                        nameLong: "Altium Limited",
+                        url: "https://www.altium.com/",
+                        logoUrl: "/assets/images/organizations/altium-logo.svg",
+                        logoBackgroundColor: "#171719",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#jetbrains",
+                        name: "JetBrains",
+                        nameLong: "JetBrains s.r.o.",
+                        url: "https://www.jetbrains.com/",
+                        logoUrl: "/assets/images/organizations/jetbrains-logo.svg",
+                        logoBackgroundColor: "#19191C",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#trimble",
+                        name: "Trimble",
+                        nameLong: "Trimble Inc.",
+                        url: "https://www.trimble.com/",
+                        logoUrl: "/assets/images/organizations/trimble-logo.svg",
+                        logoBackgroundColor: "#252A2E",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#mongo-db-inc",
+                        name: "MongoDB, Inc.",
+                        nameLong: "MongoDB, Inc.",
+                        url: "https://www.mongodb.com/",
+                        logoUrl: "/assets/images/organizations/mongodb-inc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#progress",
+                        name: "Progress",
+                        nameLong: "Progress Software Corporation",
+                        url: "https://www.progress.com/",
+                        logoUrl: "/assets/images/organizations/progress-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#telerik",
+                        name: "Telerik",
+                        nameLong: "Telerik Corporation",
+                        url: "https://www.telerik.com/",
+                        logoUrl: "/assets/images/organizations/telerik-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#docker-inc",
+                        name: "Docker, Inc.",
+                        nameLong: "Docker, Inc.",
+                        url: "https://www.docker.com/",
+                        logoUrl: "/assets/images/organizations/docker-inc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#f5-inc",
+                        name: "F5, Inc.",
+                        nameLong: "F5, Inc.",
+                        url: "https://www.f5.com/",
+                        logoUrl: "/assets/images/organizations/f5-inc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#wemos",
+                        name: "WEMOS",
+                        nameLong: "WEMOS",
+                        url: "https://www.wemos.cc/",
+                        logoUrl: "/assets/images/organizations/wemos-logo.webp",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#linux-foundation",
+                        name: "The Linux Foundation",
+                        nameLong: "The Linux Foundation",
+                        url: "https://www.linuxfoundation.org/",
+                        logoUrl: "/assets/images/organizations/linux-foundation-logo.svg",
+                        logoBackgroundColor: "#222222",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#smart-bear",
+                        name: "SmartBear",
+                        nameLong: "SmartBear Software",
+                        url: "https://smartbear.com/",
+                        logoUrl: "/assets/images/organizations/smart-bear-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#vmware",
+                        name: "VMware",
+                        nameLong: "VMware, Inc.",
+                        url: "https://www.vmware.com/",
+                        logoUrl: "/assets/images/organizations/vmware-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#broadcom-inc",
+                        name: "Broadcom",
+                        nameLong: "Broadcom, Inc.",
+                        url: "https://www.broadcom.com/",
+                        logoUrl: "/assets/images/organizations/broadcom-logo.svg",
+                        logoBackgroundColor: "#F7F7F7",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#iso-iec-jtc1-sc22-wg14",
+                        name: "ISO/IEC JTC1/SC22/WG14",
+                        nameLong: "ISO/IEC JTC1/SC22/WG14",
+                        url: "https://www.open-std.org/jtc1/sc22/wg14/",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#iso-iec-jtc1-sc22-wg21",
+                        name: "ISO/IEC JTC1/SC22/WG21",
+                        nameLong: "ISO/IEC JTC1/SC22/WG21",
+                        url: "https://www.open-std.org/jtc1/sc22/wg21/",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#iso-iec-jtc1-sc32-wg3",
+                        name: "ISO/IEC JTC1/SC32/WG3",
+                        nameLong: "ISO/IEC JTC1/SC32/WG3",
+                        url: "https://www.iso.org/committee/45342.html",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#postgresql-global-development-group",
+                        name: "PostgreSQL Global Development Group",
+                        nameLong: "PostgreSQL Global Development Group",
+                        url: "https://www.postgresql.org/",
+                        logoUrl: "/assets/images/organizations/postgresql-global-development-group-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: true
+                    },
+                    {
+                        key: "organization#hover",
+                        name: "Hover",
+                        nameLong: "Hover",
+                        url: "https://www.hover.com/",
+                        logoUrl: "/assets/images/organizations/hover-logo.svg",
+                        logoBackgroundColor: "#229E87",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#tucows-inc",
+                        name: "Tucows Inc.",
+                        nameLong: "Tucows Inc.",
+                        url: "https://www.tucows.com/",
+                        logoUrl: "/assets/images/organizations/tucows-inc-logo.svg",
+                        logoBackgroundColor: "#0011B7",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#godaddy",
+                        name: "GoDaddy",
+                        nameLong: "GoDaddy Inc.",
+                        url: "https://www.godaddy.com/",
+                        logoUrl: "/assets/images/organizations/godaddy-logo.svg",
+                        logoBackgroundColor: "#2b2b2b",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#namecheap",
+                        name: "Namecheap",
+                        nameLong: "Namecheap Inc.",
+                        url: "https://www.namecheap.com/",
+                        logoUrl: "/assets/images/organizations/namecheap-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#m2host",
+                        name: "M2Host",
+                        nameLong: "M2Host",
+                        url: "https://www.m2host.com/",
+                        logoUrl: "/assets/images/organizations/m2host-logo.png",
+                        logoBackgroundColor: "#F8F8F8",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#sqlite-consortium",
+                        name: "SQLite Consortium",
+                        nameLong: "SQLite Consortium",
+                        url: "https://www.sqlite.org/",
+                        logoUrl: "/assets/images/organizations/sqlite-consortium-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#facebook",
+                        name: "Facebook",
+                        nameLong: "Facebook (Meta Platforms, Inc.)",
+                        url: "https://www.facebook.com/",
+                        logoUrl: "/assets/images/organizations/facebook-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#supabase",
+                        name: "Supabase",
+                        nameLong: "Supabase Inc.",
+                        url: "https://supabase.com/",
+                        logoUrl: "/assets/images/organizations/supabase-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#digital-ocean",
+                        name: "DigitalOcean",
+                        nameLong: "DigitalOcean",
+                        url: "https://www.digitalocean.com/",
+                        logoUrl: "/assets/images/organizations/digital-ocean-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#postman-inc",
+                        name: "Postman Inc.",
+                        nameLong: "Postman Inc.",
+                        url: "https://www.postman.com/",
+                        logoUrl: "/assets/images/organizations/postman-inc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#figma-inc",
+                        name: "Figma Inc.",
+                        nameLong: "Figma Inc.",
+                        url: "https://www.figma.com/",
+                        logoUrl: "/assets/images/organizations/figma-inc-logo.svg",
+                        logoBackgroundColor: "#F3F3F3",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#digital-workshop",
+                        name: "Digital Workshop",
+                        nameLong: "Digital Workshop",
+                        url: "https://digitalworkshop.co.uk/",
+                        logoUrl: "/assets/images/organizations/digital-workshop-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#bice-mizzi-vassallo",
+                        name: "Bice Mizzi Vassallo",
+                        nameLong: "Bice Mizzi Vassallo",
+                        nonProfit: true,
+                        communityDriven: false,
+                        locationsKeys: {
+                            main: {
+                                locationKey: "location#bice-mizzi-vassallo-complex-pembroke-malta"
+                            }
+                        }
+                    },
+                    {
+                        key: "organization#archbishops-seminary",
+                        name: "Archbishop's Seminary",
+                        nameLong: "The Archbishop's Seminary",
+                        url: "https://www.maltaseminary.org",
+                        logoUrl: "/assets/images/organizations/archbishops-seminary-logo.jpg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: false,
+                        locationsKeys: {
+                            main: {
+                                locationKey: "location#archbishops-seminary-rabat-malta"
+                            }
+                        }
+                    },
+                    {
+                        key: "organization#icdl-foundation",
+                        name: "ICDL Foundation",
+                        nameLong: "ICDL Foundation",
+                        url: "https://icdl.org",
+                        logoUrl: "/assets/images/organizations/icdl-foundation-logo.svg",
+                        logoBackgroundColor: "#009EDE",
+                        nonProfit: true,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#stc-higher-education",
+                        name: "STC Higher Education",
+                        nameLong: "STC Higher Education",
+                        url: "https://www.stcmalta.com/",
+                        logoUrl: "/assets/images/organizations/stc-higher-education-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false,
+                        locationsKeys: {
+                            malta: {
+                                locationKey: "location#stc-higher-education-pembroke-malta"
+                            }
+                        }
+                    },
+                    {
+                        key: "organization#g-f-abela-junior-college",
+                        name: "Ġ.F. Abela Junior College",
+                        nameLong: "Ġ.F. Abela Junior College",
+                        url: "https://www.jc.um.edu.mt",
+                        logoUrl: "/assets/images/organizations/g-f-abela-junior-college-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: true,
+                        communityDriven: false,
+                        locationsKeys: {
+                            main: {
+                                locationKey: "location#g-f-abela-junior-college-msida-malta"
+                            }
+                        }
+                    },
+                    {
+                        key: "organization#ncc-education",
+                        name: "NCC Education",
+                        nameLong: "NCC Education",
+                        url: "https://www.nccedu.com/",
+                        logoUrl: "/assets/images/organizations/ncc-education-logo.png",
+                        logoBackgroundColor: "#0C5AB5",
+                        nonProfit: false,
+                        communityDriven: false,
+                        locationsKeys: {
+                            malta: {
+                                locationKey: "location#stc-higher-education-pembroke-malta"
+                            }
+                        }
+                    },
+                    {
+                        key: "organization#middlesex-university",
+                        name: "Middlesex University",
+                        nameLong: "Middlesex University",
+                        url: "https://www.mdx.ac.uk",
+                        logoUrl: "/assets/images/organizations/middlesex-university-logo.webp",
+                        logoBackgroundColor: "#2F2552",
+                        nonProfit: false,
+                        communityDriven: false,
+                        locationsKeys: {
+                            malta: {
+                                locationKey: "location#stc-higher-education-pembroke-malta",
+                                permanentlyClosedDate: "2023-03"
+                            }
+                        }
+                    },
+                    {
+                        key: "organization#packt",
+                        name: "Packt",
+                        nameLong: "Packt Publishing Ltd.",
+                        url: "https://www.packt.com/",
+                        logoUrl: "/assets/images/organizations/packt-logo.svg",
+                        logoBackgroundColor: "#F2F2F2",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#mark-j-price",
+                        name: "Mark J. Price",
+                        nameLong: "Mark J. Price",
+                        url: "https://github.com/markjprice/",
+                        nonProfit: false,
+                        communityDriven: false,
+                        isPerson: true
+                    },
+                    {
+                        key: "organization#udemy",
+                        name: "Udemy",
+                        nameLong: "Udemy, Inc.",
+                        url: "https://www.udemy.com/",
+                        logoUrl: "/assets/images/organizations/udemy-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#andre-la-mothe",
+                        name: "André LaMothe",
+                        nameLong: "André LaMothe",
+                        url: "https://www.linkedin.com/in/andrelamothe/",
+                        logoUrl: "/assets/images/organizations/andre-la-mothe-logo.jpg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false,
+                        isPerson: true
+                    },
+                    {
+                        key: "organization#mina-farid",
+                        name: "Mina Farid",
+                        nameLong: "Mina Farid",
+                        url: "https://www.linkedin.com/in/mina-farid-749a7a124/",
+                        logoUrl: "/assets/images/organizations/mina-farid-logo.jpeg",
+                        logoBackgroundColor: "#4E48F6",
+                        nonProfit: false,
+                        communityDriven: false,
+                        isPerson: true
+                    },
+                    {
+                        key: "organization#youtube",
+                        name: "YouTube",
+                        nameLong: "YouTube, LLC",
+                        url: "https://www.youtube.com/",
+                        logoUrl: "/assets/images/organizations/youtube-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false
+                    },
+                    {
+                        key: "organization#vandad-nahavandipoor",
+                        name: "Vandad Nahavandipoor",
+                        nameLong: "Vandad Nahavandipoor",
+                        url: "https://www.linkedin.com/in/vandadnp",
+                        logoUrl: "/assets/images/organizations/vandad-nahavandipoor-logo.jpg",
+                        logoBackgroundColor: "#FFFFFF",
+                        nonProfit: false,
+                        communityDriven: false,
+                        isPerson: true
+                    },
+                    {
+                        key: "organization#pixem-web",
+                        name: "PixemWeb",
+                        nameLong: "PixemWeb",
+                        url: "https://www.pixemweb.com",
+                        logoUrl: "/assets/images/organizations/pixem-web-logo.jpg",
+                        logoBackgroundColor: "#282828",
+                        nonProfit: false,
+                        communityDriven: false
+                    }
+                ],
+                locations: [
+                    {
+                        key: "location#bice-mizzi-vassallo-complex-pembroke-malta",
+                        name: "Bice Mizzi Vassallo Complex",
+                        address: "Bice Mizzi Vassallo Complex, Triq Alamein, Pembroke PBK 1773, Malta",
+                        countryCode: "MT",
+                        position: {
+                            latitude: "35.925187",
+                            longitude: "14.475894"
+                        }
+                    },
+                    {
+                        key: "location#archbishops-seminary-rabat-malta",
+                        name: "Archbishop's Seminary",
+                        address: "90, Tal-Virtù Road, Tal-Virtù, Rabat, RBT 2604, Malta",
+                        countryCode: "MT",
+                        position: {
+                            latitude: "35.8735545944439",
+                            longitude: "14.40320588103787"
+                        }
+                    },
+                    {
+                        key: "location#g-f-abela-junior-college-msida-malta",
+                        name: "Ġ.F. Abela Junior College",
+                        address: "Ġ.F. Abela Junior College, Ġużè Debono Square, Msida MSD 1252, Malta",
+                        countryCode: "MT",
+                        position: {
+                            latitude: "35.893257296040794",
+                            longitude: "14.488875325048665"
+                        }
+                    },
+                    {
+                        key: "location#stc-higher-education-pembroke-malta",
+                        name: "STC Higher Education",
+                        address: "STC Higher Education, Block D, Giorgio Mitrovich Street, Pembroke, PBK1014, Malta",
+                        countryCode: "MT",
+                        position: {
+                            latitude: "35.925929512280504",
+                            longitude: "14.476148599899684"
+                        }
+                    }
+                ],
+                sectors: [
+                    {
+                        key: "sector#catering-hospitality",
+                        name: "Catering & Hospitality",
+                        description: "Projects related to the catering & hospitality industry."
+                    },
+                    {
+                        key: "sector#finance-banking",
+                        name: "Finance & Banking",
+                        description: "Projects related to finance and banking."
+                    },
+                    {
+                        key: "sector#trust-legal",
+                        name: "Trust & Legal",
+                        description: "Projects related to trust and legal services."
+                    },
+                    {
+                        key: "sector#healthcare",
+                        name: "Healthcare",
+                        description: "Projects related to healthcare and medical services."
+                    },
+                    {
+                        key: "sector#education",
+                        name: "Education",
+                        description: "Projects related to education and learning."
+                    },
+                    {
+                        key: "sector#gaming-casino",
+                        name: "Gaming & Casino",
+                        description: "Projects related to the gaming & casino industry."
+                    },
+                    {
+                        key: "sector#transportation-logistics",
+                        name: "Transportation & Logistics",
+                        description: "Projects related to transportation and logistics."
+                    },
+                    {
+                        key: "sector#political-social",
+                        name: "Political & Social",
+                        description: "Projects related to political and social causes."
+                    },
+                    {
+                        key: "sector#general-other",
+                        name: "General & Other",
+                        description: "Miscellaneous projects that don't fit into the other categories."
+                    }
+                ],
+                concepts: [
+                    {
+                        key: "concept#technical",
+                        name: "Technical",
+                        description: "Technical concepts and skills related to software development.",
+                        experienceGradeLevel: 1,
+                        children: [
+                            {
+                                key: "concept#technical#computing",
+                                name: "Computing",
+                                description: "Fundamental computing concepts and principles.",
+                                experienceGradeLevel: 1,
+                                children: [
+                                    {
+                                        key: "concept#technical#computing#asynchrony-threading-task-scheduling",
+                                        name: "Asynchrony, Threading & Task Scheduling",
+                                        description: "Handling asynchronous operations, multi-threading, and task scheduling in applications.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#real-time-web-sockets",
+                                        name: "Real-Time (Web Sockets)",
+                                        description: "Implementing real-time communication using WebSockets.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#page-routing-widgets-components",
+                                        name: "Page Routing & Widgets/Components",
+                                        description: "Managing page navigation and reusable UI components.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#error-handling-logging",
+                                        name: "Error Handling & Logging",
+                                        description: "Implementing error handling and logging mechanisms.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#analytics-audit-trailing",
+                                        name: "Analytics & Audit Trailing",
+                                        description: "Implementing analytics and audit trailing for user actions.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#packaging-versioning-migration",
+                                        name: "Packaging, Versioning & Migration",
+                                        description: "Managing application packaging, versioning, and migration.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#database-orm-change-tracking-migration",
+                                        name: "Database Object-Relational Mapping (ORM), Change Tracking, Transactions & Migration",
+                                        description: "Using ORM frameworks for database interactions, change tracking, and migrations.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#dependency-injection",
+                                        name: "Dependency Injection",
+                                        description: "Implementing dependency injection for better modularity and testability.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#software-architectures",
+                                        name: "Software Architectures",
+                                        description: "Understanding and applying software architecture patterns and principles.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#technical#computing#software-architectures#clean-code",
+                                                name: "Clean Code",
+                                                description: "Writing clean, maintainable, and readable code.",
+                                                experienceGradeLevel: 2
+                                            },
+                                            {
+                                                key: "concept#technical#computing#software-architectures#atomic-design",
+                                                name: "Atomic Design",
+                                                description: "Creating design systems using atomic design principles.",
+                                                experienceGradeLevel: 1
+                                            },
+                                            {
+                                                key: "concept#technical#computing#software-architectures#microservices",
+                                                name: "Microservices",
+                                                description: "Designing and implementing microservices architectures.",
+                                                experienceGradeLevel: 1
+                                            },
+                                            {
+                                                key: "concept#technical#computing#software-architectures#serverless",
+                                                name: "Serverless",
+                                                description: "Building applications using serverless architecture patterns.",
+                                                experienceGradeLevel: 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        key: "concept#technical#computing#authentication-authorization",
+                                        name: "Authentication & Authorization",
+                                        description: "Implementing authentication and authorization mechanisms in applications.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#technical#computing#authentication-authorization#account-social-logins",
+                                                name: "Account & Social Logins",
+                                                description: "Implementing account and social login options for user authentication.",
+                                                experienceGradeLevel: 2
+                                            },
+                                            {
+                                                key: "concept#technical#computing#authentication-authorization#two-factor-authentication",
+                                                name: "Two-Factor Authentication (2FA)",
+                                                description: "Implementing two-factor authentication.",
+                                                experienceGradeLevel: 2
+                                            },
+                                            {
+                                                key: "concept#technical#computing#authentication-authorization#user-roles-permissions",
+                                                name: "User Roles and Permissions",
+                                                description: "Defining user roles and permissions for access control.",
+                                                experienceGradeLevel: 1
+                                            },
+                                            {
+                                                key: "concept#technical#computing#authentication-authorization#database-row-level-security",
+                                                name: "Database Row-Level Security",
+                                                description: "Implementing row-level security policies in the database.",
+                                                experienceGradeLevel: 2
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        key: "concept#technical#computing#cryptography",
+                                        name: "Cryptography",
+                                        description: "Implementing cryptographic techniques for data protection.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#technical#computing#cryptography#symmetric-encryption",
+                                                name: "Symmetric Encryption",
+                                                description: "Implementing symmetric encryption algorithms for data confidentiality.",
+                                                experienceGradeLevel: 1
+                                            },
+                                            {
+                                                key: "concept#technical#computing#cryptography#asymmetric-encryption",
+                                                name: "Asymmetric Encryption",
+                                                description: "Implementing asymmetric encryption algorithms for secure data exchange.",
+                                                experienceGradeLevel: 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        key: "concept#technical#computing#testing-quality-assurance",
+                                        name: "Testing & Quality Assurance",
+                                        description: "Ensuring the quality and reliability of software through testing.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#technical#computing#firewalling-reverse-proxying-protection",
+                                        name: "Firewalling, Reverse Proxying and Protection",
+                                        description: "Implementing firewall rules, reverse proxy configurations, and security measures.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#technical#computing#firewalling-reverse-proxying-protection#exponential-backoff-rate-limiting",
+                                                name: "Exponential Backoff & Rate Limiting",
+                                                description: "Implementing exponential backoff strategies and rate limiting for API requests.",
+                                                experienceGradeLevel: 1
+                                            },
+                                            {
+                                                key: "concept#technical#computing#firewalling-reverse-proxying-protection#ip-whitelisting",
+                                                name: "IP Whitelisting",
+                                                description: "Implementing IP whitelisting for enhanced security.",
+                                                experienceGradeLevel: 2
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        key: "concept#technical#computing#api-network-debugging-inspection",
+                                        name: "API/Network Debugging and Inspection",
+                                        description: "Implementing API and network debugging and inspection techniques.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#network-design-implementation",
+                                        name: "Network Design & Implementation",
+                                        description: "Designing and implementing network architectures.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#email-sms-social-media-messaging",
+                                        name: "Email, SMS and Social Media Messaging",
+                                        description: "Implementing email, SMS and social media messaging services.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#big-data-message-queueing",
+                                        name: "Big Data & Message Queueing",
+                                        description: "Implementing message queueing systems for big data applications.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#performance-tuning-debugging",
+                                        name: "Performance Tuning and Debugging",
+                                        description: "Optimizing application performance and debugging issues.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#technical#computing#performance-tuning-debugging#caching",
+                                                name: "Caching",
+                                                description: "Implementing caching strategies to improve performance.",
+                                                experienceGradeLevel: 2
+                                            },
+                                            {
+                                                key: "concept#technical#computing#performance-tuning-debugging#indexing",
+                                                name: "Indexing",
+                                                description: "Creating indexes to optimize database queries.",
+                                                experienceGradeLevel: 2
+                                            },
+                                            {
+                                                key: "concept#technical#computing#performance-tuning-debugging#stored-procedures",
+                                                name: "Stored Procedures",
+                                                description: "Using stored procedures for complex database operations.",
+                                                experienceGradeLevel: 2
+                                            },
+                                            {
+                                                key: "concept#technical#computing#performance-tuning-debugging#identifying-memory-leaks",
+                                                name: "Identifying Memory Leaks",
+                                                description: "Detecting and resolving memory leaks in applications.",
+                                                experienceGradeLevel: 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        key: "concept#technical#computing#state-management",
+                                        name: "State Management",
+                                        description: "Managing application state effectively.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#pagination-infinite-scrolling",
+                                        name: "Pagination & Infinite Scrolling",
+                                        description: "Implementing pagination and infinite scrolling for large datasets.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#internationalization-localization",
+                                        name: "Internationalization (i18n) & Localization (l10n)",
+                                        description: "Implementing internationalization and localization for multi-language support.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#offline-first",
+                                        name: "Offline-First",
+                                        description: "Designing applications to work offline and sync data when online.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#interop-code",
+                                        name: "Interop Code",
+                                        description: "Writing interop code for integrating with external libraries or services.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#system-configuration",
+                                        name: "System Configuration",
+                                        description: "Configuring system settings and parameters.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#electronic-component-integration-within-embedded-systems",
+                                        name: "Electronic Component Integration within Embedded Systems",
+                                        description: "Integrating electronic components within embedded systems through software.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#computing#artificial-intelligence",
+                                        name: "Artificial Intelligence",
+                                        description: "Implementing and integrating artificial intelligence algorithms.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#technical#computing#artificial-intelligence#artificial-intelligence-algorithms",
+                                                name: "Artificial Intelligence Algorithms",
+                                                description: "Understanding and implementing various AI algorithms.",
+                                                experienceGradeLevel: 1
+                                            },
+                                            {
+                                                key: "concept#technical#computing#artificial-intelligence#artificial-intelligence-integration",
+                                                name: "Artificial Intelligence Integration",
+                                                description: "Integrating AI algorithms into applications.",
+                                                experienceGradeLevel: 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                key: "concept#technical#hardware",
+                                name: "Hardware",
+                                description: "Hardware concepts and skills.",
+                                experienceGradeLevel: 1,
+                                children: [
+                                    {
+                                        key: "concept#technical#hardware#circuit-design-component-selection",
+                                        name: "Circuit Design & Component Selection",
+                                        description: "Designing electronic circuits and selecting appropriate components.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#hardware#prototyping",
+                                        name: "Prototyping",
+                                        description: "Creating prototypes for hardware projects.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#hardware#pcb-manufacturing",
+                                        name: "PCB Manufacturing",
+                                        description: "Manufacturing printed circuit boards (PCBs) for electronic devices.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#hardware#soldering-assembly",
+                                        name: "Soldering & Assembly",
+                                        description: "Soldering components and assembling electronic devices.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#hardware#3d-design-printing",
+                                        name: "3D Design & Printing",
+                                        description: "Designing and printing 3D models for hardware projects.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#technical#hardware#hardware-debugging",
+                                        name: "Hardware Debugging",
+                                        description: "Debugging and troubleshooting hardware issues.",
+                                        experienceGradeLevel: 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        key: "concept#creative-artistic",
+                        name: "Creative & Artistic",
+                        description: "Creative and artistic concepts.",
+                        experienceGradeLevel: 1,
+                        children: [
+                            {
+                                key: "concept#creative-artistic#user-interface-ui-ux-design",
+                                name: "User Interface (UI) / User Experience (UX) Design",
+                                description: "Designing user interfaces and experiences for applications.",
+                                experienceGradeLevel: 2
+                            }
+                        ]
+                    },
+                    {
+                        key: "concept#mathematical-physical",
+                        name: "Mathematical & Physical",
+                        description: "Mathematical and physical concepts and skills.",
+                        experienceGradeLevel: 1
+                    },
+                    {
+                        key: "concept#business-administration",
+                        name: "Business Administration",
+                        description: "Business administration concepts and skills.",
+                        experienceGradeLevel: 1,
+                        children: [
+                            {
+                                key: "concept#business-administration#accounting",
+                                name: "Accounting",
+                                description: "Accounting principles and practices.",
+                                experienceGradeLevel: 1
+                            }
+                        ]
+                    },
+                    {
+                        key: "concept#personal-relational-environmental-effectiveness",
+                        name: "Personal, Relational, Environmental & Effectiveness",
+                        description: "Personal, relational, environmental and effectiveness concepts and skills.",
+                        experienceGradeLevel: 1,
+                        children: [
+                            {
+                                key: "concept#personal-relational-environmental-effectiveness#communication-linguistics",
+                                name: "Communication & Linguistics",
+                                description: "Communication and linguistical concepts and skills.",
+                                experienceGradeLevel: 1,
+                                children: [
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
+                                        name: "Written Communication",
+                                        description: "Communicating effectively through writing.",
+                                        experienceGradeLevel: 1,
+                                        children: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication#technical-writing",
+                                                name: "Technical Writing",
+                                                description: "Writing technical documentation and guides.",
+                                                experienceGradeLevel: 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication",
+                                        name: "Verbal Communication",
+                                        description: "Communicating effectively through speech.",
+                                        experienceGradeLevel: 1
+                                    }
+                                ]
+                            },
+                            {
+                                key: "concept#personal-relational-environmental-effectiveness#organizational-managerial",
+                                name: "Organizational & Managerial",
+                                description: "Organizational and managerial concepts and skills.",
+                                experienceGradeLevel: 1,
+                                children: [
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#organizational-managerial#project-management",
+                                        name: "Project Management",
+                                        description: "Managing projects effectively.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#organizational-managerial#agile-scrum-kanban",
+                                        name: "Agile, Scrum & Kanban",
+                                        description: "Using Agile methodologies, Scrum, and Kanban for project management.",
+                                        experienceGradeLevel: 2
+                                    },
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#organizational-managerial#team-leadership-mentoring",
+                                        name: "Team Leadership & Mentoring",
+                                        description: "Leading and mentoring teams effectively.",
+                                        experienceGradeLevel: 2
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                technologyTypes: [
+                    {
+                        key: "technology-type#languages",
+                        name: "Languages",
+                        description: "Programming languages used in development.",
+                        children: [
+                            {
+                                key: "technology-type#languages#programming-languages",
+                                name: "Programming Languages",
+                                description: "Languages used for general-purpose programming."
+                            },
+                            {
+                                key: "technology-type#languages#markup-languages",
+                                name: "Markup Languages",
+                                description: "Languages used for structuring and presenting content."
+                            },
+                            {
+                                key: "technology-type#languages#style-sheet-languages",
+                                name: "Style Sheet Languages",
+                                description: "Languages used for styling and layout."
+                            },
+                            {
+                                key: "technology-type#languages#serialization-languages",
+                                name: "Serialization Languages",
+                                description: "Languages used for data serialization and deserialization."
+                            }
+                        ]
+                    },
+                    {
+                        key: "technology-type#main-libraries-toolkits-frameworks",
+                        name: "Main Libraries, Toolkits & Frameworks",
+                        description: "Core libraries, toolkits, and frameworks that provide essential functionality for application development."
+                    },
+                    {
+                        key: "technology-type#other-libraries-toolkits-frameworks",
+                        name: "Other Libraries, Toolkits & Frameworks",
+                        description: "Additional libraries, toolkits, and frameworks used in development."
+                    },
+                    {
+                        key: "technology-type#backend-as-a-service",
+                        name: "Backend as a Service (BaaS)",
+                        description: "Services that provide backend functionality for applications."
+                    },
+                    {
+                        key: "technology-type#databases",
+                        name: "Databases",
+                        description: "Database management systems and technologies."
+                    },
+                    {
+                        key: "technology-type#database-object-relational-object-document-mapping-orm-odm-frameworks-tools",
+                        name: "Database Object-Relational / Object-Document Mapping (ORM / ODM) Frameworks & Tools",
+                        description: "Frameworks and tools for object-relational and object-document mapping in databases."
+                    },
+                    {
+                        key: "technology-type#database-management-tools",
+                        name: "Database Management Tools",
+                        description: "Tools and software for managing databases."
+                    },
+                    {
+                        key: "technology-type#styling-design-layout-animation",
+                        name: "Styling, Design, Layout & Animation",
+                        description: "Technologies and frameworks used for styling, design, layout, and animation."
+                    },
+                    {
+                        key: "technology-type#testing-frameworks-tools",
+                        name: "Testing Frameworks & Tools",
+                        description: "Frameworks and tools for unit testing, integration testing, and end-to-end testing."
+                    },
+                    {
+                        key: "technology-type#no-code",
+                        name: "No-Code",
+                        description: "No-code platforms and tools for building applications without writing code."
+                    },
+                    {
+                        key: "technology-type#scaling-reliability-analytics-search",
+                        name: "Scaling, Reliability, Analytics & Search",
+                        description: "Technologies and frameworks for scaling applications, ensuring reliability, performing analytics, and enabling search functionality."
+                    },
+                    {
+                        key: "technology-type#cloud-computing-hosting",
+                        name: "Cloud Computing & Hosting",
+                        description: "Cloud computing platforms and hosting services used in development."
+                    },
+                    {
+                        key: "technology-type#virtualization-containerization",
+                        name: "Virtualization & Containerization",
+                        description: "Technologies used for virtualization and containerization."
+                    },
+                    {
+                        key: "technology-type#domain-registrar",
+                        name: "Domain Registrar",
+                        description: "Services used for domain registration."
+                    },
+                    {
+                        key: "technology-type#source-code-version-control-systems-tools",
+                        name: "Source Code Version Control Systems & Tools",
+                        description: "Systems and tools used for version control of source code."
+                    },
+                    {
+                        key: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        name: "Project Documentation, Issue Tracking and Collaboration Platforms",
+                        description: "Platforms that facilitate collaboration and communication among project teams."
+                    },
+                    {
+                        key: "technology-type#continuous-integration-continuous-delivery-deployment-tools",
+                        name: "Continuous Integration & Continuous Delivery/Deployment (CI/CD) Tools",
+                        description: "Tools for automating the integration and deployment of code changes."
+                    },
+                    {
+                        key: "technology-type#integrated-development-environments",
+                        name: "Integrated Development Environments",
+                        description: "Tools for writing, testing, and debugging code."
+                    },
+                    {
+                        key: "technology-type#text-editors",
+                        name: "Text Editors",
+                        description: "Tools for editing plain text files, often used for programming."
+                    },
+                    {
+                        key: "technology-type#package-managers-build-tools",
+                        name: "Package Managers & Build Tools",
+                        description: "Tools for managing dependencies, packages, and build processes."
+                    },
+                    {
+                        key: "technology-type#version-managers",
+                        name: "Version Managers",
+                        description: "Tools for managing different versions of programming languages and frameworks."
+                    },
+                    {
+                        key: "technology-type#operating-systems",
+                        name: "Operating Systems",
+                        description: "Familiarity with various operating systems."
+                    },
+                    {
+                        key: "technology-type#web-browsers",
+                        name: "Web Browsers",
+                        description: "Software applications for accessing information on the World Wide Web."
+                    },
+                    {
+                        key: "technology-type#office-productivity",
+                        name: "Office & Productivity",
+                        description: "Tools and software for office productivity."
+                    },
+                    {
+                        key: "technology-type#audio-video-computer-aided-design-engineering",
+                        name: "Audio, Video & Computer-Aided Design Engineering",
+                        description: "Technologies and tools for audio, video, and computer-aided design engineering."
+                    },
+                    {
+                        key: "technology-type#game-development",
+                        name: "Game Development",
+                        description: "Technologies and tools used in game development."
+                    },
+                    {
+                        key: "technology-type#remote-access-tools",
+                        name: "Remote Access Tools",
+                        description: "Tools for remote access to servers and networks."
+                    },
+                    {
+                        key: "technology-type#api-network-debugging-inspection",
+                        name: "API/Network Debugging & Inspection",
+                        description: "Tools and techniques for API and network debugging and inspection."
+                    },
+                    {
+                        key: "technology-type#reverse-engineering-manipulation",
+                        name: "Reverse Engineering & Manipulation",
+                        description: "Tools and techniques for reverse engineering and manipulating software."
+                    },
+                    {
+                        key: "technology-type#microcontrollers-single-board-computers",
+                        name: "IoT - Microcontrollers & Single-Board Computers",
+                        description: "Technologies and tools used in microcontroller and single-board computer development."
+                    },
+                    {
+                        key: "technology-type#electronic-design-automation-tools",
+                        name: "Electronic Design Automation Tools",
+                        description: "Software tools for designing electronic systems."
+                    },
+                    {
+                        key: "technology-type#artificial-intelligence-machine-learning",
+                        name: "Artificial Intelligence & Machine Learning",
+                        description: "Technologies and tools used in AI and machine learning."
+                    },
+                    {
+                        key: "technology-type#web-servers",
+                        name: "Web Servers",
+                        description: "Technologies and tools used for hosting web applications."
+                    },
+                    {
+                        key: "technology-type#utilities",
+                        name: "Utilities",
+                        description: "Various utilities and tools used in development."
+                    }
+                ],
+                technologies: [
+                    {
+                        key: "technology#windows",
+                        name: "Windows",
+                        nameLong: "Windows",
+                        description: "Operating system developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/windows",
+                        logoUrl: "/assets/images/technologies/windows-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#native-mobile", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-word",
+                        name: "Office Word",
+                        nameLong: "Office Word",
+                        description: "Word processing software developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/word",
+                        logoUrl: "/assets/images/technologies/office-word-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#office-productivity",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-powerpoint",
+                        name: "Office PowerPoint",
+                        nameLong: "Office PowerPoint",
+                        description: "Presentation software developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+                        logoUrl: "/assets/images/technologies/office-powerpoint-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#office-productivity",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#internet-explorer",
+                        name: "Internet Explorer",
+                        nameLong: "Internet Explorer",
+                        description: "Web browser developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/windows/internet-explorer",
+                        logoUrl: "/assets/images/technologies/internet-explorer-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: true,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#opus-creator",
+                        name: "Opus Creator",
+                        nameLong: "Opus Creator (Illuminatus)",
+                        description: "Multimedia authoring tool for creating interactive applications and presentations.",
+                        url: "http://www.digitalworkshop.co.uk/products/features/features-index.shtml",
+                        logoUrl: "/assets/images/technologies/opus-creator-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#flash"],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#front-end", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#digital-workshop"],
+                        discontinued: true,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#flash",
+                        name: "Flash",
+                        nameLong: "Flash",
+                        description: "Multimedia software platform used for creating animations, rich web applications, and mobile applications.",
+                        url: "https://en.wikipedia.org/wiki/Adobe_Flash",
+                        logoUrl: "/assets/images/technologies/flash-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#front-end", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#adobe"],
+                        discontinued: true,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-publisher",
+                        name: "Office Publisher",
+                        nameLong: "Office Publisher",
+                        description: "Desktop publishing application from Microsoft.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/publisher",
+                        logoUrl: "/assets/images/technologies/office-publisher-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#photoshop",
+                        name: "Photoshop",
+                        nameLong: "Photoshop",
+                        description: "Raster graphics editor developed and published by Adobe Inc.",
+                        url: "https://www.adobe.com/products/photoshop.html",
+                        logoUrl: "/assets/images/technologies/photoshop-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#adobe"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#firefox",
+                        name: "Firefox",
+                        nameLong: "Mozilla Firefox",
+                        description: "Web browser developed by Mozilla Foundation.",
+                        url: "https://www.mozilla.org/en-US/firefox/new/",
+                        logoUrl: "/assets/images/technologies/firefox-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#mozilla-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#chrome",
+                        name: "Chrome",
+                        nameLong: "Google Chrome",
+                        description: "Web browser developed by Google.",
+                        url: "https://www.google.com/chrome/",
+                        logoUrl: "/assets/images/technologies/chrome-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#chromium"],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#sketchup",
+                        name: "SketchUp",
+                        nameLong: "SketchUp",
+                        description: "3D modeling computer program for a wide range of drawing applications.",
+                        url: "https://www.sketchup.com/",
+                        logoUrl: "/assets/images/technologies/sketchup-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#audio-video-computer-aided-design-engineering",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#trimble"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#android",
+                        name: "Android",
+                        nameLong: "Android",
+                        description: "A mobile operating system developed by Google.",
+                        url: "https://www.android.com/",
+                        logoUrl: "/assets/images/technologies/android-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#android-studio", "technology#java", "technology#android-sdk", "technology#flutter-sdk"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#native-mobile", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#opera-mini",
+                        name: "Opera Mini",
+                        nameLong: "Opera Mini",
+                        description: "A lightweight mobile web browser developed by Opera Software.",
+                        url: "https://www.opera.com/mini",
+                        logoUrl: "/assets/images/technologies/opera-mini-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#opera-software"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#power-automate",
+                        name: "Power Automate (WinAutomation)",
+                        nameLong: "Power Automate (WinAutomation)",
+                        description: "Windows automation software for automating repetitive tasks.",
+                        url: "https://www.microsoft.com/en-us/power-platform/products/power-automate",
+                        logoUrl: "/assets/images/technologies/power-automate-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#no-code",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-excel",
+                        name: "Office Excel",
+                        nameLong: "Office Excel",
+                        description: "Spreadsheet software developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/excel",
+                        logoUrl: "/assets/images/technologies/office-excel-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#office-productivity",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-access",
+                        name: "Office Access",
+                        nameLong: "Office Access",
+                        description: "Database management system from Microsoft that combines the relational Microsoft Jet Database Engine with a graphical user interface and software-development tools.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/access",
+                        logoUrl: "/assets/images/technologies/office-access-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-outlook",
+                        name: "Office Outlook",
+                        nameLong: "Office Outlook",
+                        description: "Personal information manager from Microsoft, available as a part of the Microsoft Office suite.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/outlook/",
+                        logoUrl: "/assets/images/technologies/office-outlook-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#office-productivity",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#gnu-image-manipulation-program",
+                        name: "GIMP",
+                        nameLong: "GIMP (GNU Image Manipulation Program)",
+                        description: "Free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.",
+                        url: "https://www.gimp.org/",
+                        logoUrl: "/assets/images/technologies/gimp-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#structured-query-language",
+                        name: "SQL",
+                        nameLong: "Structured Query Language (SQL)",
+                        description: "A standard programming language for managing and manipulating databases.",
+                        url: "https://www.iso.org/standard/76583.html",
+                        logoUrl: "/assets/images/technologies/structured-query-language-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#iso-iec-jtc1-sc32-wg3"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-project",
+                        name: "Office Project",
+                        nameLong: "Office Project",
+                        description: "Project management software developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/project",
+                        logoUrl: "/assets/images/technologies/office-project-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#office-productivity",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#office-visio",
+                        name: "Office Visio",
+                        nameLong: "Office Visio",
+                        description: "Diagramming and vector graphics application from Microsoft.",
+                        url: "https://www.microsoft.com/en-us/microsoft-365/visio/flowchart-software",
+                        logoUrl: "/assets/images/technologies/office-visio-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#office-productivity",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#linux",
+                        name: "Linux",
+                        nameLong: "Linux",
+                        description: "Open-source operating system kernel.",
+                        url: "https://www.kernel.org/",
+                        logoUrl: "/assets/images/technologies/linux-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#native-mobile", "role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#linux-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#linux-mint",
+                        name: "Linux Mint",
+                        nameLong: "Linux Mint",
+                        description: "A user-friendly Linux distribution based on Ubuntu and Debian.",
+                        url: "https://linuxmint.com/",
+                        logoUrl: "/assets/images/technologies/linux-mint-logo.svg",
+                        logoBackgroundColor: "#68C174",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#chromium",
+                        name: "Chromium",
+                        nameLong: "Chromium",
+                        description: "Open-source web browser project from Google.",
+                        url: "https://www.chromium.org/",
+                        logoUrl: "/assets/images/technologies/chromium-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#chrome", "technology#opera", "technology#vivaldi", "technology#edge"],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#pascal",
+                        name: "Pascal",
+                        nameLong: "Pascal",
+                        description: "Legacy programming language and environment.",
+                        url: "https://en.wikipedia.org/wiki/Pascal_(programming_language)",
+                        logoUrl: "/assets/images/technologies/pascal-logo.webp",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#turbo-pascal"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: true,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#turbo-pascal",
+                        name: "Turbo Pascal",
+                        nameLong: "Turbo Pascal",
+                        description: "Legacy programming language and environment.",
+                        url: "https://en.wikipedia.org/wiki/Turbo_Pascal",
+                        logoUrl: "/assets/images/technologies/turbo-pascal-logo.jpg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#pascal"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#borland"],
+                        discontinued: true,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#hypertext-markup-language",
+                        name: "HTML",
+                        nameLong: "HyperText Markup Language (HTML)",
+                        description: "Standard markup language for documents designed to be displayed in a web browser.",
+                        url: "https://html.spec.whatwg.org/multipage/",
+                        logoUrl: "/assets/images/technologies/hypertext-markup-language-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#cascading-style-sheets", "technology#javascript", "technology#webassembly"],
+                        technologyTypeId: "technology-type#markup-languages",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#world-wide-web-consortium", "organization#web-hypertext-application-technology-working-group"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#cascading-style-sheets",
+                        name: "CSS",
+                        nameLong: "Cascading Style Sheets (CSS)",
+                        description: "Style sheet language used for describing the presentation of a document written in HTML or XML.",
+                        url: "https://www.w3.org/Style/CSS/",
+                        logoUrl: "/assets/images/technologies/cascading-style-sheets-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#hypertext-markup-language", "technology#syntactically-awesome-style-sheets-sassy", "technology#less"],
+                        technologyTypeId: "technology-type#style-sheet-languages",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#world-wide-web-consortium", "organization#web-hypertext-application-technology-working-group"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#dreamweaver",
+                        name: "Dreamweaver",
+                        nameLong: "Dreamweaver",
+                        description: "A proprietary web development tool for designing and developing websites.",
+                        url: "https://www.adobe.com/products/dreamweaver.html",
+                        logoUrl: "/assets/images/technologies/dreamweaver-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#hypertext-markup-language", "technology#cascading-style-sheets"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#adobe"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#fl-studio",
+                        name: "FL Studio",
+                        nameLong: "FL Studio",
+                        description: "A digital audio workstation developed by Belgian company Image-Line.",
+                        url: "https://www.image-line.com/",
+                        logoUrl: "/assets/images/technologies/fl-studio-logo.png",
+                        logoBackgroundColor: "#1B1C20",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#audio-video-computer-aided-design-engineering",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#image-line"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#sculptris",
+                        name: "Sculptris",
+                        nameLong: "Sculptris",
+                        description: "A digital sculpting tool that combines 3D/2.5D modeling, texturing, and painting.",
+                        url: "https://www.sculpteo.com/en/glossary/sculptris-definition/",
+                        logoUrl: "/assets/images/technologies/sculptris-logo.webp",
+                        logoBackgroundColor: "#FEFEFE",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#audio-video-computer-aided-design-engineering",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#maxon"],
+                        discontinued: true,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#inkscape",
+                        name: "Inkscape",
+                        nameLong: "Inkscape",
+                        description: "A free and open-source vector graphics editor.",
+                        url: "https://inkscape.org/",
+                        logoUrl: "/assets/images/technologies/inkscape-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#audio-video-computer-aided-design-engineering",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#java",
+                        name: "Java",
+                        nameLong: "Java",
+                        description: "A high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.",
+                        url: "https://www.java.com/",
+                        logoUrl: "/assets/images/technologies/java-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#java-development-kit"],
+                        isRelatedTo: ["technology#java-development-kit", "technology#spring-boot"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#back-end", "role#front-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#oracle"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#java-development-kit",
+                        name: "JDK",
+                        nameLong: "Java Development Kit (JDK)",
+                        description: "A software development kit used to develop Java applications.",
+                        url: "https://openjdk.java.net/",
+                        logoUrl: "/assets/images/technologies/java-development-kit-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end", "role#front-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#oracle"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#blue-j",
+                        name: "BlueJ",
+                        nameLong: "BlueJ",
+                        description: "An integrated development environment (IDE) for the Java programming language, designed for educational purposes.",
+                        url: "https://www.bluej.org/",
+                        logoUrl: "/assets/images/technologies/blue-j-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#java"],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#opera",
+                        name: "Opera",
+                        nameLong: "Opera",
+                        description: "A multi-platform web browser developed by Opera Software.",
+                        url: "https://www.opera.com/",
+                        logoUrl: "/assets/images/technologies/opera-logo.svg",
+                        logoBackgroundColor: "#0E1323",
+                        isChildOf: ["technology#chromium"],
+                        isRelatedTo: ["technology#chromium"],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#opera"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#notepad-plus-plus",
+                        name: "Notepad++",
+                        nameLong: "Notepad++",
+                        description: "A free source code editor and Notepad replacement that supports several languages.",
+                        url: "https://notepad-plus-plus.org/",
+                        logoUrl: "/assets/images/technologies/notepad-plus-plus-logo.svg",
+                        logoBackgroundColor: "#FEFEFE",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#text-editors",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#eclipse",
+                        name: "Eclipse",
+                        nameLong: "Eclipse",
+                        description: "An integrated development environment (IDE) used in computer programming, primarily for Java.",
+                        url: "https://www.eclipse.org/",
+                        logoUrl: "/assets/images/technologies/eclipse-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#java"],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#eclipse-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#netbeans",
+                        name: "NetBeans",
+                        nameLong: "NetBeans",
+                        description: "An open-source integrated development environment (IDE) for Java and other languages.",
+                        url: "https://netbeans.apache.org/",
+                        logoUrl: "/assets/images/technologies/netbeans-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#java"],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#javascript",
+                        name: "JavaScript",
+                        nameLong: "JavaScript",
+                        description: "High-level, dynamic, untyped, and interpreted programming language.",
+                        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                        logoUrl: "/assets/images/technologies/javascript-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#typescript"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#front-end", "role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#ecma-international", "organization#tc39"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#jquery",
+                        name: "jQuery",
+                        nameLong: "jQuery",
+                        description: "A fast, small, and feature-rich JavaScript library.",
+                        url: "https://jquery.com/",
+                        logoUrl: "/assets/images/technologies/jquery-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#javascript"],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#openjs-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#php",
+                        name: "PHP",
+                        nameLong: "PHP: Hypertext Preprocessor",
+                        description: "A popular general-purpose scripting language that is especially suited to web development.",
+                        url: "https://www.php.net/",
+                        logoUrl: "/assets/images/technologies/php-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#json",
+                        name: "JSON",
+                        nameLong: "JavaScript Object Notation (JSON)",
+                        description: "A lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate.",
+                        url: "https://www.json.org/json-en.html",
+                        logoUrl: "/assets/images/technologies/json-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#serialization-languages",
+                        roleIds: ["role#front-end", "role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#ecma-international", "organization#tc39"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#mysql",
+                        name: "MySQL",
+                        nameLong: "MySQL",
+                        description: "An open-source relational database management system.",
+                        url: "https://www.mysql.com/",
+                        logoUrl: "/assets/images/technologies/mysql-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#maria-db"],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#oracle"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#mysql-workbench",
+                        name: "MySQL Workbench",
+                        nameLong: "MySQL Workbench",
+                        description: "A unified visual tool for database architects, developers, and DBAs.",
+                        url: "https://www.mysql.com/products/workbench/",
+                        logoUrl: "/assets/images/technologies/mysql-workbench-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#mysql"],
+                        technologyTypeId: "technology-type#database-management-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#oracle"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#arduino",
+                        name: "Arduino",
+                        nameLong: "Arduino",
+                        description: "An open-source electronics platform based on easy-to-use hardware and software.",
+                        url: "https://www.arduino.cc/",
+                        logoUrl: "/assets/images/technologies/arduino-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c", "technology#c-plus-plus"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: true,
+                        vendors: ["organization#arduino-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#arduino-ide",
+                        name: "Arduino",
+                        nameLong: "Arduino",
+                        description: "An open-source electronics platform based on easy-to-use hardware and software.",
+                        url: "https://www.arduino.cc/",
+                        logoUrl: "/assets/images/technologies/arduino-ide-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#arduino"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: true,
+                        vendors: ["organization#arduino-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#arduino-uno-r3",
+                        name: "Arduino Uno R3",
+                        nameLong: "Arduino Uno R3",
+                        description: "A microcontroller board based on the ATmega328P.",
+                        url: "https://www.arduino.cc/en/Main/ArduinoBoardUno",
+                        logoUrl: "/assets/images/technologies/arduino-uno-r3-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#arduino"],
+                        technologyTypeId: "technology-type#microcontrollers-single-board-computers",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: true,
+                        vendors: ["organization#arduino-ag"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#arduino-mega-2560",
+                        name: "Arduino Mega 2560",
+                        nameLong: "Arduino Mega 2560",
+                        description: "A microcontroller board based on the ATmega2560.",
+                        url: "https://www.arduino.cc/en/Main/ArduinoBoardMega2560",
+                        logoUrl: "/assets/images/technologies/arduino-mega-2560-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#arduino"],
+                        technologyTypeId: "technology-type#microcontrollers-single-board-computers",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: true,
+                        vendors: ["organization#arduino-ag"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#raspberry-pi",
+                        name: "Raspberry Pi",
+                        nameLong: "Raspberry Pi",
+                        description: "A series of small single-board computers developed in the UK by the Raspberry Pi Foundation.",
+                        url: "https://www.raspberrypi.org/",
+                        logoUrl: "/assets/images/technologies/raspberry-pi-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c", "technology#python"],
+                        technologyTypeId: "technology-type#microcontrollers-single-board-computers",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: true,
+                        vendors: ["organization#raspberry-pi-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#ubuntu",
+                        name: "Ubuntu",
+                        nameLong: "Ubuntu",
+                        description: "A popular Linux distribution based on Debian.",
+                        url: "https://ubuntu.com/",
+                        logoUrl: "/assets/images/technologies/ubuntu-logo.svg",
+                        logoBackgroundColor: "#F3F3F3",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#canonical"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#debian",
+                        name: "Debian",
+                        nameLong: "Debian",
+                        description: "A stable and versatile Linux distribution.",
+                        url: "https://www.debian.org/",
+                        logoUrl: "/assets/images/technologies/debian-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#software-in-the-public-interest"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#raspberry-pi-operating-system",
+                        name: "Raspberry Pi OS",
+                        nameLong: "Raspberry Pi OS",
+                        description: "A Debian-based operating system optimized for the Raspberry Pi hardware.",
+                        url: "https://www.raspberrypi.com/software/operating-systems/",
+                        logoUrl: "/assets/images/technologies/raspberry-pi-operating-system-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#raspberry-pi-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#python",
+                        name: "Python",
+                        nameLong: "Python",
+                        description: "A high-level, interpreted programming language.",
+                        url: "https://www.python.org/",
+                        logoUrl: "/assets/images/technologies/python-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#python-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#idle",
+                        name: "IDLE",
+                        nameLong: "Integrated Development and Learning Environment (IDLE)",
+                        description: "The default integrated development environment (IDE) for Python.",
+                        url: "https://docs.python.org/3/library/idle.html",
+                        logoUrl: "/assets/images/technologies/idle-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#python"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#python-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#nano",
+                        name: "Nano",
+                        nameLong: "GNU Nano",
+                        description: "A simple, user-friendly text editor for Unix-like computing systems or operating environments using a command line interface.",
+                        url: "https://www.nano-editor.org/",
+                        logoUrl: "/assets/images/technologies/nano-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#text-editors",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#gnu-project"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#open-ssh",
+                        name: "OpenSSH",
+                        nameLong: "Open Secure Shell (OpenSSH)",
+                        description: "A free version of the SSH connectivity tools that technical users rely on.",
+                        url: "https://www.openssh.com/",
+                        logoUrl: "/assets/images/technologies/openssh-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#remote-access-tools",
+                        roleIds: ["role#dev-ops", "role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#openbsd-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#mobaxterm",
+                        name: "MobaXterm",
+                        nameLong: "MobaXterm",
+                        description: "An enhanced terminal for Windows with an X11 server, tabbed SSH client, network tools, and more.",
+                        url: "https://mobaxterm.mobatek.net/",
+                        logoUrl: "/assets/images/technologies/mobaxterm-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#open-ssh"],
+                        technologyTypeId: "technology-type#remote-access-tools",
+                        roleIds: ["role#dev-ops"],
+                        corporateDependency: true,
+                        vendors: ["organization#mobatek"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#cache",
+                        name: "Caché",
+                        nameLong: "Caché",
+                        description: "A high-performance database management system and application development environment.",
+                        url: "https://www.intersystems.com/products/cache/",
+                        logoUrl: "/assets/images/technologies/cache-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#intersystems"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#objectscript",
+                        name: "ObjectScript",
+                        nameLong: "ObjectScript",
+                        description: "A programming language used primarily for developing applications on the InterSystems Caché database.",
+                        url: "https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOS_overview",
+                        logoUrl: "/assets/images/technologies/objectscript-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#cache"],
+                        isRelatedTo: ["technology#cache"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#intersystems"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#tomcat",
+                        name: "Tomcat",
+                        nameLong: "Tomcat",
+                        description: "An open-source implementation of the Java Servlet, JavaServer Pages, and Java Expression Language technologies.",
+                        url: "https://tomcat.apache.org/",
+                        logoUrl: "/assets/images/technologies/tomcat-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#web-servers",
+                        roleIds: ["role#back-end", "role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#jetty",
+                        name: "Jetty",
+                        nameLong: "Jetty",
+                        description: "An open-source project providing an HTTP server, HTTP client, and javax.servlet container.",
+                        url: "https://www.eclipse.org/jetty/",
+                        logoUrl: "/assets/images/technologies/jetty-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#web-servers",
+                        roleIds: ["role#back-end", "role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: ["organization#eclipse-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#storm",
+                        name: "Storm",
+                        nameLong: "Storm",
+                        description: "A free and open-source distributed real-time computation system.",
+                        url: "https://storm.apache.org/",
+                        logoUrl: "/assets/images/technologies/storm-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#spark", "technology#kafka", "technology#hadoop"],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#big-data"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#kafka",
+                        name: "Kafka",
+                        nameLong: "Apache Kafka",
+                        description: "A distributed event streaming platform capable of handling trillions of events a day.",
+                        url: "https://kafka.apache.org/",
+                        logoUrl: "/assets/images/technologies/kafka-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#spark", "technology#storm", "technology#hadoop"],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#big-data"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#spark",
+                        name: "Spark",
+                        nameLong: "Apache Spark",
+                        description: "An open-source unified analytics engine for large-scale data processing, with built-in modules for streaming, SQL, machine learning, and graph processing.",
+                        url: "https://spark.apache.org/",
+                        logoUrl: "/assets/images/technologies/spark-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#kafka", "technology#hadoop", "technology#storm"],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#big-data"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#hadoop",
+                        name: "Hadoop",
+                        nameLong: "Apache Hadoop",
+                        description: "An open-source software framework used for the distributed storage and processing of large data sets.",
+                        url: "https://hadoop.apache.org/",
+                        logoUrl: "/assets/images/technologies/hadoop-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#kafka", "technology#spark", "technology#storm"],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#big-data"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#google-maps-javascript",
+                        name: "Google Maps JavaScript API",
+                        nameLong: "Google Maps JavaScript API",
+                        description: "A JavaScript library for embedding Google Maps into web pages.",
+                        url: "https://developers.google.com/maps/documentation/javascript/overview",
+                        logoUrl: "/assets/images/technologies/google-maps-javascript-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#javascript"],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#processing",
+                        name: "Processing",
+                        nameLong: "Processing",
+                        description: "A flexible software sketchbook and a language for learning how to code within the context of the visual arts.",
+                        url: "https://processing.org/",
+                        logoUrl: "/assets/images/technologies/processing-logo.svg",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#processing-lib"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#gaming"],
+                        corporateDependency: false,
+                        vendors: ["organization#processing-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#processing-lib",
+                        name: "Processing",
+                        nameLong: "Processing",
+                        description: "A library for visual arts and creative coding.",
+                        url: "https://processing.org/",
+                        logoUrl: "/assets/images/technologies/processing-lib-logo.svg",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#processing"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#gaming"],
+                        corporateDependency: false,
+                        vendors: ["organization#processing-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#reactivision",
+                        name: "reacTIVision",
+                        nameLong: "reacTIVision",
+                        description: "A computer vision framework for the tracking of fiducial markers attached onto physical objects.",
+                        url: "https://reactivision.sourceforge.net/",
+                        logoUrl: "/assets/images/technologies/reactivision-logo.jpg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#gaming"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#unity",
+                        name: "Unity",
+                        nameLong: "Unity",
+                        description: "A cross-platform game engine developed by Unity Technologies.",
+                        url: "https://unity.com/",
+                        logoUrl: "/assets/images/technologies/unity-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c-sharp", "technology#c-plus-plus"],
+                        technologyTypeId: "technology-type#game-development",
+                        roleIds: ["role#gaming"],
+                        corporateDependency: true,
+                        vendors: ["organization#unity-technologies"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#vuforia",
+                        name: "Vuforia",
+                        nameLong: "Vuforia",
+                        description: "An augmented reality software development kit for mobile devices.",
+                        url: "https://developer.vuforia.com/",
+                        logoUrl: "/assets/images/technologies/vuforia-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#unity"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#gaming"],
+                        corporateDependency: true,
+                        vendors: ["organization#ptc"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#github",
+                        name: "GitHub",
+                        nameLong: "GitHub",
+                        description: "A web-based platform used for version control and collaborative software development.",
+                        url: "https://github.com/",
+                        logoUrl: "/assets/images/technologies/github-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other", "role#dev-ops"],
+                        corporateDependency: true,
+                        vendors: ["organization#github"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#atom",
+                        name: "Atom",
+                        nameLong: "Atom",
+                        description: "A hackable text editor for the 21st century, developed by GitHub.",
+                        url: "https://atom.io/",
+                        logoUrl: "/assets/images/technologies/atom-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#github"],
+                        discontinued: true,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#vivaldi",
+                        name: "Vivaldi",
+                        nameLong: "Vivaldi",
+                        description: "A feature-rich web browser built on Chromium.",
+                        url: "https://vivaldi.com/",
+                        logoUrl: "/assets/images/technologies/vivaldi-logo.svg",
+                        logoBackgroundColor: "#F7F7F9",
+                        isChildOf: ["technology#chromium"],
+                        isRelatedTo: ["technology#chromium"],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#vivaldi-technologies"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#android-sdk",
+                        name: "Android SDK",
+                        nameLong: "Android Software Development Kit",
+                        description: "A set of development tools used to create applications for Android.",
+                        url: "https://developer.android.com/studio",
+                        logoUrl: "/assets/images/technologies/android-sdk-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#android"],
+                        technologyTypeId: "technology-type#development-tools",
+                        roleIds: ["role#back-end", "role#front-end", "role#native-mobile"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#android-studio",
+                        name: "Android Studio",
+                        nameLong: "Android Studio",
+                        description: "The official integrated development environment (IDE) for Google's Android operating system.",
+                        url: "https://developer.android.com/studio",
+                        logoUrl: "/assets/images/technologies/android-studio-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#gradle",
+                        name: "Gradle",
+                        nameLong: "Gradle",
+                        description: "A build automation tool that is used primarily for Java projects.",
+                        url: "https://gradle.org/",
+                        logoUrl: "/assets/images/technologies/gradle-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#android-sdk"],
+                        technologyTypeId: "technology-type#package-managers-build-tools",
+                        roleIds: ["role#back-end", "role#native-mobile"],
+                        corporateDependency: true,
+                        vendors: ["organization#gradle"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#xml",
+                        name: "XML",
+                        nameLong: "eXtensible Markup Language (XML)",
+                        description: "A markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.",
+                        url: "https://www.w3.org/XML/",
+                        logoUrl: "/assets/images/technologies/xml-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#html", "technology#json"],
+                        technologyTypeId: "technology-type#markup-languages",
+                        roleIds: ["role#front-end", "role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: ["organization#world-wide-web-consortium"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#node-js",
+                        name: "Node.js",
+                        nameLong: "Node.js",
+                        description: "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+                        url: "https://nodejs.org/",
+                        logoUrl: "/assets/images/technologies/node-js-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#javascript"],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#openjs-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#express-js",
+                        name: "Express.js",
+                        nameLong: "Express.js",
+                        description: "A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+                        url: "https://expressjs.com/",
+                        logoUrl: "/assets/images/technologies/express-js-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#node-js"],
+                        isRelatedTo: ["technology#node-js", "technology#javascript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#openjs-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#mongo-db",
+                        name: "MongoDB",
+                        nameLong: "MongoDB",
+                        description: "A source-available cross-platform document-oriented database program.",
+                        url: "https://www.mongodb.com/",
+                        logoUrl: "/assets/images/technologies/mongo-db-logo.svg",
+                        logoBackgroundColor: "#001E2B",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#mongo-db-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#mongoose-js",
+                        name: "Mongoose.js",
+                        nameLong: "Mongoose.js",
+                        description: "An Object Data Modeling (ODM) library for MongoDB and Node.js.",
+                        url: "https://mongoosejs.com/",
+                        logoUrl: "/assets/images/technologies/mongoose-js-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#mongo-db"],
+                        isRelatedTo: ["technology#node-js", "technology#javascript"],
+                        technologyTypeId: "technology-type#database-object-relational-object-document-mapping-orm-odm-frameworks-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#ormlite",
+                        name: "OrmLite",
+                        nameLong: "OrmLite",
+                        description: "A lightweight Object-Relational Mapping (ORM) framework for Java.",
+                        url: "https://ormlite.com/",
+                        logoUrl: "/assets/images/technologies/ormlite-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java", "technology#android"],
+                        technologyTypeId: "technology-type#database-object-relational-object-document-mapping-orm-odm-frameworks-tools",
+                        roleIds: ["role#back-end", "role#native-mobile"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#realm",
+                        name: "Realm",
+                        nameLong: "Realm",
+                        description: "A mobile database that runs directly inside phones, tablets or wearables.",
+                        url: "https://realm.io/",
+                        logoUrl: "/assets/images/technologies/realm-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#android", "technology#java"],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end", "role#native-mobile"],
+                        corporateDependency: true,
+                        vendors: ["organization#mongo-db-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#google-maps-sdk-android",
+                        name: "Google Maps SDK for Android",
+                        nameLong: "Google Maps SDK for Android",
+                        description: "An SDK that allows developers to integrate Google Maps into their Android applications.",
+                        url: "https://developers.google.com/maps/documentation/android-sdk/",
+                        logoUrl: "/assets/images/technologies/google-maps-sdk-android-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#android-sdk"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#native-mobile"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#visual-studio",
+                        name: "Visual Studio",
+                        nameLong: "Visual Studio",
+                        description: "An integrated development environment (IDE) from Microsoft for developing applications.",
+                        url: "https://visualstudio.microsoft.com/",
+                        logoUrl: "/assets/images/technologies/visual-studio-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c-sharp", "technology#dot-net"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#dot-net",
+                        name: ".NET",
+                        nameLong: ".NET (dotNET)",
+                        description: "A free, cross-platform, open-source developer platform for building many different types of applications.",
+                        url: "https://dotnet.microsoft.com/",
+                        logoUrl: "/assets/images/technologies/dot-net-logo.svg",
+                        logoBackgroundColor: "#5027D5",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c-sharp", "technology#asp-net", "technology#entity-framework"],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#c-sharp",
+                        name: "C#",
+                        nameLong: "C# (C Sharp)",
+                        description: "A modern, object-oriented programming language developed by Microsoft.",
+                        url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+                        logoUrl: "/assets/images/technologies/c-sharp-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#asp-net", "technology#entity-framework"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#asp-net",
+                        name: "ASP.NET",
+                        nameLong: "ASP.NET",
+                        description: "A free, open-source web framework for building modern web apps and services with .NET.",
+                        url: "https://dotnet.microsoft.com/apps/aspnet",
+                        logoUrl: "/assets/images/technologies/asp-net-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#entity-framework"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#asp-net-web-forms",
+                        name: "ASP.NET Web Forms",
+                        nameLong: "ASP.NET Web Forms",
+                        description: "A web application framework developed by Microsoft to build dynamic websites.",
+                        url: "https://dotnet.microsoft.com/apps/aspnet/web-forms",
+                        logoUrl: "/assets/images/technologies/asp-net-web-forms-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#asp-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#entity-framework"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#asp-net-mvc",
+                        name: "ASP.NET MVC",
+                        nameLong: "ASP.NET MVC",
+                        description: "A framework for building web applications using the Model-View-Controller design pattern.",
+                        url: "https://dotnet.microsoft.com/apps/aspnet/mvc",
+                        logoUrl: "/assets/images/technologies/asp-net-mvc-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#asp-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#entity-framework"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#maria-db",
+                        name: "MariaDB",
+                        nameLong: "MariaDB",
+                        description: "An open-source relational database management system that is a fork of MySQL.",
+                        url: "https://mariadb.org/",
+                        logoUrl: "/assets/images/technologies/maria-db-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#mysql"],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#mariadb-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#bootstrap",
+                        name: "Bootstrap",
+                        nameLong: "Bootstrap",
+                        description: "A free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
+                        url: "https://getbootstrap.com/",
+                        logoUrl: "/assets/images/technologies/bootstrap-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#cascading-style-sheets"],
+                        isRelatedTo: ["technology#cascading-style-sheets", "technology#syntactically-awesome-style-sheets-sassy", "technology#javascript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#entity-framework",
+                        name: "Entity Framework",
+                        nameLong: "Entity Framework",
+                        description: "An open-source object-relational mapping framework for ADO.NET.",
+                        url: "https://docs.microsoft.com/en-us/ef/",
+                        logoUrl: "/assets/images/technologies/entity-framework-logo.svg",
+                        logoBackgroundColor: "#512BD4",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#asp-net"],
+                        technologyTypeId: "technology-type#database-object-relational-object-document-mapping-orm-odm-frameworks-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#nuget",
+                        name: "NuGet",
+                        nameLong: "NuGet",
+                        description: "A free and open-source package manager for the Microsoft development platform.",
+                        url: "https://www.nuget.org/",
+                        logoUrl: "/assets/images/technologies/nuget-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp"],
+                        technologyTypeId: "technology-type#package-managers-build-tools",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#tortoise-svn",
+                        name: "TortoiseSVN",
+                        nameLong: "TortoiseSVN",
+                        description: "A Windows shell interface to Subversion, providing a user-friendly interface for version control.",
+                        url: "https://tortoisesvn.net/",
+                        logoUrl: "/assets/images/technologies/tortoise-svn-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#subversion"],
+                        technologyTypeId: "technology-type#source-code-version-control-systems-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#tortoise-git",
+                        name: "TortoiseGit",
+                        nameLong: "TortoiseGit",
+                        description: "A Windows Shell Interface to Git, providing a user-friendly interface for version control.",
+                        url: "https://tortoisegit.org/",
+                        logoUrl: "/assets/images/technologies/tortoise-git-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#git"],
+                        technologyTypeId: "technology-type#source-code-version-control-systems-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#win-merge",
+                        name: "WinMerge",
+                        nameLong: "WinMerge",
+                        description: "An open-source differencing and merging tool for Windows.",
+                        url: "https://winmerge.org/",
+                        logoUrl: "/assets/images/technologies/win-merge-logo.png",
+                        logoBackgroundColor: "#FFCC00",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#git", "technology#subversion", "technology#tortoise-git", "technology#tortoise-svn"],
+                        technologyTypeId: "technology-type#source-code-version-control-systems-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#win-scp",
+                        name: "WinSCP",
+                        nameLong: "WinSCP",
+                        description: "An open-source file manager for Windows supporting SFTP, FTP, FTPS, SCP, S3, WebDAV and local-to-local file transfers.",
+                        url: "https://winscp.net/",
+                        logoUrl: "/assets/images/technologies/win-scp-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#openssh", "technology#mobaxterm"],
+                        technologyTypeId: "technology-type#remote-access-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#dbforge-studio-mysql",
+                        name: "dbForge Studio for MySQL",
+                        nameLong: "dbForge Studio for MySQL",
+                        description: "A powerful IDE for MySQL database development, management, and administration.",
+                        url: "https://www.devart.com/dbforge/mysql/studio/",
+                        logoUrl: "/assets/images/technologies/dbforge-studio-mysql-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#database-management-tools",
+                        roleIds: ["role#database-administrator", "role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#devart"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#windows-presentation-foundation",
+                        name: "WPF",
+                        nameLong: "Windows Presentation Foundation (WPF)",
+                        description: "A UI framework for building Windows desktop applications.",
+                        url: "https://docs.microsoft.com/en-us/dotnet/desktop/wpf/",
+                        logoUrl: "/assets/images/technologies/windows-presentation-foundation-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#xaml",
+                        name: "XAML",
+                        nameLong: "Extensible Application Markup Language (XAML)",
+                        description: "A declarative XML-based language used to initialize structured values and objects.",
+                        url: "https://docs.microsoft.com/en-us/dotnet/desktop/wpf/xaml/",
+                        logoUrl: "/assets/images/technologies/xaml-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp"],
+                        technologyTypeId: "technology-type#markup-languages",
+                        roleIds: ["role#front-end", "role#native-mobile"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#entity-developer",
+                        name: "Entity Developer",
+                        nameLong: "Entity Developer",
+                        description: "A powerful ORM designer for ADO.NET Entity Framework, NHibernate, LinqConnect, and Telerik Data Access.",
+                        url: "https://www.devart.com/entitydeveloper/",
+                        logoUrl: "/assets/images/technologies/entity-developer-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#entity-framework"],
+                        technologyTypeId: "technology-type#database-object-relational-object-document-mapping-orm-odm-frameworks-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#devart"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#bugzilla",
+                        name: "Bugzilla",
+                        nameLong: "Bugzilla",
+                        description: "A web-based general-purpose bug tracker and testing tool.",
+                        url: "https://www.bugzilla.org/",
+                        logoUrl: "/assets/images/technologies/bugzilla-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#zarro-boogs-corporation", "organization#mozilla-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#subversion",
+                        name: "SVN",
+                        nameLong: "Subversion (SVN)",
+                        description: "A software versioning and revision control system.",
+                        url: "https://subversion.apache.org/",
+                        logoUrl: "/assets/images/technologies/subversion-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#source-code-version-control-systems-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#git",
+                        name: "Git",
+                        nameLong: "Git",
+                        description: "A distributed version control system for tracking changes in source code.",
+                        url: "https://git-scm.com/",
+                        logoUrl: "/assets/images/technologies/git-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#source-code-version-control-systems-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#software-freedom-conservancy"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#gitlab",
+                        name: "GitLab",
+                        nameLong: "GitLab",
+                        description: "A web-based DevOps lifecycle tool that provides a Git repository manager providing wiki, issue-tracking, and CI/CD pipeline features.",
+                        url: "https://about.gitlab.com/",
+                        logoUrl: "/assets/images/technologies/gitlab-logo.svg",
+                        logoBackgroundColor: "#E8E7EB",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other", "role#dev-ops"],
+                        corporateDependency: true,
+                        vendors: ["organization#gitlab-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#bitbucket",
+                        name: "Bitbucket",
+                        nameLong: "Bitbucket",
+                        description: "A web-based version control repository hosting service owned by Atlassian.",
+                        url: "https://bitbucket.org/",
+                        logoUrl: "/assets/images/technologies/bitbucket-logo.svg",
+                        logoBackgroundColor: "#F0F1F2",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other", "role#dev-ops"],
+                        corporateDependency: true,
+                        vendors: ["organization#atlassian"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#confluence",
+                        name: "Confluence",
+                        nameLong: "Confluence",
+                        description: "A collaboration software program developed and published by Atlassian.",
+                        url: "https://www.atlassian.com/software/confluence",
+                        logoUrl: "/assets/images/technologies/confluence-logo.svg",
+                        logoBackgroundColor: "#F0F1F2",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#atlassian"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#jira",
+                        name: "Jira",
+                        nameLong: "Jira",
+                        description: "A proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.",
+                        url: "https://www.atlassian.com/software/jira",
+                        logoUrl: "/assets/images/technologies/jira-logo.svg",
+                        logoBackgroundColor: "#F0F1F2",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#atlassian"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#freshdesk",
+                        name: "Freshdesk",
+                        nameLong: "Freshdesk",
+                        description: "A cloud-based customer support platform.",
+                        url: "https://freshworks.com/freshdesk",
+                        logoUrl: "/assets/images/technologies/freshdesk-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#freshworks-inc"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#visual-studio-code",
+                        name: "Visual Studio Code",
+                        nameLong: "Visual Studio Code",
+                        description: "A source-code editor developed by Microsoft for Windows, Linux, and macOS.",
+                        url: "https://code.visualstudio.com/",
+                        logoUrl: "/assets/images/technologies/visual-studio-code-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#javascript", "technology#typescript"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#typescript",
+                        name: "TypeScript",
+                        nameLong: "TypeScript",
+                        description: "A superset of JavaScript that compiles to plain JavaScript.",
+                        url: "https://www.typescriptlang.org/",
+                        logoUrl: "/assets/images/technologies/typescript-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#javascript"],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#angular",
+                        name: "Angular",
+                        nameLong: "Angular",
+                        description: "A platform for building mobile and desktop web applications.",
+                        url: "https://angular.io/",
+                        logoUrl: "/assets/images/technologies/angular-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#javascript"],
+                        isRelatedTo: ["technology#javascript", "technology#typescript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#npm",
+                        name: "npm",
+                        nameLong: "npm is not an acronym (npm)",
+                        description: "A package manager for the JavaScript programming language.",
+                        url: "https://www.npmjs.com/",
+                        logoUrl: "/assets/images/technologies/npm-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#package-managers-build-tools",
+                        roleIds: ["role#front-end", "role#back-end", "role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: ["organization#npm-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#syntactically-awesome-style-sheets-sassy",
+                        name: "SASS/SCSS",
+                        nameLong: "Syntactically Awesome Style Sheets (SASS) / Sassy CSS (SCSS)",
+                        description: "Syntactically Awesome Style Sheets (SASS) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SCSS is a syntax of SASS.",
+                        url: "https://sass-lang.com/",
+                        logoUrl: "/assets/images/technologies/syntactically-awesome-style-sheets-sassy-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#cascading-style-sheets"],
+                        isRelatedTo: ["technology#cascading-style-sheets"],
+                        technologyTypeId: "technology-type#style-sheet-languages",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#leaner-extensible-style-sheets",
+                        name: "LESS",
+                        nameLong: "Leaner Extensible Style Sheets (LESS)",
+                        description: "A backward-compatible language extension for CSS.",
+                        url: "http://lesscss.org/",
+                        logoUrl: "/assets/images/technologies/leaner-extensible-style-sheets-logo.svg",
+                        logoBackgroundColor: "#1D365D",
+                        isChildOf: ["technology#cascading-style-sheets"],
+                        isRelatedTo: ["technology#cascading-style-sheets"],
+                        technologyTypeId: "technology-type#style-sheet-languages",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#signalr",
+                        name: "SignalR",
+                        nameLong: "SignalR",
+                        description: "A library for ASP.NET developers that makes it incredibly simple to add real-time web functionality to applications.",
+                        url: "https://dotnet.microsoft.com/apps/aspnet/signalr",
+                        logoUrl: "/assets/images/technologies/signalr-logo.svg",
+                        logoBackgroundColor: "#FAFAFA",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#asp-net", "technology#javascript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#nunit",
+                        name: "NUnit",
+                        nameLong: "NUnit",
+                        description: "A unit-testing framework for all .NET languages.",
+                        url: "https://nunit.org/",
+                        logoUrl: "/assets/images/technologies/nunit-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp"],
+                        technologyTypeId: "technology-type#testing-frameworks-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#mstest",
+                        name: "MSTest",
+                        nameLong: "MSTest",
+                        description: "A testing framework for .NET applications.",
+                        url: "https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest",
+                        logoUrl: "/assets/images/technologies/mstest-logo.svg",
+                        logoBackgroundColor: "#F3F3F3",
+                        isChildOf: ["technology#dot-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp"],
+                        technologyTypeId: "technology-type#testing-frameworks-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#selenium",
+                        name: "Selenium",
+                        nameLong: "Selenium",
+                        description: "A suite of tools for automating web browsers.",
+                        url: "https://www.selenium.dev/",
+                        logoUrl: "/assets/images/technologies/selenium-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp"],
+                        technologyTypeId: "technology-type#testing-frameworks-tools",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#software-freedom-conservancy"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#phantomjs",
+                        name: "PhantomJS",
+                        nameLong: "PhantomJS",
+                        description: "A headless WebKit scriptable with a JavaScript API.",
+                        url: "http://phantomjs.org/",
+                        logoUrl: "/assets/images/technologies/phantomjs-logo.png",
+                        logoBackgroundColor: "#42413D",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#testing-frameworks-tools",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: true,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#casperjs",
+                        name: "CasperJS",
+                        nameLong: "CasperJS",
+                        description: "A navigation scripting and testing utility for PhantomJS.",
+                        url: "https://n1k0.github.io/casperjs/",
+                        logoUrl: "/assets/images/technologies/casperjs-logo.webp",
+                        logoBackgroundColor: "#1F1F1F",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#javascript"],
+                        technologyTypeId: "technology-type#testing-frameworks-tools",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: true,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#esp8266",
+                        name: "ESP8266",
+                        nameLong: "ESP8266",
+                        description: "A low-cost Wi-Fi microchip with full TCP/IP stack and microcontroller capability.",
+                        url: "https://www.espressif.com/en/products/hardware/esp8266ex/overview",
+                        logoUrl: "/assets/images/technologies/esp8266-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#microcontrollers-single-board-computers",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: false,
+                        vendors: ["organization#espressif-systems"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#esp32",
+                        name: "ESP32",
+                        nameLong: "ESP32",
+                        description: "A series of low-cost, low-power system on a chip (SoC) microcontrollers with integrated Wi-Fi and dual-mode Bluetooth.",
+                        url: "https://www.espressif.com/en/products/socs/esp32/overview",
+                        logoUrl: "/assets/images/technologies/esp32-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#microcontrollers-single-board-computers",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: false,
+                        vendors: ["organization#espressif-systems"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#webassembly",
+                        name: "WebAssembly",
+                        nameLong: "WebAssembly",
+                        description: "A binary instruction format for a stack-based virtual machine, enabling high-performance applications on the web.",
+                        url: "https://webassembly.org/",
+                        logoUrl: "/assets/images/technologies/webassembly-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#world-wide-web-consortium", "organization#webassembly-community-group"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#asp-net-blazor",
+                        name: "ASP.NET Blazor",
+                        nameLong: "ASP.NET Blazor",
+                        description: "A framework for building interactive web applications using C# instead of JavaScript.",
+                        url: "https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor",
+                        logoUrl: "/assets/images/technologies/asp-net-blazor-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#asp-net"],
+                        isRelatedTo: ["technology#dot-net", "technology#c-sharp", "technology#asp-net"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#wordpress",
+                        name: "WordPress",
+                        nameLong: "WordPress",
+                        description: "A free and open-source content management system (CMS) based on PHP and MySQL.",
+                        url: "https://wordpress.org/",
+                        logoUrl: "/assets/images/technologies/wordpress-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#php"],
+                        isRelatedTo: ["technology#php"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#php-my-admin",
+                        name: "phpMyAdmin",
+                        nameLong: "phpMyAdmin",
+                        description: "A free and open-source administration tool for MySQL and MariaDB.",
+                        url: "https://www.phpmyadmin.net/",
+                        logoUrl: "/assets/images/technologies/php-my-admin-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#php", "technology#wordpress", "technology#mysql", "technology#maria-db"],
+                        technologyTypeId: "technology-type#database-management-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#software-freedom-conservancy"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#magento",
+                        name: "Magento",
+                        nameLong: "Magento",
+                        description: "An open-source e-commerce platform written in PHP.",
+                        url: "https://magento.com/",
+                        logoUrl: "/assets/images/technologies/magento-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#php"],
+                        isRelatedTo: ["technology#php"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end", "role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#adobe"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#amazon-web-services",
+                        name: "Amazon Web Services (AWS)",
+                        nameLong: "Amazon Web Services (AWS)",
+                        description: "A subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments.",
+                        url: "https://aws.amazon.com/",
+                        logoUrl: "/assets/images/technologies/amazon-web-services-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#cloud-computing",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#amazon"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#elastic-search",
+                        name: "Elasticsearch",
+                        nameLong: "Elasticsearch",
+                        description: "A distributed, RESTful search and analytics engine.",
+                        url: "https://www.elastic.co/elasticsearch/",
+                        logoUrl: "/assets/images/technologies/elastic-search-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#kibana"],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#big-data"],
+                        corporateDependency: true,
+                        vendors: ["organization#elastic"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#kibana",
+                        name: "Kibana",
+                        nameLong: "Kibana",
+                        description: "An open-source data visualization dashboard for Elasticsearch.",
+                        url: "https://www.elastic.co/kibana",
+                        logoUrl: "/assets/images/technologies/kibana-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#elastic-search"],
+                        isRelatedTo: ["technology#elastic-search"],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#big-data", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#elastic"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#inkscape",
+                        name: "Inkscape",
+                        nameLong: "Inkscape",
+                        description: "A free and open-source vector graphics editor.",
+                        url: "https://inkscape.org/",
+                        logoUrl: "/assets/images/technologies/inkscape-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#fiddler",
+                        name: "Fiddler",
+                        nameLong: "Fiddler",
+                        description: "A free web debugging proxy for any browser, system, or platform.",
+                        url: "https://www.telerik.com/fiddler",
+                        logoUrl: "/assets/images/technologies/fiddler-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#api-network-debugging-inspection",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#telerik", "organization#progress"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#ida-pro",
+                        name: "IDA Pro",
+                        nameLong: "Interactive DisAssembler",
+                        description: "A disassembler for computer software.",
+                        url: "https://www.hex-rays.com/products/ida/",
+                        logoUrl: "/assets/images/technologies/ida-pro-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#reverse-engineering-manipulation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#hex-rays"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#hover",
+                        name: "Hover",
+                        nameLong: "Hover",
+                        description: "A domain registrar and web hosting company.",
+                        url: "https://www.hover.com/",
+                        logoUrl: "/assets/images/technologies/hover-logo.svg",
+                        logoBackgroundColor: "#229E87",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#domain-registrars",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#hover", "organization#tucows-inc"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#dnspy",
+                        name: "dnSpy",
+                        nameLong: "dnSpy",
+                        description: "A debugger and .NET assembly editor for Windows.",
+                        url: "https://github.com/dnSpy/dnSpy",
+                        logoUrl: "/assets/images/technologies/dnspy-logo.png",
+                        logoBackgroundColor: "#8F4C19",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#dnspy-dnspyex"],
+                        technologyTypeId: "technology-type#reverse-engineering-manipulation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: true,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#dnspy-dnspyex",
+                        name: "dnSpy (dnSpyEx)",
+                        nameLong: "dnSpy (dnSpyEx)",
+                        description: "A fork of dnSpy with additional features and improvements.",
+                        url: "https://github.com/dnSpyEx/dnSpy",
+                        logoUrl: "/assets/images/technologies/dnspy-dnspyex-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#dnspy"],
+                        technologyTypeId: "technology-type#reverse-engineering-manipulation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#postgresql",
+                        name: "PostgreSQL",
+                        nameLong: "PostgreSQL",
+                        description: "A powerful, open-source object-relational database system.",
+                        url: "https://www.postgresql.org/",
+                        logoUrl: "/assets/images/technologies/postgresql-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#pgadmin"],
+                        isRelatedTo: ["technology#pgadmin", "technology#supabase"],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#postgresql-global-development-group"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#soap-ui",
+                        name: "SoapUI",
+                        nameLong: "SoapUI",
+                        description: "A tool for testing web services.",
+                        url: "https://www.soapui.org/",
+                        logoUrl: "/assets/images/technologies/soap-ui-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#api-network-debugging-inspection",
+                        roleIds: ["role#back-end", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#smart-bear"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#c",
+                        name: "C",
+                        nameLong: "C Programming Language",
+                        description: "A general-purpose, procedural computer programming language.",
+                        url: "https://en.wikipedia.org/wiki/C_(programming_language)",
+                        logoUrl: "/assets/images/technologies/c-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c-plus-plus"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#native-mobile", "role#embedded"],
+                        corporateDependency: false,
+                        vendors: ["organization#iso-iec-jtc1-sc22-wg14"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#c-plus-plus",
+                        name: "C++",
+                        nameLong: "C++ Programming Language",
+                        description: "An extension of the C programming language that includes object-oriented features.",
+                        url: "https://en.wikipedia.org/wiki/C%2B%2B",
+                        logoUrl: "/assets/images/technologies/c-plus-plus-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#c"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#native-mobile", "role#embedded"],
+                        corporateDependency: false,
+                        vendors: ["organization#iso-iec-jtc1-sc22-wg21"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#d1-mini",
+                        name: "D1 Mini",
+                        nameLong: "D1 Mini",
+                        description: "A mini Wi-Fi board based on the ESP8266 chip, designed for IoT applications.",
+                        url: "https://www.wemos.cc/en/latest/d1/d1_mini.html",
+                        logoUrl: "/assets/images/technologies/d1-mini-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#esp8266"],
+                        isRelatedTo: ["technology#esp8266"],
+                        technologyTypeId: "technology-type#microcontrollers-single-board-computers",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: false,
+                        vendors: ["organization#wemos"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#altium-designer",
+                        name: "Altium Designer",
+                        nameLong: "Altium Designer",
+                        description: "A proprietary software for printed circuit board (PCB) design.",
+                        url: "https://www.altium.com/altium-designer/",
+                        logoUrl: "/assets/images/technologies/altium-designer-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#electronic-design-automation-tools",
+                        roleIds: ["role#embedded"],
+                        corporateDependency: true,
+                        vendors: ["organization#altium"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#arch-linux",
+                        name: "Arch Linux",
+                        nameLong: "Arch Linux",
+                        description: "A lightweight and flexible Linux distribution that tries to Keep It Simple.",
+                        url: "https://archlinux.org/",
+                        logoUrl: "/assets/images/technologies/arch-linux-logo.svg",
+                        logoBackgroundColor: "#333333",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#edge",
+                        name: "Edge",
+                        nameLong: "Microsoft Edge",
+                        description: "A web browser developed by Microsoft.",
+                        url: "https://www.microsoft.com/edge",
+                        logoUrl: "/assets/images/technologies/edge-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#chromium"],
+                        isRelatedTo: ["technology#chromium"],
+                        technologyTypeId: "technology-type#web-browsers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#spring-boot",
+                        name: "Spring Boot",
+                        nameLong: "Spring Boot",
+                        description: "A framework for building Java-based applications with minimal configuration.",
+                        url: "https://spring.io/projects/spring-boot",
+                        logoUrl: "/assets/images/technologies/spring-boot-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#java"],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#intellij-idea",
+                        name: "IntelliJ IDEA",
+                        nameLong: "IntelliJ IDEA",
+                        description: "An integrated development environment (IDE) for Java development.",
+                        url: "https://www.jetbrains.com/idea/",
+                        logoUrl: "/assets/images/technologies/intellij-idea-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#java"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#front-end", "role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#jetbrains"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#postman",
+                        name: "Postman",
+                        nameLong: "Postman",
+                        description: "A collaboration platform for API development.",
+                        url: "https://www.postman.com/",
+                        logoUrl: "/assets/images/technologies/postman-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#api-network-debugging-inspection",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#postman-inc"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#dbforge-studio-postgresql",
+                        name: "dbForge Studio for PostgreSQL",
+                        nameLong: "dbForge Studio for PostgreSQL",
+                        description: "A powerful IDE for PostgreSQL database development, management, and administration.",
+                        url: "https://www.devart.com/dbforge/postgresql/studio/",
+                        logoUrl: "/assets/images/technologies/dbforge-studio-postgresql-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#database-management-tools",
+                        roleIds: ["role#back-end", "role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#devart"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#ngrx",
+                        name: "NgRx",
+                        nameLong: "NgRx",
+                        description: "A set of reactive libraries for Angular, inspired by Redux.",
+                        url: "https://ngrx.io/",
+                        logoUrl: "/assets/images/technologies/ngrx-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#angular"],
+                        isRelatedTo: ["technology#angular", "technology#typescript"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#rabbit-mq",
+                        name: "RabbitMQ",
+                        nameLong: "RabbitMQ",
+                        description: "An open-source message broker software that originally implemented the Advanced Message Queuing Protocol (AMQP).",
+                        url: "https://www.rabbitmq.com/",
+                        logoUrl: "/assets/images/technologies/rabbit-mq-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#scaling-reliability-analytics-search",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#vmware", "organization#broadcom-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#firebase",
+                        name: "Firebase",
+                        nameLong: "Firebase",
+                        description: "A platform developed by Google for creating mobile and web applications.",
+                        url: "https://firebase.google.com/",
+                        logoUrl: "/assets/images/technologies/firebase-logo.svg",
+                        logoBackgroundColor: "#1E1E1E",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#backend-as-a-service",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#swagger",
+                        name: "Swagger",
+                        nameLong: "Swagger",
+                        description: "A framework for API documentation and testing.",
+                        url: "https://swagger.io/",
+                        logoUrl: "/assets/images/technologies/swagger-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#smart-bear"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#maven",
+                        name: "Maven",
+                        nameLong: "Apache Maven",
+                        description: "A build automation tool used primarily for Java projects.",
+                        url: "https://maven.apache.org/",
+                        logoUrl: "/assets/images/technologies/maven-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#package-managers-build-tools",
+                        roleIds: ["role#back-end", "role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: ["organization#apache-software-foundation"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#bitbucket-pipelines",
+                        name: "Bitbucket Pipelines",
+                        nameLong: "Bitbucket Pipelines",
+                        description: "A continuous integration and continuous deployment service built into Bitbucket.",
+                        url: "https://bitbucket.org/product/features/pipelines",
+                        logoUrl: "/assets/images/technologies/bitbucket-pipelines-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#bitbucket"],
+                        isRelatedTo: ["technology#bitbucket"],
+                        technologyTypeId: "technology-type#continuous-integration-continuous-deployment-tools",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#atlassian"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#yaml",
+                        name: "YAML",
+                        nameLong: "YAML",
+                        description: "A human-readable data serialization standard that can be used in conjunction with all programming languages and is often used to write configuration files.",
+                        url: "https://yaml.org/",
+                        logoUrl: "/assets/images/technologies/yaml-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#serialization-languages",
+                        roleIds: ["role#dev-ops", "role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#nswag",
+                        name: "NSwag",
+                        nameLong: "NSwag",
+                        description: "A Swagger/OpenAPI toolchain for .NET, supporting ASP.NET Core and ASP.NET Web API.",
+                        url: "https://github.com/RicoSuter/NSwag",
+                        logoUrl: "/assets/images/technologies/nswag-logo.png",
+                        logoBackgroundColor: "#2D680E",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#spyder",
+                        name: "Spyder",
+                        nameLong: "Spyder",
+                        description: "An open-source IDE for scientific programming in Python.",
+                        url: "https://www.spyder-ide.org/",
+                        logoUrl: "/assets/images/technologies/spyder-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#python"],
+                        technologyTypeId: "technology-type#integrated-development-environments",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#sqlite",
+                        name: "SQLite",
+                        nameLong: "SQLite",
+                        description: "A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.",
+                        url: "https://www.sqlite.org/",
+                        logoUrl: "/assets/images/technologies/sqlite-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#sqlite-consortium"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#batch",
+                        name: "Batch",
+                        nameLong: "Batch",
+                        description: "A scripting language for automating tasks in Windows.",
+                        url: "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/batch",
+                        logoUrl: "/assets/images/technologies/batch-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#scripting-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#bash",
+                        name: "Bash",
+                        nameLong: "Bash",
+                        description: "A Unix shell and command language.",
+                        url: "https://www.gnu.org/software/bash/",
+                        logoUrl: "/assets/images/technologies/bash-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#scripting-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#perl",
+                        name: "Perl",
+                        nameLong: "Perl",
+                        description: "A high-level, general-purpose, interpreted, dynamic programming language.",
+                        url: "https://www.perl.org/",
+                        logoUrl: "/assets/images/technologies/perl-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#scripting-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#alpine-linux",
+                        name: "Alpine Linux",
+                        nameLong: "Alpine Linux",
+                        description: "A security-oriented, lightweight Linux distribution based on musl libc and busybox.",
+                        url: "https://alpinelinux.org/",
+                        logoUrl: "/assets/images/technologies/alpine-linux-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#linux"],
+                        isRelatedTo: ["technology#linux"],
+                        technologyTypeId: "technology-type#operating-systems",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#powershell",
+                        name: "PowerShell",
+                        nameLong: "PowerShell",
+                        description: "A task automation and configuration management framework from Microsoft.",
+                        url: "https://docs.microsoft.com/en-us/powershell/",
+                        logoUrl: "/assets/images/technologies/powershell-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#scripting-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#docker",
+                        name: "Docker",
+                        nameLong: "Docker",
+                        description: "A set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
+                        url: "https://www.docker.com/",
+                        logoUrl: "/assets/images/technologies/docker-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#containerization",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#docker-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#nginx",
+                        name: "Nginx",
+                        nameLong: "Nginx",
+                        description: "A high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.",
+                        url: "https://www.nginx.com/",
+                        logoUrl: "/assets/images/technologies/nginx-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#web-servers",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#f5-inc"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#godaddy",
+                        name: "GoDaddy",
+                        nameLong: "GoDaddy",
+                        description: "A domain registrar and web hosting company.",
+                        url: "https://www.godaddy.com/",
+                        logoUrl: "/assets/images/technologies/godaddy-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#domain-registrars",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#godaddy"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#namecheap",
+                        name: "Namecheap",
+                        nameLong: "Namecheap",
+                        description: "A domain registrar and web hosting company.",
+                        url: "https://www.namecheap.com/",
+                        logoUrl: "/assets/images/technologies/namecheap-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#domain-registrars",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#namecheap"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#m2-host",
+                        name: "M2Host",
+                        nameLong: "M2Host",
+                        description: "A web hosting company.",
+                        url: "https://www.m2host.com/",
+                        logoUrl: "/assets/images/technologies/m2host-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#cloud-computing-hosting",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: ["organization#m2host"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#react",
+                        name: "React",
+                        nameLong: "React",
+                        description: "A JavaScript library for building user interfaces.",
+                        url: "https://reactjs.org/",
+                        logoUrl: "/assets/images/technologies/react-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#facebook"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#sql-server",
+                        name: "SQL Server (MSSQL)",
+                        nameLong: "SQL Server (MSSQL)",
+                        description: "A relational database management system developed by Microsoft.",
+                        url: "https://www.microsoft.com/en-us/sql-server",
+                        logoUrl: "/assets/images/technologies/sql-server-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#databases",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#sql-server-management-studio",
+                        name: "SQL Server Management Studio",
+                        nameLong: "SQL Server Management Studio (SSMS)",
+                        description: "A software application for configuring, managing, and administering all components within Microsoft SQL Server.",
+                        url: "https://docs.microsoft.com/en-us/sql/ssms/",
+                        logoUrl: "/assets/images/technologies/sql-server-management-studio-logo.png",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#database-management-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsoft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#trello",
+                        name: "Trello",
+                        nameLong: "Trello",
+                        description: "A web-based Kanban-style list-making application.",
+                        url: "https://trello.com/",
+                        logoUrl: "/assets/images/technologies/trello-logo.svg",
+                        logoBackgroundColor: "#F0F1F2",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#atlassian"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#illustrator",
+                        name: "Illustrator",
+                        nameLong: "Illustrator",
+                        description: "A vector graphics editor and design program developed by Adobe Inc.",
+                        url: "https://www.adobe.com/products/illustrator.html",
+                        logoUrl: "/assets/images/technologies/illustrator-logo.svg",
+                        logoBackgroundColor: "#F8F8F8",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#adobe"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#flutter-sdk",
+                        name: "Flutter SDK",
+                        nameLong: "Flutter Software Development Kit",
+                        description: "The Flutter SDK is a set of tools for developing applications in the Flutter framework.",
+                        url: "https://flutter.dev/",
+                        logoUrl: "/assets/images/technologies/flutter-sdk-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#dart", "technology#dart-sdk"],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#dart-sdk",
+                        name: "Dart SDK",
+                        nameLong: "Dart Software Development Kit",
+                        description: "The Dart SDK is a set of tools for developing applications in the Dart programming language.",
+                        url: "https://dart.dev/get-dart",
+                        logoUrl: "/assets/images/technologies/dart-sdk-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#dart", "technology#flutter-sdk"],
+                        technologyTypeId: "technology-type#other-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#dart",
+                        name: "Dart",
+                        nameLong: "Dart",
+                        description: "A client-optimized programming language for fast apps on any platform.",
+                        url: "https://dart.dev/",
+                        logoUrl: "/assets/images/technologies/dart-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#dart-sdk"],
+                        isRelatedTo: ["technology#dart-sdk", "technology#flutter-sdk"],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#pub-dev",
+                        name: "pub.dev",
+                        nameLong: "pub.dev",
+                        description: "The package manager for Dart and Flutter.",
+                        url: "https://pub.dev/",
+                        logoUrl: "/assets/images/technologies/pub-dev-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#flutter-sdk", "technology#dart-sdk"],
+                        isRelatedTo: ["technology#dart", "technology#flutter-sdk", "technology#dart-sdk"],
+                        technologyTypeId: "technology-type#package-managers-build-tools",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: true,
+                        vendors: ["organization#google"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#supabase",
+                        name: "Supabase",
+                        nameLong: "Supabase",
+                        description: "An open-source Firebase alternative that provides a backend as a service.",
+                        url: "https://supabase.io/",
+                        logoUrl: "/assets/images/technologies/supabase-logo.svg",
+                        logoBackgroundColor: "#121212",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#backend-as-a-service",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#supabase"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#pgadmin",
+                        name: "pgAdmin",
+                        nameLong: "pgAdmin",
+                        description: "A web-based database management tool for PostgreSQL.",
+                        url: "https://www.pgadmin.org/",
+                        logoUrl: "/assets/images/technologies/pgadmin-logo.svg",
+                        logoBackgroundColor: "#343A40",
+                        isChildOf: [],
+                        isRelatedTo: ["technology#postgresql"],
+                        technologyTypeId: "technology-type#database-management-tools",
+                        roleIds: ["role#back-end"],
+                        corporateDependency: false,
+                        vendors: ["organization#pgadmin"],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#puro",
+                        name: "Puro",
+                        nameLong: "Puro",
+                        description: "A version manager for Flutter, allowing developers to easily switch between different versions of Flutter.",
+                        url: "https://puro.dev/",
+                        logoUrl: "/assets/images/technologies/puro-logo.svg",
+                        logoBackgroundColor: "#7E56C2",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#version-managers",
+                        roleIds: ["role#front-end", "role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#visual-basic-for-applications",
+                        name: "VBA",
+                        nameLong: "Visual Basic for Applications (VBA)",
+                        description: "A programming language developed by Microsoft for automation of tasks in Microsoft Office applications.",
+                        url: "https://learn.microsoft.com/en-us/office/vba/api/overview/",
+                        logoUrl: "/assets/images/technologies/visual-basic-for-applications-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#programming-languages",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#microsft"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#figma",
+                        name: "Figma",
+                        nameLong: "Figma",
+                        description: "A web-based UI/UX design application.",
+                        url: "https://www.figma.com/",
+                        logoUrl: "/assets/images/technologies/figma-logo.svg",
+                        logoBackgroundColor: "#F3F3F3",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#figma-inc"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#penpot",
+                        name: "Penpot",
+                        nameLong: "Penpot",
+                        description: "An open-source design and prototyping platform.",
+                        url: "https://penpot.app/",
+                        logoUrl: "/assets/images/technologies/penpot-logo.svg",
+                        logoBackgroundColor: "#F5F8Fb",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    },
+                    {
+                        key: "technology#xd",
+                        name: "XD",
+                        nameLong: "XD",
+                        description: "A vector-based user experience design tool for web apps and mobile apps.",
+                        url: "https://www.adobe.com/products/xd.html",
+                        logoUrl: "/assets/images/technologies/xd-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#styling-design-layout-animation",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#adobe"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#tmetric",
+                        name: "TMetric",
+                        nameLong: "TMetric",
+                        description: "A time tracking and employee monitoring software.",
+                        url: "https://tmetric.com/",
+                        logoUrl: "/assets/images/technologies/tmetric-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#project-documentation-issue-tracking-collaboration-platforms",
+                        roleIds: ["role#general-other"],
+                        corporateDependency: true,
+                        vendors: ["organization#devart"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#digital-ocean",
+                        name: "DigitalOcean",
+                        nameLong: "DigitalOcean",
+                        description: "A cloud infrastructure provider that offers cloud services to help deploy modern apps.",
+                        url: "https://www.digitalocean.com/",
+                        logoUrl: "/assets/images/technologies/digital-ocean-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#cloud-computing-hosting",
+                        roleIds: ["role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: ["organization#digital-ocean"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#github-actions",
+                        name: "GitHub Actions",
+                        nameLong: "GitHub Actions",
+                        description: "A CI/CD service for automating software workflows.",
+                        url: "https://github.com/features/actions",
+                        logoUrl: "/assets/images/technologies/github-actions-logo.svg",
+                        logoBackgroundColor: "#FFFFFF",
+                        isChildOf: ["technology#github"],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#continuous-integration-continuous-deployment-tools",
+                        roleIds: ["role#dev-ops"],
+                        corporateDependency: false,
+                        vendors: ["organization#github"],
+                        discontinued: false,
+                        openSource: false
+                    },
+                    {
+                        key: "technology#astro",
+                        name: "Astro",
+                        nameLong: "Astro",
+                        description: "A modern static site builder that allows developers to create fast, content-focused websites.",
+                        url: "https://astro.build/",
+                        logoUrl: "/assets/images/technologies/astro-logo.svg",
+                        logoBackgroundColor: "#17191E",
+                        isChildOf: [],
+                        isRelatedTo: [],
+                        technologyTypeId: "technology-type#main-libraries-toolkits-frameworks",
+                        roleIds: ["role#front-end"],
+                        corporateDependency: false,
+                        vendors: [],
+                        discontinued: false,
+                        openSource: true
+                    }
+                ],
+                projects: [
+                    {
+                        key: "project#secondary-school",
+                        name: "Secondary School (O Level Exams)",
+                        description: "Tutoring in a variety of subjects including Computer Studies, Information and Communications Technology (ICT), Mathematics, Physics, Chemistry, English, Maltese, French, Italian, Graphical Communication, Religion, Environmental Studies and Other\r\n\r\nLESSON STRUCTURE\r\n\r\nForm 1 & 2\r\n\r\nICT (4 lessons)\r\nMaltese (4 lessons)\r\nEnglish (4 lessons)\r\nFrench (2 lessons)\r\nItalian (2 lessons)\r\nReligion (2 lessons)\r\nGraphical Communication (3 lessons)\r\nMaths (4 lessons)\r\nGeneral Science (4 lessons)\r\nEnvironmental Studies (3 lessons)\r\nPE (3 lessons)\r\nPSD (2 lessons)\r\nMusic & Theater (3 lessons)\r\n\r\n\r\nForm 3, 4 & 5\r\n\r\nICT (1 lesson)\r\nComputer Studies (4 lessons)\r\nMaltese (4 lessons)\r\nEnglish (2 lessons)\r\nEnglish Literature (2 lessons)\r\nFrench (3 lessons)\r\nReligion (2 lessons)\r\nGraphical Communication (2 lessons)\r\nMaths (4 lessons)\r\nPhysics (3 lessons)\r\nChemistry (4 lessons)\r\nEnvironmental Studies (3 lessons)\r\nPE (2 lessons)\r\nPSD (1 lesson)\r\nMusic & Theater (2 lessons)\r\nMedia Literacy (1 lesson)\r\n\r\n\r\n08:15-09:00\r\n09:00-09:45\r\n09:45-10:30\r\n10:30-11:15\r\n11:15-12:00 - Break\r\n12:00-12:45\r\n12:45-13:30\r\n13:30-14:15\r\n14:15-15:00\r\n\r\n8 lessons a day\r\n\r\n8*5=40 lessons in a week\r\n",
+                        startDate: "2006-09-20",
+                        endDate: "2011-06-20",
+                        timeZone: 'Europe/Malta',
+                        projectMotiveKey: "project-motive#education-academia",
+                        projectTagsKeys: ["project-tag#learning"],
+                        technologyLogs: [],
+                        conceptKeys: [],
+                        sectorsKeysRatios: {},
+                        organizationsKeys: [{
+                            organizationKey: "organization#archbishops-seminary",
+                            organizationLocationKey: "main",
+                            workModelsKeysRatios: {
+                                "work-model#on-site": 0.6,
+                                "work-model#remote": 0.4
+                            }
+                        }],
+                        subProjects: [
+                            {
+                                key: "project#secondary-school#computer-studies-ict",
+                                name: "Computer Studies & ICT",
+                                description: "Tutoring in Computer Studies and Information and Communications Technology (ICT) for O Level Exams",
+                                conceptKeys: [
+                                    "concept#technical#computing"
+                                ]
+                            },
+                            {
+                                key: "project#secondary-school#mathematics-physics-chemistry-general-science",
+                                name: "Mathematics, Physics, Chemistry and General Science",
+                                description: "Tutoring in Mathematics, Physics, Chemistry and General Science for O Level Exams",
+                                conceptKeys: [
+                                    "concept#mathematical-physical"
+                                ]
+                            },
+                            {
+                                key: "project#secondary-school#languages",
+                                name: "Languages (Maltese, English, French and Italian)",
+                                description: "Tutoring in Maltese, English, French and Italian for O Level Exams",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
+                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication"
+                                ]
+                            },
+                            {
+                                key: "project#secondary-school#graphical-communication",
+                                name: "Graphical Communication",
+                                description: "Tutoring in Graphical Communication for O Level Exams",
+                                conceptKeys: [
+                                    "concept#creative-artistic",
+                                    "concept#mathematical-physical"
+                                ]
+                            },
+                            {
+                                key: "project#secondary-school#religion",
+                                name: "Religion",
+                                description: "Tutoring in religious Catholicism for O Level Exams",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness"
+                                ]
+                            },
+                            {
+                                key: "project#secondary-school#environmental-studies",
+                                name: "Environmental Studies (Social Studies, History and Geography)",
+                                description: "Tutoring in Social Studies, History and Geography for O Level Exams",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness"
+                                ]
+                            },
+                            {
+                                key: "project#secondary-school#other",
+                                name: "Other",
+                                description: "Tutoring in other complimentary subjects",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        key: "project#teachers-multimedia-presentation-intro-course",
+                        name: "Teachers' Multimedia Presentation Intro Course",
+                        description: "A short course for teachers to introduce them to the use of multimedia presentations in their teaching.",
+                        startDate: "2005-07-22",
+                        endDate: "2005-08-23",
+                        timeZone: 'Europe/Malta',
+                        projectMotiveKey: "project-motive#education-academia",
+                        projectTagsKeys: ["project-tag#learning", "project-tag#presenting"],
+                        conceptKeys: [],
+                        technologyLogs: [
+                            {
+                                technologyKey: "technology#windows",
+                                hoursEntries: [
+                                    {
+                                        periodStartDate: "2005-07-26",
+                                        periodEndDate: "2005-08-23",
+                                        timingScheduleKey: "timing-schedule#teachers-multimedia-presentation-intro-course",
+                                        hoursTimeBasisEvery: "definite",
+                                        hoursPerBasis: 36
+                                    }
+                                ],
+                                conceptKeys: [],
+                                subTechnologiesLogs: [
+                                    {
+                                        technologyKey: "technology#powerpoint",
+                                        hoursEntries: [
+                                            {
+                                                periodStartDate: "2005-07-26",
+                                                periodEndDate: "2005-07-29",
+                                                hoursTimeBasisEvery: "definite",
+                                                hoursPerBasis: 8
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        technologyKey: "technology#photoshop",
+                                        hoursEntries: [
+                                            {
+                                                periodStartDate: "2005-08-02",
+                                                periodEndDate: "2005-08-05",
+                                                hoursTimeBasisEvery: "definite",
+                                                hoursPerBasis: 8
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        technologyKey: "technology#opus-creator",
+                                        hoursEntries: [
+                                            {
+                                                periodStartDate: "2005-08-09",
+                                                periodEndDate: "2005-08-12",
+                                                hoursTimeBasisEvery: "definite",
+                                                hoursPerBasis: 8
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        technologyKey: "technology#flash",
+                                        hoursEntries: [
+                                            {
+                                                periodStartDate: "2005-08-16",
+                                                periodEndDate: "2005-08-23",
+                                                hoursTimeBasisEvery: "definite",
+                                                hoursPerBasis: 12
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        organizationsKeys: []
+                    },
+                    {
+                        key: "project#primary-school",
+                        name: "Primary School (Common Entrance & Junior Lyceum Exams)",
+                        description: "Tutoring in a variety of subjects including Mathematics, English, Maltese, Religion, Social Studies, History and Geography",
+                        startDate: "2000-09-20",
+                        endDate: "2006-06-20",
+                        timeZone: 'Europe/Malta',
+                        projectMotiveKey: "project-motive#education-academia",
+                        projectTagsKeys: ["project-tag#learning"],
+                        technologyLogs: [],
+                        conceptKeys: [],
+                        sectorsKeysRatios: {},
+                        organizationsKeys: [{
+                            organizationKey: "organization#bice-mizzi-vassallo",
+                            organizationLocationKey: "main",
+                            workModelsKeysRatios: {
+                                "work-model#on-site": 0.65,
+                                "work-model#remote": 0.35
+                            }
+                        }],
+                        subProjects: [
+                            {
+                                key: "project#primary-school#mathematics",
+                                name: "Mathematics",
+                                description: "Tutoring in Mathematics for Common Entrance and Junior Lyceum Exams",
+                                conceptKeys: [
+                                    "concept#mathematical-physical"
+                                ]
+                            },
+                            {
+                                key: "project#primary-school#languages-maltese-english",
+                                name: "Languages (Maltese and English)",
+                                description: "Tutoring in Maltese and English for Common Entrance and Junior Lyceum Exams",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
+                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication"
+                                ]
+                            },
+                            {
+                                key: "project#primary-school#religion",
+                                name: "Religion",
+                                description: "Tutoring in religious Catholicism for Common Entrance and Junior Lyceum Exams",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness"
+                                ]
+                            },
+                            {
+                                key: "project#primary-school#social-studies-history-geography",
+                                name: "Social Studies, History and Geography",
+                                description: "Tutoring in Social Studies, History and Geography for Common Entrance and Junior Lyceum Exams",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness"
+                                ]
+                            },
+                            {
+                                key: "project#primary-school#other",
+                                name: "Other",
+                                description: "Tutoring in other complimentary subjects",
+                                conceptKeys: [
+                                    "concept#personal-relational-environmental-effectiveness",
+                                    "concept#creative-artistic"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                timingSchedules: [
+                    {
+                        key: "timing-schedule#secondary-school-and-home-work",
+                        timeZone: "Europe/Malta",
+                        defaultSleepTime: { startTime: { hours: 11 }, endTime: { hours: 7 } },
+                        weeklyScheduleApplicable: [
+                            {
+                                applicableFromDate: "2006-09",
+                                daysSchedules: [
+                                    {
+                                        weekDays:
+                                        {
+                                            "Monday,Tuesday,Wednesday,Thursday,Friday": {
+                                                startTime: { hours: 8, minutes: 15 },
+                                                endTime: { hours: 21 },
+                                                breaks: [
+                                                    {
+                                                        startBreakTime: { hours: 11, minutes: 15 },
+                                                        breakDurationMinutes: 45
+                                                    },
+                                                    {
+                                                        startBreakTime: { hours: 15 },
+                                                        breakDurationMinutes: 60
+                                                    },
+                                                    {
+                                                        startBreakTime: { hours: 18, minutes: 15 },
+                                                        breakDurationMinutes: 45
+                                                    }
+                                                ]
+                                            },
+                                            "Saturday": {
+                                                startTime: { hours: 9 },
+                                                endTime: { hours: 12 }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        holidaysRestAndLeaveApplied: [
+                            {
+                                holidaysRestAndLeaveEntryKey: "holiday-rest-leave-entry#public-holidays-malta"
+                            },
+                            {
+                                holidaysRestAndLeaveEntryKey: "holiday-rest-leave-entry#scholastic-year-holidays-malta"
+                            }
+                        ]
+                    },
+                    {
+                        key: "timing-schedule#teachers-multimedia-presentation-intro-course",
+                        timeZone: "Europe/Malta",
+                        weeklyScheduleApplicable: [
+                            {
+                                applicableFromDate: "2005-07",
+                                daysSchedules: [
+                                    {
+                                        weekDays: {
+                                            "Tuesday": {
+                                                startTime: { hours: 9, minutes: 30 },
+                                                endTime: { hours: 14 },
+                                                breaks: [
+                                                    {
+                                                        startBreakTime: { hours: 11, minutes: 30 },
+                                                        breakDurationMinutes: 30
+                                                    }
+                                                ]
+                                            },
+                                            "Friday": {
+                                                startTime: { hours: 9, minutes: 30 },
+                                                endTime: { hours: 14 },
+                                                breaks: [
+                                                    {
+                                                        startBreakTime: { hours: 11, minutes: 30 },
+                                                        breakDurationMinutes: 30
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                holidaysRestAndLeaveEntries: [
+                    {
+                        key: "holiday-rest-leave-entry#scholastic-year-holidays-malta",
+                        type: "school",
+                        timeZone: "Europe/Malta",
+                        functions: undefined,
+                        // functions: { 
+                        //     context: '',
+                        //     functions: [
+                        //         {
+                        //             name: "getCatholicEasterSundayByYear",
+                        //             arguments: "year,timeZone",
+                        //             body: "let o=3;const l=year%19+1,e=Math.floor(year/100)+1,a=Math.floor(3*e/4)-12;let r=(11*l+20+(Math.floor((8*e+5)/25)-5)-a)%30;24===r&&(r+=1),25===r&&l>11&&(r+=1);let f=44-r;f<21&&(f+=30);let h=f+7-(Math.floor(5*year/4)-a-10+f)%7;return h>31&&(h-=31,o=4),new TZDate(year,o-1,h,timeZone)",
+                        //             canBeCalledFromOtherFunctions: true
+                        //         },
+                        //         {
+                        //             name: "getPublicNationalHolidaysAppliedByYear",
+                        //             arguments: "year,allHolidayRestAndLeaveEntries,holidayRestAndLeaveEntriesApplied",
+                        //             body: ""
+                        //         },
+                        //         {
+                        //             name: "getSchoolHolidaysByYear",
+                        //             arguments: "year,otherFunctionResults",
+                        //             body: ""
+                        //         }
+                        //     ]
+                        // }, // TO BE FILLED AUTOMATICALLY
+                        entries: [
+                            {
+                                name: "Summer Holidays",
+                                startDate: { day: 28, month: "June" },
+                                endDate: { day: 21, month: "September" }
+                            },
+                            {
+                                name: "November Mid-Term"
+                            }
+                        ],
+                        dependsOnType: "publicNational"
+                    },
+                    {
+                        key: "holiday-rest-leave-entry#public-holidays-malta",
+                        type: "publicNational",
+                        timeZone: "Europe/Malta",
+                        functions: undefined,
+                        // functions: {
+                        //     context: '',
+                        //     functions: []
+                        // }, // TO BE FILLED IN AUTOMATICALLY
+                        entries: [
+                            {
+                                name: "New Year's Day",
+                                date: { day: 1, month: "January" }
+                            },
+                            {
+                                name: "Feast of St. Paul's Shipwreck",
+                                date: { day: 10, month: "February" }
+                            },
+                            {
+                                name: "Feast of St. Joseph",
+                                date: { day: 19, month: "March" }
+                            },
+                            {
+                                name: "Good Friday",
+                                functionName: "getCatholicEasterSundayByYear",
+                                dateResultOffset: {
+                                    days: -2
+                                }
+                            },
+                            {
+                                name: "Freedom Day",
+                                date: { day: 31, month: "March" }
+                            },
+                            {
+                                name: "Worker's Day",
+                                date: { day: 1, month: "May" }
+                            },
+                            {
+                                name: "Sette Giugno",
+                                date: { day: 7, month: "June" }
+                            },
+                            {
+                                name: "Feast of St. Peter and St. Paul",
+                                date: { day: 29, month: "June" }
+                            },
+                            {
+                                name: "Feast of the Assumption",
+                                date: { day: 15, month: "August" }
+                            },
+                            {
+                                name: "Feast of Our Lady of Victories",
+                                date: { day: 8, month: "September" }
+                            },
+                            {
+                                name: "Independence Day",
+                                date: { day: 21, month: "September" }
+                            },
+                            {
+                                name: "Feast of the Immaculate Conception",
+                                date: { day: 8, month: "December" }
+                            },
+                            {
+                                name: "Republic Day",
+                                date: { day: 13, month: "December" }
+                            },
+                            {
+                                name: "Christmas Day",
+                                date: { day: 25, month: "December" }
+                            }
+                        ],
+                        defaultSleepTime: { startTime: { hours: 23 }, endTime: { hours: 7 } }
+                    }
+                ],
+                projectTags: [
+                    {
+                        key: "project-tag#learning",
+                        name: "Learning",
+                        description: "Projects related to learning new skills or technologies."
+                    },
+                    {
+                        key: "project-tag#teaching",
+                        name: "Teaching",
+                        description: "Projects related to teaching or tutoring others."
+                    },
+                    {
+                        key: "project-tag#presenting",
+                        name: "Presenting",
+                        description: "Projects related to creating and delivering presentations."
+                    },
+                    {
+                        key: "project-tag#publishing-research",
+                        name: "Publishing (Research)",
+                        description: "Projects related to publishing research papers or articles."
+                    },
+                    {
+                        key: "project-tag#logistics",
+                        name: "Logistics",
+                        description: "Projects related to logistics and supply chain management."
+                    },
+                    {
+                        key: "project-tag#wallet",
+                        name: "Wallet",
+                        description: "Projects related to digital wallets or payment systems."
+                    },
+                    {
+                        key: "project-tag#payment-gateway",
+                        name: "Payment Gateway",
+                        description: "Projects related to payment gateway integration or development."
+                    },
+                    {
+                        key: "project-tag#customer-relations-management",
+                        name: "Customer Relations Management",
+                        description: "Projects related to customer relations management (CRM) systems."
+                    },
+                    {
+                        key: "project-tag#operations",
+                        name: "Operations",
+                        description: "Projects related to business operations and process improvement."
+                    },
+                    {
+                        key: "project-tag#administration",
+                        name: "Administration",
+                        description: "Projects related to administrative tasks and office management."
+                    },
+                    {
+                        key: "project-tag#fraud-detection",
+                        name: "Fraud Detection",
+                        description: "Projects related to fraud detection and prevention."
+                    },
+                    {
+                        key: "project-tag#pci-dss-compliance",
+                        name: "PCI DSS Compliance",
+                        description: "Projects related to Payment Card Industry Data Security Standard (PCI DSS) compliance."
+                    }
+                ],
+                companyTypes: [
+                    "Startups",
+                    "Established Businesses"
+                ]
+            },
+            otherInterestsWants: [
+                "Self-Hosted/Decentralised Solutions",
+                "Reverse Engineering and Manipulation",
+                "Low-Level, Operating Systems Development and Electronics",
+                "Events & Planning"
+            ],
+            process: {
+                gettingStarted: {
+                    description: "What is the getting started process?",
+                    steps: [
+                        "Collecting Requirements, Market Research & Potentially Identifying the Money Makers",
+                        "Emailing out a specifications document with price-per-feature & admitting knowledge limitations and plans to overcome them"
+                    ]
+                },
+                softwareDevelopmentLifecycle: {
+                    description: "This process is bidirectional.",
+                    steps: [
+                        "Design & Flow (for multiple devices)",
+                        "Programming",
+                        "Testing (automatic & manual test-cases)",
+                        "Release"
+                    ]
+                }
+            },
+            projectManagement: [
+                {
+                    imageUrl: "/assets/images/cube-tweaking.webp",
+                    title: "Project Ownership & Support",
+                    titleInfo: null,
+                    textLines: [
+                        "Tackled from all ends; ensuring that all required features are implemented and any reported bugs are fixed.",
+                        "A timely description and explanation of what needs to be performed is provided, as well as a change-log with every release."
+                    ]
+                },
+                {
+                    imageUrl: "/assets/images/people.webp",
+                    title: "Mentoring & Guidance",
+                    titleInfo: null,
+                    textLines: [
+                        "Training is provided for usability and when on-boarding new technical members on the team.",
+                        "Technical suggestions are advised and feedback welcomed."
+                    ]
+                },
+                {
+                    imageUrl: "/assets/images/doc-time-tracking.webp",
+                    title: "Documentation & Time Tracking",
+                    titleInfo: null,
+                    textLines: [
+                        "In exploring the workings, in-depth documentation may be concocted covering the ins and outs of a system and user manuals may be drafted on request.",
+                        "Development commits and time are tracked for every task."
+                    ]
+                }
+            ]
+        }
+    }, options);
+};

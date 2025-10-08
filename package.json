@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@date-fns/tz": "^1.4.1",
+    "date-fns": "^4.1.0"
+  },
+  "scripts": {
+    "dev": "(tsc || true) && npm run runner && npx tsc-watch --noClear --onSuccess \"npm run runner\"",
+    "runner": "node ./build/runners/site.runner.js || true"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/jscodeshift": "^17.3.0",
+    "@types/node": "^24.5.2",
+    "@types/uglify-js": "^3.17.5",
+    "jscodeshift": "^17.3.0",
+    "rollup": "^4.52.2",
+    "tsc-watch": "^7.1.1",
+    "typescript": "^5.9.2",
+    "uglify-js": "^3.19.3"
+  }
+}

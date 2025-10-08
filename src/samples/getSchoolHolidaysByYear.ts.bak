@@ -1,0 +1,53 @@
+import { isDate, isValid, parse, parseISO, isPast, isFuture, isBefore, isAfter, eachMonthOfInterval, getDaysInMonth, startOfDay, endOfDay, addHours, addMinutes, addSeconds, addMilliseconds } from 'date-fns';
+import { enUS, is } from 'date-fns/locale';
+import { TZDate } from '@date-fns/tz';
+import rovercoderJson from './rovercoder.json' assert { type: "json" };
+
+
+function getSchoolHolidaysByYear(year: number, timeZone: string, allHolidayRestAndLeaveEntries: any[], holidayRestAndLeaveEntriesApplied: any[], functions: { [key: string]: { fn: Function; args: string[] } }) {
+    var catholicEasterDate: Date = functions['getCatholicEasterByYear'].fn.call(this, ...[year]);
+    var holidayRestAndLeaveEntriesApplicable = holidayRestAndLeaveEntriesApplied.filter(x => (x.applicableFromDate === undefined || x.applicableFromDate === null || (isValid(x.applicableFromDate) && isPast(parseISO(x.applicableFromDate)))) && (x.applicableToDate === undefined || x.applicableToDate === null || (isValid(x.applicableToDate) && isFuture(parseISO(x.applicableToDate)))));
+    var holidayRestAndLeaveList = holidayRestAndLeaveEntriesApplicable.map(x => allHolidayRestAndLeaveEntries.find(y => y.key == x.holidaysRestAndLeaveEntryKey)).filter(x => x != null);
+    var publicNationalEntries = holidayRestAndLeaveList.filter(x => x.type == 'publicNational');
+    if (publicNationalEntries.length === 0) {
+        return [];
+    }
+    var publicNationalHolidaysDateRanges: { names: string[], startDate: TZDate, endDate: TZDate }[] = [];
+    for (var i = 0; i < publicNationalEntries.length; i++) {
+        var publicNationalEntry = publicNationalEntries[i];
+        for (var j = 0; j < publicNationalEntry.entries.length; j++) {
+            var publicNationalHoliday = publicNationalEntry.entries[j];
+            var name = publicNationalHoliday.name;
+
+            var result = getStartDateAndEndDate({
+                dates: {
+                    baseDate: publicNationalHoliday.date,
+                    startDate: publicNationalHoliday.startDate,
+                    endDate: publicNationalHoliday.endDate,
+                    timeZone: publicNationalEntry.timeZone ?? timeZone
+                },
+                fillDateProps: {
+                    year: year
+                }
+            });
+            if (!result.valid || !result.value) continue;
+            
+            var startDate = result.value.startDate;
+            var endDate = result.value.endDate;
+
+            // handle function-based dates
+
+            if 
+        }
+    }
+}
+
+var functions = holidaysRestAndLeaveEntries.filter(x => x.key === 'holiday-rest-leave-entry#scholastic-year-holidays-malta')[0].functions;
+var declaredFunctions: { [key: string]: { fn: Function; args: string[] } } = {}; for (var i = 0; i < functions.length; i++) { declaredFunctions[functions[i].name] = { fn: new Function(functions[i].arguments, functions[i].body), args: functions[i].arguments.split(",").map(x => x.trim()) } }
+
+getSchoolHolidaysByYear(2025, 'Europe/Malta', holidaysRestAndLeaveEntries, timingSchedule.holidaysRestAndLeave, declaredFunctions);
+
+console.log(getDaysInMonth(new Date(2025, 1)));
+
+console.log(new TZDate(2025, 9, 26, 3, 0, 'Europe/Malta').toString());
+

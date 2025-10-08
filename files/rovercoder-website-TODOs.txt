@@ -1,0 +1,945 @@
+x List all technologies used and the heirarchy required for each project
+x Ensure that every technology listed below is available in the rovercoder.json file, and add if not
+- Deduce the best JSON structure and plot everything as JSON
+	> Decide whether there should be a difference between additional/appended hours and hours
+- Calculate the hours
+	> Open an Excel sheet and find out the best structure in Excel for calculating time spent on each technology
+	OR
+	> Code a program/website to calculate hours that allows drill down in a tree view
+
+WORK
+
+
+=> NightOwl Studios
+	> Entwine
+		> Entwine Wine Pairing Application
+			> Windows
+				> VS Code
+					> puro
+					> Flutter SDK
+						> Flutter Package Manager
+						> Dart SDK
+							> Dart
+			> JSON
+			> DigitalOcean
+			> GitHub
+				> GitHub Actions
+		> Entwine Inventory - Restaurant Management System
+			> Windows
+				> VS Code
+					> puro
+					> Flutter SDK
+						> Flutter Package Manager
+						> Dart SDK
+							> Dart
+			> JSON
+			> DigitalOcean
+			> GitHub
+				> GitHub Actions
+		> Entwine Administration System
+			> Windows
+				> VS Code
+					> puro
+					> Flutter SDK
+						> Flutter Package Manager
+						> Dart SDK
+							> Dart			
+			> JSON
+			> DigitalOcean
+			> GitHub
+				> GitHub Actions
+		> Supabase
+			> Docker
+			> PostgreSQL
+				> SQL
+		> Windows
+			> Excel
+				> VBA
+			> Visual Studio
+				> .NET
+					> C#
+					> EntityFramework
+						> C#
+					> NuGET
+			> pgAdmin
+				> PostgreSQL
+					> SQL
+		> Figma
+		> Penpot
+		> Adobe XD
+		> Trello
+		> TMetric
+	> LEET
+		> Leet App
+			> Windows
+				> VS Code
+					> puro
+					> Flutter SDK
+						> Flutter Package Manager
+						> Dart SDK
+							> Dart
+				> Postman
+			> JSON
+			> Firebase
+		> Trello
+		> TMetric
+	> The MetHub
+		> Windows
+			> VS Code
+				> Flutter SDK
+					> Flutter Package Manager
+					> Dart SDK
+						> Dart
+		> Trello
+		> TMetric
+	> AI Physio
+		> Windows
+			> VS Code
+				> Flutter SDK
+					> Flutter Package Manager
+					> Dart SDK
+						> Dart
+		> Trello
+		> TMetric
+	> Template Project
+		> Windows
+			> VS Code
+				> puro
+				> Flutter SDK
+					> Flutter Package Manager
+					> Dart SDK
+						> Dart
+			> pgAdmin
+				> PostgreSQL
+					> SQL
+		> JSON
+		> Supabase
+			> Docker
+			> PostgreSQL
+				> SQL
+		> Firebase
+		> Trello
+		> TMetric
+		> GitHub
+			> GitHub Actions
+	> Other
+		> WordPress
+			> PHP
+			> HTML
+			> CSS
+			> JS
+				> jQuery
+
+=> ShowsHappening
+	> ShowsHappening
+		> Windows
+			> VS Code
+				> Javascript
+	> ShowsManager
+		> Windows
+			> VS Code
+				> npm
+				> JS
+					> TypeScript
+						> React
+							> SVG font bug
+							> Upgrading React version and dependencies
+				> HTML
+				> CSS
+					> SASS/SCSS
+	> Trello
+	> SQL Server Management Studio
+		> SQL Server
+
+=> Mario Borg
+	> Political Website
+		> Windows
+			> VS Code
+				> HTML
+				> CSS
+				> JS
+				> Bootstrap
+				> JSON
+				
+=> Mike Portelli
+	> Learning Platform
+		> Windows
+			> WordPress
+				> PHP
+
+=> eCabs
+	> Internal Operations System
+		> Windows
+			> IntelliJ IDEA
+				> JDK
+					> Java
+					> Java Spring Boot Framework
+					> Websockets
+					> RabbitMQ
+				> Swagger
+					> YAML
+				> Maven
+			> VS Code
+				> npm
+				> JS
+					> Angular
+						> NgRx
+						> Material
+					> Google Maps JS
+					> Websockets
+				> CSS
+					> SASS/SCSS
+				> HTML
+			> Fiddler
+			> Postman
+			> dbForge Studio for PostgreSQL
+				> PostgreSQL
+		> JSON
+		> Firebase
+		> Confluence
+		> Jira
+		> BitBucket
+		> BitBucket Pipelines
+			> YAML
+			
+	> Stress Testing
+		> Windows
+			> Visual Studio
+				> .NET
+					> C#
+			> JSON
+			> NSwag
+			> Fiddler
+
+	
+=> Bit8
+	> Bit8 Platform
+		> Testing Improvements
+			> Windows
+				> Visual Studio
+					> .NET
+						> C#
+		> Adding features
+			> Windows
+				> VS Code
+					> PHP
+					> JS
+						> jQuery
+				> Visual Studio
+					> .NET
+						> C#
+				> SoapUI
+				> Docker
+			
+		> Building Analyser of PHP Code
+			> Windows
+				> Visual Studio
+					> .NET
+						> C#
+		> Evaluating
+			> Windows
+				> dbForge Studio for PostgreSQL
+					> PostgreSQL (Stored Procedures)			
+			
+
+=> Transactium
+	> Payment Gateway
+		> Windows
+			> Visual Studio
+				> .NET
+					> C#
+					> Entity Framework
+						> C#
+					> ASP.NET
+						> ASP.NET Web Forms
+							> Bootstrap
+							> JS
+								> jQuery
+							> CSS
+							> HTML
+						> ASP.NET MVC
+							> Bootstrap
+							> JS
+								> jQuery
+							> CSS
+							> HTML
+					> NuGET
+					> NUnit
+						> C#
+					> Selenium
+						> C#
+				> XML
+				
+			> Entity Developer
+				
+			> dbForge Studio for MySQL
+				> MySQL
+					> SQL
+					
+			> Fiddler
+			
+			> TortoiseSVN
+				> SVN
+
+			> WinMerge
+			
+		> Amazon Web Services
+			> Elasticsearch
+				> Kibana
+		
+
+		> BugZilla
+		> Confluence
+		
+	> Wallet System
+		> Windows
+			> Visual Studio
+				> .NET
+					> C#
+					> Entity Framework
+						> C#
+					> NuGet
+					> MSTest
+						> C#
+				> Bootstrap
+			> Entity Developer
+			> VS Code
+				> npm
+				> JS
+					> TypeScript
+						> Angular
+				> Bootstrap
+				> CSS
+					> SASS/SCSS
+				> HTML
+				> PhantomJS
+					> CasperJS
+				
+			> dbForge Studio for MySQL
+				> MariaDB
+					> SQL
+					
+			> Fiddler
+					
+			> TortoiseGIT
+				> GitLab
+					> GIT
+			> Photoshop
+			> WinMerge
+					
+		> Amazon Web Services
+		
+		> Confluence
+		> Freshdesk
+		
+	> Currency Trading Platform
+		> Windows
+			> Visual Studio
+				> .NET
+					> C#
+					> Entity Framework
+						> C#
+					> NuGet
+					> SignalR
+						> C#
+				> Bootstrap
+			> Entity Developer
+			> VS Code
+				> npm
+				> JS
+					> TypeScript
+						> Angular
+				> Bootstrap
+				> CSS
+					> SASS/SCSS
+				> HTML
+				
+			> dbForge Studio for MySQL
+				> MariaDB
+					> SQL
+					
+			> Fiddler
+					
+			> TortoiseGIT
+				> GitLab
+					> GIT
+			> WinMerge
+		> Confluence
+		> Freshdesk
+			
+	> Age Checking System
+		> Windows
+			> Visual Studio
+				> .NET
+					> C#
+					> Entity Framework
+						> C#
+					> ASP.NET
+						> ASP.NET MVC
+					> NuGet
+					> MSTest
+						> C#
+					> Selenium
+						> C#
+				> Bootstrap
+				> JS
+					> jQuery
+				> CSS
+					> LESS
+				> HTML
+				
+			> Entity Developer
+			
+			> dbForge Studio for MySQL
+				> MySQL
+					> SQL
+					
+			> Fiddler
+					
+			> TortoiseGIT
+				> BitBucket
+					> GIT
+
+			> WinMerge
+		
+		> Confluence
+		> Freshdesk
+		> Jira
+		
+
+	> Website
+		> VS Code
+			> HTML
+			> CSS
+			> JS
+			> Google Maps JS API
+		> Inkscape
+		> Photoshop
+		> GIT
+		> Amazon Web Services
+	> Wordpress (Dr. Cere)
+		> Windows
+			> Notepad++
+				> Wordpress
+					> PHP	
+					> JS
+					> CSS
+					> HTML
+					> jQuery
+					> Bootstrap
+			> Inkscape
+			
+			> phpMyAdmin
+				> MariaDB
+					> SQL
+			
+			> dbForge Studio for MySQL
+				> MariaDB
+					> SQL
+			> Fiddler
+			
+			> WinSCP
+			> MobaXTerm
+				> SSH
+			> BitBucket
+				> GIT
+			
+		> Confluence
+	> Plugins for Wordpress
+		> Gravity Forms
+			> Windows
+				> Notepad++
+					> Wordpress
+						> PHP
+						> JS
+						> HTML
+						> CSS
+				> GIT
+				> phpMyAdmin
+					> MariaDB
+						> SQL
+				> dbForge Studio for MySQL
+					> MariaDB
+						> SQL
+				> Fiddler
+			> Confluence
+		> WooCommerce
+			> Windows
+				> Notepad++
+					> Wordpress					
+						> PHP
+						> JS
+						> HTML
+						> CSS
+				> GIT
+				> phpMyAdmin
+					> MariaDB
+						> SQL
+				> dbForge Studio for MySQL
+					> MariaDB
+						> SQL
+				> Fiddler
+			
+			> Confluence
+		
+
+	> Plugin for Magento (updates)
+		> Windows
+			> Notepad++
+				> Magento
+					> PHP
+					> JS
+						> jQuery
+					> HTML
+					> CSS
+			> Fiddler
+
+
+=> Mi-C3
+	> Logistics System
+		> Windows
+			> Intersystems Cache
+				> ObjectScript
+	> Data Analytics project
+		> Windows
+			> Netbeans
+				> JDK
+					> Java
+				> Hadoop
+				> Storm
+				> Kafka
+				> Jetty
+				> Tomcat
+				> Spark
+				> Maven
+	> Tag'N'Go Simulator
+		> Windows
+			> Netbeans
+				> JDK
+					> Java
+
+HOBBY
+
+=> RoverCoder	
+	> Interview Tasks
+		=> Bit8
+			> Movie Recommendation Interview Task
+				> Visual Studio
+					> .NET
+						> C#
+				
+		=> eCabs
+			> eCbas – Front-End Test Evaluation
+				> VS Code
+					> npm
+					> Angular
+					> Angular Material
+					> State Management
+					> JSON
+		=> Other
+			> VS Code
+				> JS
+					> TypeScript
+						> React
+						> VueJS
+				> npm
+				> JSON
+			> Netbeans
+				> JDK
+					> Java
+					> Java Spring Boot Framework
+					> Maven
+
+	> Open-Source Contributions
+		> Windows PowerToys
+			> Quick Accent - Maltese language addition
+				> Visual Studio
+					> .NET
+						> C#
+
+	> Server Configuration
+		> Linux
+			> Ubuntu
+				> VSCode	
+					> Bash
+					> Perl
+				> nano
+					> Nginx
+			> Alpine
+				> Bash
+				> Perl
+
+	> General
+	
+		> Linux
+			> Linux Mint
+			> Arch Linux
+				> Configuration	
+					> KVM with GPU passthrough
+				
+		> Windows
+			> Word
+			> Internet Explorer
+			> Outlook
+			> PowerPoint
+			> Opus Creator (Illuminatus)
+			> Flash
+			> Publisher
+			> Photoshop
+			> SketchUp
+			> PowerAutomate (WinAutomation)
+			> Excel
+			> Chrome
+			> Firefox
+			> FL Studio
+			> Android
+			> Opera Mini
+			> Chromium
+			> Opera
+			> Sculptris
+			> Inkscape
+			> Vivaldi
+			> Visual Studio
+				> .NET
+					> C#
+					> SignalR
+						> C#
+					> EntityFramework
+						> C#
+					> NuGET
+					> ASP.NET
+						> Blazor
+							> C#
+							> WebAssembly
+							> HTML
+							> CSS
+							> JS
+					> WPF
+						> XAML
+				> C
+					> Arduino
+					> ESP8266
+						> D1 Mini
+					> ESP32
+				> C++
+					> Arduino
+					> ESP8266
+						> D1 Mini
+					> ESP32
+				> Entity Developer
+			> dbForge Studio for MySQL
+				> MySQL
+			> Arduino IDE
+				> Arduino
+				> C
+					> ESP8266
+						> D1 Mini
+					> ESP32
+				> C++
+					> ESP8266
+						> D1 Mini
+					> ESP32
+			> Raspberry Pi
+				> Linux
+					> Debian
+					> Raspberry Pi OS
+						> Configuration
+						> MySQL
+							> SQL
+			> VS Code
+				> JS
+					> TypeScript
+						> Angular
+							> SignalR
+						> React
+				> Astro
+			> Altium Designer
+			> Fiddler
+			> IDA Pro
+			> dnSpy
+			> dnSpy (dnSpyEx)
+			> Edge
+			> Spyder IDE
+				> Python
+			> Batch
+			> PowerShell
+			> Docker
+				> Open WebUI (no need)
+			> Illustrator
+			
+		> Hover
+		> GoDaddy
+		> Namecheap
+		> M2Host
+		
+
+STUDY
+
+=> PixemWeb & YouTube
+	> Master WordPress Theme Development: Step-by-Step Tutorial - DevWP
+		> https://www.youtube.com/watch?v=4b7rJs147oA&ab_channel=PixemWeb
+		> Elementor
+		> Bricks
+
+=> Vandad Nahavandipoor & YouTube
+	> Flutter State Management Course
+		> https://www.youtube.com/playlist?list=PL6yRaaP0WPkUf-ff1OX99DVSL1cynLHxO
+		> Flutter Package Manager
+		> Flutter SDK
+			> Dart SDK
+				> Dart
+
+=> Mina Farid & Udemy
+	> Flutter Advanced Course - Clean Architecture With MVVM
+		> https://www.udemy.com/course/flutter-advanced-course-clean-architecture-with-mvvm
+		> Flutter Package Manager
+		> Flutter SDK
+			> Dart SDK
+				> Dart
+				> JSON
+		
+=> Andre' LaMothe & Udemy
+	> Crash Course Electronics and PCB Design
+		> https://www.udemy.com/course/crash-course-electronics-and-pcb-design/
+
+=> Mark J. Price & Packt
+	> C# 8.0 and .NET Core 3.0 - Modern Cross-Platform Development
+		> https://www.packtpub.com/en-mt/product/c-80-and-net-core-30-modern-cross-platform-development-9781788471572
+		> .NET
+			> C#
+			> NuGET
+		> JSON
+		> XML
+		> SQLite
+
+=> ? Unknown ? [Online Course]
+	> C/C++ Course
+		> C
+		> C++
+
+=> Middlesex University Malta
+	> Computer Science Degree
+		> Thesis
+			> GoalCane app
+				> Android Studio
+					> Android SDK
+						> Android
+						> Java
+						> Google Maps Android SDK
+						> OrmLite
+						> Realm
+						> XML
+					> Gradle
+				> npm
+				> Atom
+					> nodeJS
+						> Express.js
+						> Mongoose
+							> Mongo DB
+				> JSON
+		> Research Methodology & Professional Project Development
+			> Farmer Minions Automation Simulation Project
+				> Windows
+					> NetBeans
+						> HTML
+						> CSS
+						> JS
+							> jQuery
+							> Google Maps JS
+						> PHP
+							> MySQL (using MySQLi connector)
+								> SQL
+						> JSON
+					> MySQL Workbench
+						> MySQL
+							> SQL
+		> Artificial Intelligence
+			> Depth-First and Breadth-First Maze Search
+				> Netbeans
+					> JDK
+						> Java
+			> Machine Learning - Identification of Handwritten Digits via k-NN and k-Means
+				> Netbeans
+					> JDK
+						> Java
+			> AI Algorithms
+		> Tangible User Interfaces
+			> Word Guess - Table-Top Spelling Game for Children
+				> Windows
+					> Processing IDE
+						> Processing
+							> Java
+						> reacTIVision (via TUIO)
+				> GitHub
+					> git
+			> Augmented Reality in the Museum
+				> Windows
+					> Unity
+						> .NET
+							> C#
+						> Vuforia
+				> GitHub
+					> git
+		> Data Warehousing
+		> Systems Engineering for Robotics
+			> Windows
+				> Arduino IDE
+					> Arduino
+					> Arduino UNO
+					> Arduino MEGA 2560
+				> MobaXTerm
+					> OpenSSH
+						> Raspberry Pi
+							> Linux
+								> Ubuntu
+									> IDLE IDE
+										> Python
+								
+				> Circuit Design
+		> Software and Web Development & Databases
+			> Book Library GUI Mini-Project
+				> Windows
+					> Netbeans
+						> JDK
+							> Java
+								> MySQL (using JDBC)
+									> SQL
+					> MySQL Workbench
+						> MySQL
+							> SQL
+				> GUI
+			> BitCouch File Manager Website
+				> Windows
+					> Netbeans
+						> PHP
+							> MySQL (using MySQLi connector)
+								> SQL
+						> JS
+						> HTML
+						> CSS
+						> JSON
+					> MySQL Workbench
+						> MySQL
+							SQL
+			> Default
+				> Windows
+					> NetBeans
+						> JDK
+							> Java
+					> Server
+					> Multi-Threading
+					> DB Connectors (JDBC)
+					> PhpStorm
+						> PHP
+						> JS
+						> HTML
+						> CSS
+						> JSON
+						> XML
+				> WordPress
+
+=> NCC Education
+	> Computing Diploma
+		> Windows
+			> Eclipse
+				> JDK
+					> Java
+			> UI Building
+			> Game
+			> Dreamweaver
+				> HTML
+				> CSS
+			> MySQL Workbench
+				> MySQL
+					> SQL
+			> Word
+			> Excel
+		> Computer Network Concepts
+
+=> G.F Abela Junior College
+	> Computing (A-Level)
+		> Space Jet
+			> Windows
+				> BlueJ
+					> JDK
+						> Java
+			> Game
+		> Default
+			> Windows
+				> BlueJ
+					> JDK
+						> Java
+		> Computing Concepts
+	> Pure Mathematics (A-Level)
+		> Mathematical Concepts
+	> Physics (Intermediate)
+		> Physical Concepts
+	> Accounting (Intermediate)
+		> Accounting Concepts
+	> English (Intermediate)
+		> Windows
+			> Word
+	> Other
+
+=> STC Higher Education
+	> Web Design Course
+		> Windows
+			> Photoshop
+			> Dreamweaver
+				> HTML
+				> CSS
+			> Chrome
+
+=> ICDL Foundation
+	> International Certification of Digital Literacy (ICDL)
+		> Windows
+			> Word
+			> Excel
+			> PowerPoint
+			> Outlook
+			> Internet Explorer
+
+=> Archbishop's Seminary, Rabat
+	> O Levels (Secondary School)
+		> Information and Communications Technology (ICT)
+			> Windows
+				> Word
+				> GIMP
+				> Firefox
+
+		> Computer Studies
+			> Windows
+				> Word
+				> Visio
+				> Access
+				> Project
+				> Turbo Pascal
+					> Pascal
+
+		> Maths
+		> Physics
+		> Chemistry
+		> Languages (Maltese, English, French, Italian)
+			> Windows
+				> Word
+		> Religion
+		> Other
+			> Windows
+				> Word
+
+=> ? Unknown ?
+	> Teachers' Multimedia Intro Course
+		> Windows
+			> PowerPoint
+			> Photoshop
+			> Opus Creator (Illuminatus)
+			> Flash
+			
+
+=> Bice Mizzi Vassallo, Pembroke
+	> Common Entrance & Junior Lyceum Exams (Primary School)
+		> Languages (Maltese, English)
+		> Maths
+		> Religion
+		> Social Studies
+		> Other
