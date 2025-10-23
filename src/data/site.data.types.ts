@@ -1,3 +1,5 @@
+import type { DateTypePartial } from "./options/functions/site.data.options.functions.types.js";
+
 export interface SiteData {
     name: string;
     version: string;
@@ -44,6 +46,7 @@ export interface Experience {
     timingSchedules: TimingSchedule[];
     holidaysRestAndLeaveEntries: HolidaysRestAndLeaveEntry[];
     projectTags: ProjectTag[];
+    projectActionTags: ProjectActionTag[];
     companyTypes: string[];
 }
 
@@ -88,6 +91,12 @@ export interface ProjectMotive {
 }
 
 export interface ProjectTag {
+    key: string;
+    name: string;
+    description: string;
+}
+
+export interface ProjectActionTag {
     key: string;
     name: string;
     description: string;
@@ -213,28 +222,86 @@ export interface Project {
     description?: string;
     linkUrl?: string;
     linkUrlOrganizationKey?: string;
-    startDate: string;
-    endDate?: string;
+    dates: [ProjectDateTimeRangeEntry, ...ProjectDateTimeRangeEntry[]];
     timeZone: string;
+    breaks?: ProjectBreak[];
+    timingScheduleKey: string;
+    hoursEntries?: HoursEntryWithoutAreHoursPerBasisAdditional[];
+    workHoursRatio?: WorkHoursRatio;
+    organizationsKeys: OrganizationsKey[];
+    projectActions?: ProjectAction[];
     projectMotiveKey: string;
     projectTagsKeys: string[];
-    technologyLogs?: TechnologyLog[];
-    conceptKeys: string[];
     sectorsKeysRatios?: { [key: string]: number; };
-    organizationsKeys: OrganizationsKey[];
     subProjects?: SubProject[];
 }
 
-export interface SubProject extends Partial<Project> {
+export interface SubProject extends Partial<Omit<Project, "dates">> {
     key: string;
     name: string;
-    startDate?: string;
+    dates?: [ProjectDateTimeRangeEntryPartial, ...ProjectDateTimeRangeEntryPartial[]];
 }
+
+export interface ProjectDateTimeRangeEntry {
+    startDate: string;
+    endDate?: string;
+    timeZone?: string;
+}
+
+export type ProjectDateTimeRangeEntryPartial = Partial<ProjectDateTimeRangeEntry>;
+
+export interface ProjectBreak {
+    fromDate: DateClass;
+    toDate: DateClass;
+    timeZone?: string;
+}
+
+export interface ProjectAction {
+    name: string;
+    projectActionsTagsKeys?: ProjectActionTagKey[];
+    timingScheduleTimeSlice?: string;
+    workHoursRatio: WorkHoursRatio;
+    organizationsKeys?: OrganizationsKey[];
+    conceptsKeys?: ConceptKey[];
+    subActions?: ProjectSubAction[];
+    technologyLogs?: TechnologyLog[];
+}
+
+export interface ProjectSubAction extends Partial<ProjectAction> {
+    name: string;
+    workHoursRatio: WorkHoursRatio;
+}
+
+export interface ProjectActionTagKey {
+    key: string;
+    workHoursRatio: WorkHoursRatio;
+    organizationsKeys?: OrganizationsKey[];
+}
+
+export interface ConceptKey {
+    key: string;
+    workHoursRatio: WorkHoursRatio;
+    organizationsKeys?: OrganizationsKey[];
+}
+
+export type WorkHoursRatio = number | { ratioValue: number, startDate: DateClass, endDate: DateClass }[];
+
+export type WorkHoursRatioNullable = WorkHoursRatio | null;
 
 export interface OrganizationsKey {
     organizationKey: string;
+    organizationLocationsKeys: [OrganizationLocationKey, ...OrganizationLocationKey[]];
+    workHoursRatio?: WorkHoursRatioNullable; // if null work hours split is unknown, if all are undefined work hours are split equally
+    startDate?: string;
+    endDate?: string;
+}
+
+export interface OrganizationLocationKey {
     organizationLocationKey: string;
-    workModelsKeysRatios: { [key: string]: number; };
+    workModelsKeysRatios: { [key: string]: WorkHoursRatio; };
+    workHoursRatio?: WorkHoursRatioNullable; // if null work hours split is unknown, if all are undefined work hours are split equally
+    startDate?: string;
+    endDate?: string;
 }
 
 export interface TechnologyLog {
@@ -242,19 +309,22 @@ export interface TechnologyLog {
     description?: string;
     timeZone?: string;
     hoursEntries: HoursEntry[];
-    conceptKeys?: string[];
+    conceptsKeys?: ConceptKey[];
     subTechnologiesLogs?: TechnologyLog[];
 }
 
-export interface HoursEntry {
+export interface HoursEntry extends HoursEntryWithoutAreHoursPerBasisAdditional {
+    areHoursPerBasisAdditional?: boolean;
+}
+
+export interface HoursEntryWithoutAreHoursPerBasisAdditional {
     periodStartDate: string;
     periodEndDate: string;
     timeZone?: string;
-    timingScheduleKey?: string;
+    timingScheduleTimeSliceKey?: string;
     hoursTimeBasisEvery?: 'definite' /* same as undefined/null */ | 'day' | 'week' | 'month' | 'year';
     hoursTimeBasisEveryMultiplier?: number,
     hoursPerBasis: number;
-    areHoursPerBasisAdditional?: boolean;
 }
 
 export interface Technology {
@@ -280,9 +350,11 @@ export interface TimingSchedule {
     timeZone: string;
     defaultSleepTime?: DefaultSleepTime;
     onCallExceptions?: OnCallException[];
+    overrides?: ScheduleOverride[];
     weeklyScheduleApplicable?: WeeklyScheduleApplicable[];
     monthlyScheduleApplicable?: MonthlyScheduleApplicable[];
     yearlyScheduleApplicable?: YearlyScheduleApplicable[];
+    timeSlices?: TimeSlice[],
     holidaysRestAndLeaveApplied?: HolidaysRestAndLeaveAppliedEntry[];
 }
 
@@ -290,6 +362,21 @@ export interface OnCallException {
     startDate: string;
     endDate: string;
     timeZone?: string;
+}
+
+export interface ScheduleOverride {
+    name: string,
+    type: 'add' | 'remove';
+    fromDate: DateClass,
+    toDate: DateClass, 
+    timeZone?: string;
+}
+
+export interface TimeSlice {
+    key: string,
+    weeklyScheduleApplicable?: WeeklyScheduleApplicable[];
+    monthlyScheduleApplicable?: MonthlyScheduleApplicable[];
+    yearlyScheduleApplicable?: YearlyScheduleApplicable[];
 }
 
 export interface HolidaysRestAndLeaveAppliedEntry {

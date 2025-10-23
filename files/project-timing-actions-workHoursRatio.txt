@@ -1,0 +1,180 @@
+Project ((timespans (start + end)[]) + schedule)
+> workHoursRatioEntries
+    > workHoursRatio
+    > startDate
+    > endDate
+> Organizations
+    > #Organization
+    > workHoursRatioEntries
+        > workHoursRatio
+        > startDate
+        > endDate
+    > workModelsKeysRatioEntries
+//        > Concepts
+//            > #Concept
+//            > workHoursRatioEntries
+//                > workHoursRatio
+//                > startDate
+//                > endDate
+//            > Organizations
+//                > #Organization
+//                > workHoursRatioEntries
+//                    > workHoursRatio
+//                    > startDate
+//                    > endDate
+//                > workModelsKeysRatioEntries
+> Sub-Projects
+    > Sub-Project #1 (timespans (start + end)[] + hours per period (e.g. week/month))
+        > workHoursRatioEntries
+            > workHoursRatio
+            > startDate
+            > endDate
+        > Organizations
+            > #Organization
+            > workHoursRatioEntries
+                > workHoursRatio
+                > startDate
+                > endDate
+            > workModelsKeysRatioEntries
+//        > Concepts
+//            > #Concept
+//            > workHoursRatioEntries
+//                > workHoursRatio
+//                > startDate
+//                > endDate
+//            > Organizations
+//                > #Organization
+//                > workHoursRatioEntries
+//                    > workHoursRatio
+//                    > startDate
+//                    > endDate
+//                > workModelsKeysRatioEntries
+            
+            /*
+            EXAMPLE
+            > concept: 'concept#technical'
+            > workHoursRatioEntries: 0.8
+            > organizations:
+                > organization:
+                > workHoursRatioEntries: [ { workHoursRatio: 0.9 } ]
+                > workModelsKeysRatioEntries: { 'on-site': [{ workHoursRatio: 1 }] }
+                > technologies:
+                    > technology: Windows
+                    > sub-technologies:
+                        > technology: Visual Studio
+                        > sub-technologies:
+                            > technology: .NET
+                            > sub-technologies: 
+                                > technology: C#
+
+            ***//
+
+    > Sub-Project #2 (timespans (start + end)[] + hours per period (e.g. week/month))
+        > workHoursRatioEntries
+            > workHoursRatio
+            > startDate
+            > endDate
+        > Organizations
+            > #Organization
+            > workHoursRatioEntries
+                > workHoursRatio
+                > startDate
+                > endDate
+            > workModelsKeysRatioEntries
+//        > Concepts
+//            > #Concept
+//            > workHoursRatioEntries
+//                > workHoursRatio
+//                > startDate
+//                > endDate
+//            > Organizations
+//                > #Organization
+//                > workHoursRatioEntries
+//                    > workHoursRatio
+//                    > startDate
+//                    > endDate
+//                > workModelsKeysRatioEntries
+
+
+        > Actions
+            > Technical (0.7)
+            > Meetings (0.2)
+                > Contractual (0.1)
+                    > With Manager
+                > Project Meetings (0.9)
+                    > With Manager (0.1)
+                    > With Team (0.8)
+                    > With Client(s) (0.1)
+            > Customer Support (0.1)
+                > Calls (0.2)
+                > Emails (0.8)
+
+        > Actions
+            > #Action
+            > #ScheduleTimeSliceTag (alter schedule to include day & time slices)
+            > workHoursRatioEntries
+                > workHoursRatio
+                > startDate
+                > endDate
+            > Organizations
+                > #Organization
+                > workHoursRatioEntries
+                    > workHoursRatio
+                    > startDate
+                    > endDate
+                > workModelsKeysRatioEntries
+            > Concepts
+                > #Concept
+                > workHoursRatioEntries
+                    > workHoursRatio
+                    > startDate
+                    > endDate
+                > Organizations
+                    > #Organization
+                    > workHoursRatioEntries
+                        > workHoursRatio
+                        > startDate
+                        > endDate
+                    > workModelsKeysRatioEntries
+            > Sub-Actions
+            > Technology_Logs
+                > #Technology_Log
+                > Concepts
+                    > #Concept
+                    > workHoursRatioEntries
+                        > workHoursRatio
+                        > startDate
+                        > endDate
+                    > Organizations
+                        > #Organization
+                        > workHoursRatioEntries
+                            > workHoursRatio
+                            > startDate
+                            > endDate
+                        > workModelsKeysRatioEntries
+                > Sub-Technologies
+
+
+
+EXAMPLE
+|            |            |            |            |            |            |            |
+Axxxxxxxxxxxxxxxxxxxxxxxxx
+                          Bxxxxxxxxxxxxxxxxxxxxxxxxx
+Cxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                                                 Dxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Ratios
+> A = 1
+> B = 1
+> C = 0.5
+> D = 1
+
+0 = A (1), C (0.5)
+
+Explanation
+> Go through projects one by one at depth (first all shallow then all deeper, etc) to calculate available hours, making sure that any overlapping schedules between projects are catered for. 
+    > Calculate by hour ranges and available percentage in each hour for each project (note only whenever the project's available hours per hour changes)
+> Project workHoursRatioEntries mean percentage of hours between project startDate and endDate (make sure this calculation fits available hours for project [intelligent division of hour utilisation (also fitting schedule)])
+    > If hours of project/sub-project and other projects/sub-projects (via workHoursRatioEntries) surpasses the total amount of hours available (calculated at an upper layer of projects), then scale down, if it is less, then scale up.
+    > Same for Actions
+        > For Technology Logs split hours per hierarchy level (same as projects) (to continue notes here!)

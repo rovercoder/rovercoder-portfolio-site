@@ -1714,6 +1714,32 @@ export const getSiteData = async function (options: SiteDataOptions): Promise<Si
                                 ]
                             },
                             {
+                                key: "concept#personal-relational-environmental-effectiveness#presentational-marketing",
+                                name: "Presentational & Marketing",
+                                description: "Presentational and marketing concepts and skills.",
+                                experienceGradeLevel: 1,
+                                children: [
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#presentational-marketing#presentation-preparation",
+                                        name: "Presentation Preparation",
+                                        description: "Preparing presentations to be delivered.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#presentational-marketin#presentation-delivery",
+                                        name: "Presentation Delivery",
+                                        description: "Delivering presentations in-front of an audience.",
+                                        experienceGradeLevel: 1
+                                    },
+                                    {
+                                        key: "concept#personal-relational-environmental-effectiveness#presentational-marketing#social-media-advertising",
+                                        name: "Social Media Advertising",
+                                        description: "Advertising on social media platforms.",
+                                        experienceGradeLevel: 1
+                                    }
+                                ]
+                            },
+                            {
                                 key: "concept#personal-relational-environmental-effectiveness#organizational-managerial",
                                 name: "Organizational & Managerial",
                                 description: "Organizational and managerial concepts and skills.",
@@ -5205,79 +5231,193 @@ export const getSiteData = async function (options: SiteDataOptions): Promise<Si
                         key: "project#secondary-school",
                         name: "Secondary School (O Level Exams)",
                         description: "Tutoring in a variety of subjects including Computer Studies, Information and Communications Technology (ICT), Mathematics, Physics, Chemistry, English, Maltese, French, Italian, Graphical Communication, Religion, Environmental Studies and Other\r\n\r\nLESSON STRUCTURE\r\n\r\nForm 1 & 2\r\n\r\nICT (4 lessons)\r\nMaltese (4 lessons)\r\nEnglish (4 lessons)\r\nFrench (2 lessons)\r\nItalian (2 lessons)\r\nReligion (2 lessons)\r\nGraphical Communication (3 lessons)\r\nMaths (4 lessons)\r\nGeneral Science (4 lessons)\r\nEnvironmental Studies (3 lessons)\r\nPE (3 lessons)\r\nPSD (2 lessons)\r\nMusic & Theater (3 lessons)\r\n\r\n\r\nForm 3, 4 & 5\r\n\r\nICT (1 lesson)\r\nComputer Studies (4 lessons)\r\nMaltese (4 lessons)\r\nEnglish (2 lessons)\r\nEnglish Literature (2 lessons)\r\nFrench (3 lessons)\r\nReligion (2 lessons)\r\nGraphical Communication (2 lessons)\r\nMaths (4 lessons)\r\nPhysics (3 lessons)\r\nChemistry (4 lessons)\r\nEnvironmental Studies (3 lessons)\r\nPE (2 lessons)\r\nPSD (1 lesson)\r\nMusic & Theater (2 lessons)\r\nMedia Literacy (1 lesson)\r\n\r\n\r\n08:15-09:00\r\n09:00-09:45\r\n09:45-10:30\r\n10:30-11:15\r\n11:15-12:00 - Break\r\n12:00-12:45\r\n12:45-13:30\r\n13:30-14:15\r\n14:15-15:00\r\n\r\n8 lessons a day\r\n\r\n8*5=40 lessons in a week\r\n",
-                        startDate: "2006-09-20",
-                        endDate: "2011-06-20",
+                        dates: [{
+                            startDate: "2006-09-20", 
+                            endDate: "2011-06-20"
+                        }],
                         timeZone: 'Europe/Malta',
+                        timingScheduleKey: "timing-schedule#secondary-school-and-home-work",
                         projectMotiveKey: "project-motive#education-academia",
                         projectTagsKeys: ["project-tag#learning"],
-                        technologyLogs: [],
-                        conceptKeys: [],
                         sectorsKeysRatios: {},
                         organizationsKeys: [{
                             organizationKey: "organization#archbishops-seminary",
-                            organizationLocationKey: "main",
-                            workModelsKeysRatios: {
-                                "work-model#on-site": 0.6,
-                                "work-model#remote": 0.4
-                            }
+                            organizationLocationsKeys: [{
+                                organizationLocationKey: "main",
+                                workModelsKeysRatios: {
+                                    "work-model#on-site": 0.6,
+                                    "work-model#remote": 0.4
+                                }
+                            }]
                         }],
                         subProjects: [
                             {
                                 key: "project#secondary-school#computer-studies-ict",
                                 name: "Computer Studies & ICT",
                                 description: "Tutoring in Computer Studies and Information and Communications Technology (ICT) for O Level Exams",
-                                conceptKeys: [
-                                    "concept#technical#computing"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#technical#computing",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#secondary-school#mathematics-physics-chemistry-general-science",
                                 name: "Mathematics, Physics, Chemistry and General Science",
                                 description: "Tutoring in Mathematics, Physics, Chemistry and General Science for O Level Exams",
-                                conceptKeys: [
-                                    "concept#mathematical-physical"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#mathematical-physical",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#secondary-school#languages",
                                 name: "Languages (Maltese, English, French and Italian)",
                                 description: "Tutoring in Maltese, English, French and Italian for O Level Exams",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
-                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
+                                                workHoursRatio: 1
+                                            },
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#secondary-school#graphical-communication",
                                 name: "Graphical Communication",
                                 description: "Tutoring in Graphical Communication for O Level Exams",
-                                conceptKeys: [
-                                    "concept#creative-artistic",
-                                    "concept#mathematical-physical"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#creative-artistic",
+                                                workHoursRatio: 1
+                                            },
+                                            {
+                                                key: "concept#mathematical-physical",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#secondary-school#religion",
                                 name: "Religion",
                                 description: "Tutoring in religious Catholicism for O Level Exams",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#secondary-school#environmental-studies",
                                 name: "Environmental Studies (Social Studies, History and Geography)",
                                 description: "Tutoring in Social Studies, History and Geography for O Level Exams",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#secondary-school#other",
                                 name: "Other",
                                 description: "Tutoring in other complimentary subjects",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             }
                         ]
@@ -5286,67 +5426,80 @@ export const getSiteData = async function (options: SiteDataOptions): Promise<Si
                         key: "project#teachers-multimedia-presentation-intro-course",
                         name: "Teachers' Multimedia Presentation Intro Course",
                         description: "A short course for teachers to introduce them to the use of multimedia presentations in their teaching.",
-                        startDate: "2005-07-22",
-                        endDate: "2005-08-23",
+                        dates: [{
+                            startDate: "2005-07-22",
+                            endDate: "2005-08-23",
+                        }],
                         timeZone: 'Europe/Malta',
+                        timingScheduleKey: "timing-schedule#teachers-multimedia-presentation-intro-course",
                         projectMotiveKey: "project-motive#education-academia",
                         projectTagsKeys: ["project-tag#learning", "project-tag#presenting"],
-                        conceptKeys: [],
-                        technologyLogs: [
+                        projectActions: [
                             {
-                                technologyKey: "technology#windows",
-                                hoursEntries: [
+                                name: "Learning",
+                                projectActionsTagsKeys: [
                                     {
-                                        periodStartDate: "2005-07-26",
-                                        periodEndDate: "2005-08-23",
-                                        timingScheduleKey: "timing-schedule#teachers-multimedia-presentation-intro-course",
-                                        hoursTimeBasisEvery: "definite",
-                                        hoursPerBasis: 36
+                                        key: "project-action-tag#learning",
+                                        workHoursRatio: 1
                                     }
                                 ],
-                                conceptKeys: [],
-                                subTechnologiesLogs: [
+                                workHoursRatio: 1,
+                                technologyLogs: [
                                     {
-                                        technologyKey: "technology#powerpoint",
+                                        technologyKey: "technology#windows",
                                         hoursEntries: [
                                             {
                                                 periodStartDate: "2005-07-26",
-                                                periodEndDate: "2005-07-29",
-                                                hoursTimeBasisEvery: "definite",
-                                                hoursPerBasis: 8
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        technologyKey: "technology#photoshop",
-                                        hoursEntries: [
-                                            {
-                                                periodStartDate: "2005-08-02",
-                                                periodEndDate: "2005-08-05",
-                                                hoursTimeBasisEvery: "definite",
-                                                hoursPerBasis: 8
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        technologyKey: "technology#opus-creator",
-                                        hoursEntries: [
-                                            {
-                                                periodStartDate: "2005-08-09",
-                                                periodEndDate: "2005-08-12",
-                                                hoursTimeBasisEvery: "definite",
-                                                hoursPerBasis: 8
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        technologyKey: "technology#flash",
-                                        hoursEntries: [
-                                            {
-                                                periodStartDate: "2005-08-16",
                                                 periodEndDate: "2005-08-23",
                                                 hoursTimeBasisEvery: "definite",
-                                                hoursPerBasis: 12
+                                                hoursPerBasis: 36
+                                            }
+                                        ],
+                                        conceptsKeys: [],
+                                        subTechnologiesLogs: [
+                                            {
+                                                technologyKey: "technology#powerpoint",
+                                                hoursEntries: [
+                                                    {
+                                                        periodStartDate: "2005-07-26",
+                                                        periodEndDate: "2005-07-29",
+                                                        hoursTimeBasisEvery: "definite",
+                                                        hoursPerBasis: 8
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                technologyKey: "technology#photoshop",
+                                                hoursEntries: [
+                                                    {
+                                                        periodStartDate: "2005-08-02",
+                                                        periodEndDate: "2005-08-05",
+                                                        hoursTimeBasisEvery: "definite",
+                                                        hoursPerBasis: 8
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                technologyKey: "technology#opus-creator",
+                                                hoursEntries: [
+                                                    {
+                                                        periodStartDate: "2005-08-09",
+                                                        periodEndDate: "2005-08-12",
+                                                        hoursTimeBasisEvery: "definite",
+                                                        hoursPerBasis: 8
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                technologyKey: "technology#flash",
+                                                hoursEntries: [
+                                                    {
+                                                        periodStartDate: "2005-08-16",
+                                                        periodEndDate: "2005-08-23",
+                                                        hoursTimeBasisEvery: "definite",
+                                                        hoursPerBasis: 12
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -5359,63 +5512,147 @@ export const getSiteData = async function (options: SiteDataOptions): Promise<Si
                         key: "project#primary-school",
                         name: "Primary School (Common Entrance & Junior Lyceum Exams)",
                         description: "Tutoring in a variety of subjects including Mathematics, English, Maltese, Religion, Social Studies, History and Geography",
-                        startDate: "2000-09-20",
-                        endDate: "2006-06-20",
+                        dates: [{
+                            startDate: "2000-09-20",
+                            endDate: "2006-06-20",
+                        }],
                         timeZone: 'Europe/Malta',
+                        timingScheduleKey: "timing-schedule#primary-school-and-home-work",
                         projectMotiveKey: "project-motive#education-academia",
                         projectTagsKeys: ["project-tag#learning"],
-                        technologyLogs: [],
-                        conceptKeys: [],
                         sectorsKeysRatios: {},
                         organizationsKeys: [{
                             organizationKey: "organization#bice-mizzi-vassallo",
-                            organizationLocationKey: "main",
-                            workModelsKeysRatios: {
-                                "work-model#on-site": 0.65,
-                                "work-model#remote": 0.35
-                            }
+                            organizationLocationsKeys: [{
+                                organizationLocationKey: "main",
+                                workModelsKeysRatios: {
+                                    "work-model#on-site": 0.65,
+                                    "work-model#remote": 0.35
+                                }
+                            }]
                         }],
                         subProjects: [
                             {
                                 key: "project#primary-school#mathematics",
                                 name: "Mathematics",
                                 description: "Tutoring in Mathematics for Common Entrance and Junior Lyceum Exams",
-                                conceptKeys: [
-                                    "concept#mathematical-physical"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#mathematical-physical",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#primary-school#languages-maltese-english",
                                 name: "Languages (Maltese and English)",
                                 description: "Tutoring in Maltese and English for Common Entrance and Junior Lyceum Exams",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
-                                    "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#written-communication",
+                                                workHoursRatio: 1
+                                            },
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness#communication-linguistics#verbal-communication",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#primary-school#religion",
                                 name: "Religion",
                                 description: "Tutoring in religious Catholicism for Common Entrance and Junior Lyceum Exams",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#primary-school#social-studies-history-geography",
                                 name: "Social Studies, History and Geography",
                                 description: "Tutoring in Social Studies, History and Geography for Common Entrance and Junior Lyceum Exams",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
                                 key: "project#primary-school#other",
                                 name: "Other",
                                 description: "Tutoring in other complimentary subjects",
-                                conceptKeys: [
-                                    "concept#personal-relational-environmental-effectiveness",
-                                    "concept#creative-artistic"
+                                projectActions: [
+                                    {
+                                        name: "Learning",
+                                        projectActionsTagsKeys: [
+                                            {
+                                                key: "project-action-tag#learning",
+                                                workHoursRatio: 1
+                                            }
+                                        ],
+                                        workHoursRatio: 1,
+                                        conceptsKeys: [
+                                            {
+                                                key: "concept#personal-relational-environmental-effectiveness",
+                                                workHoursRatio: 1
+                                            },
+                                            {
+                                                key: "concept#creative-artistic",
+                                                workHoursRatio: 1
+                                            }
+                                        ]
+                                    }
                                 ]
                             }
                         ]
@@ -5503,7 +5740,54 @@ export const getSiteData = async function (options: SiteDataOptions): Promise<Si
                                 ]
                             }
                         ]
-                    }
+                    },
+                    {
+                        key: "timing-schedule#primary-school-and-home-work",
+                        timeZone: "Europe/Malta",
+                        defaultSleepTime: { startTime: { hours: 11 }, endTime: { hours: 7 } },
+                        weeklyScheduleApplicable: [
+                            {
+                                applicableFromDate: "1998-09",
+                                daysSchedules: [
+                                    {
+                                        weekDays:
+                                        {
+                                            "Monday,Tuesday,Wednesday,Thursday,Friday": {
+                                                startTime: { hours: 8, minutes: 15 },
+                                                endTime: { hours: 21 },
+                                                breaks: [
+                                                    {
+                                                        startBreakTime: { hours: 11, minutes: 15 },
+                                                        breakDurationMinutes: 45
+                                                    },
+                                                    {
+                                                        startBreakTime: { hours: 15 },
+                                                        breakDurationMinutes: 60
+                                                    },
+                                                    {
+                                                        startBreakTime: { hours: 18, minutes: 15 },
+                                                        breakDurationMinutes: 45
+                                                    }
+                                                ]
+                                            },
+                                            "Saturday": {
+                                                startTime: { hours: 9 },
+                                                endTime: { hours: 12 }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        holidaysRestAndLeaveApplied: [
+                            {
+                                holidaysRestAndLeaveEntryKey: "holiday-rest-leave-entry#public-holidays-malta"
+                            },
+                            {
+                                holidaysRestAndLeaveEntryKey: "holiday-rest-leave-entry#scholastic-year-holidays-malta"
+                            }
+                        ]
+                    },
                 ],
                 holidaysRestAndLeaveEntries: [
                     {
@@ -5677,6 +5961,13 @@ export const getSiteData = async function (options: SiteDataOptions): Promise<Si
                         key: "project-tag#pci-dss-compliance",
                         name: "PCI DSS Compliance",
                         description: "Projects related to Payment Card Industry Data Security Standard (PCI DSS) compliance."
+                    }
+                ],
+                projectActionTags: [
+                    {
+                        key: "project-action-tag#learning",
+                        name: "Learning",
+                        description: "Involves acquiring new knowledge or skills."
                     }
                 ],
                 companyTypes: [

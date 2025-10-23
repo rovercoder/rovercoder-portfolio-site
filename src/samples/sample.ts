@@ -2,9 +2,11 @@
 
 // < Run javascript module in browser >
 
+import { TZDate } from "@date-fns/tz";
 import { getFunctionDetails } from "../data/options/functions/site.data.options.functions.js";
 import type { CustomFunctionsWithContext } from "../data/site.data.types.js";
 import { fields } from "../helpers/helpers.general.js";
+import { addHours } from "date-fns";
 
 // var moduleData = `
 //     function hello() { alert('hello'); }
@@ -118,8 +120,25 @@ import { fields } from "../helpers/helpers.general.js";
 
 // </ Testing overriding toString on a parent class >
 
-var func = () => { return !true || false || !!1 || 0; }
+// < Testing variables which have a function assigned to see if name of variable is returned (Result: NOT) >
 
-var x = func;
+// var func = () => { return !true || false || !!1 || 0; }
 
-console.log(JSON.stringify(getFunctionDetails(x)));
+// var x = func;
+
+// console.log(JSON.stringify(getFunctionDetails(x)));
+
+// </ Testing variables which have a function assigned to see if name of variable is returned (Result: NOT) >
+
+// < Testing daylight savings time shift >
+
+// var date = new TZDate(2025, 9, 26, 2, 0, 0, "Europe/Madrid");
+
+// var date1 = addHours(date, 1);
+// var date2 = addHours(date1, 1);
+
+// console.log(date);
+// console.log(date1);
+// console.log(date2);
+
+// </ Testing daylight savings time shift >
