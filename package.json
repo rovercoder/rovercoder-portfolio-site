@@ -9,15 +9,15 @@
     "runner": "node ./build/runners/site.runner.js || true"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "@types/jscodeshift": "^17.3.0",
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.9.1",
     "@types/uglify-js": "^3.17.5",
     "jscodeshift": "^17.3.0",
-    "rollup": "^4.52.2",
-    "tsc-watch": "^7.1.1",
-    "typescript": "^5.9.2",
+    "rollup": "^4.52.5",
+    "tsc-watch": "^7.2.0",
+    "typescript": "^5.9.3",
     "uglify-js": "^3.19.3"
   }
 }
